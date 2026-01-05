@@ -1,0 +1,5 @@
+# Large video files
+infinity-lighting/public/*.mp4
+
+# OS files
+.DS_Store
