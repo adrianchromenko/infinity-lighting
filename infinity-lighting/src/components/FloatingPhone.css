@@ -9,16 +9,32 @@
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(165, 41, 41, 0.4);
+  box-shadow: 0 4px 15px rgba(165, 41, 41, 0.3), 0 8px 25px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   transition: all 0.3s ease;
   text-decoration: none;
   color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 15px rgba(165, 41, 41, 0.3), 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(165, 41, 41, 0.5), 0 10px 35px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0 4px 15px rgba(165, 41, 41, 0.3), 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .floating-phone:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(165, 41, 41, 0.5);
+  box-shadow: 0 6px 25px rgba(165, 41, 41, 0.6), 0 12px 35px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #8a2323, #a52929);
+  animation: none;
 }
 
 .floating-phone:active {
@@ -30,26 +46,23 @@
 }
 
 @keyframes ring {
-  0% {
-    transform: rotate(0deg);
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
   }
   10% {
-    transform: rotate(-15deg);
+    transform: rotate(-15deg) scale(1.05);
   }
   20% {
-    transform: rotate(15deg);
+    transform: rotate(15deg) scale(1.05);
   }
   30% {
-    transform: rotate(-15deg);
+    transform: rotate(-10deg) scale(1.02);
   }
   40% {
-    transform: rotate(15deg);
+    transform: rotate(10deg) scale(1.02);
   }
   50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(1);
   }
 }
 

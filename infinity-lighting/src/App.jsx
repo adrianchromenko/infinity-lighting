@@ -13,12 +13,14 @@ import EnergyAudit from './pages/EnergyAudit'
 import LightingProposal from './pages/LightingProposal'
 import ProjectsNews from './pages/ProjectsNews'
 import ContactUs from './pages/ContactUs'
+import FloatingPhone from './components/FloatingPhone'
 
 function App() {
   return (
     <HelmetProvider>
       <Router>
         <div className="App">
+          <FloatingPhone />
           <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/parking-garages" element={<ParkingGarages />} />
