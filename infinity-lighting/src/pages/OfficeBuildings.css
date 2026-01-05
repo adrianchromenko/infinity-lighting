@@ -38,8 +38,7 @@
 }
 
 .transformation-content {
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .transformation-title {
@@ -137,8 +136,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .benefit-stat {
@@ -178,8 +176,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 4rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
   align-items: center;
 }
 
@@ -401,7 +398,7 @@
   .ob-features,
   .ob-projects,
   .ob-cta {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
 }
 
@@ -455,11 +452,11 @@
   .ob-features,
   .ob-projects,
   .ob-cta {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
   
   .ob-hero {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
   
   .ob-hero-title {

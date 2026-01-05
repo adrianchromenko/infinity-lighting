@@ -1,8 +1,4 @@
-.container {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
+/* Container class now defined in index.css for consistency */
 
 a {
   text-decoration: none;

@@ -58,8 +58,7 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 3rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
   align-items: start;
 }
 
@@ -195,8 +194,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .savings-card {
@@ -241,8 +239,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 3rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
   align-items: center;
 }
 
@@ -510,7 +507,7 @@
   .lp-incentives,
   .lp-calculator,
   .lp-cta {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
 }
 
@@ -577,11 +574,11 @@
   .lp-incentives,
   .lp-calculator,
   .lp-cta {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
   
   .lp-hero {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
   
   .lp-hero-title {

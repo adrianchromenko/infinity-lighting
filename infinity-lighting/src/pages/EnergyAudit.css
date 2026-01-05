@@ -50,8 +50,7 @@
 }
 
 .service-content {
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .service-title {
@@ -132,8 +131,7 @@
 }
 
 .recommendations-content {
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 3rem;
@@ -262,8 +260,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .benefit-card {
@@ -381,7 +378,7 @@
   .ea-recommendations,
   .ea-benefits,
   .ea-cta {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
 }
 
@@ -440,11 +437,11 @@
   .ea-recommendations,
   .ea-benefits,
   .ea-cta {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
   
   .ea-hero {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
   
   .ea-hero-title {

@@ -50,8 +50,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
   background: white;
   border-radius: 20px;
   overflow: hidden;
@@ -151,8 +150,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .project-card {
@@ -411,7 +409,7 @@
   .pn-projects,
   .pn-news,
   .pn-cta {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
 }
 
@@ -467,11 +465,11 @@
   .pn-projects,
   .pn-news,
   .pn-cta {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
   
   .pn-hero {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
   
   .pn-hero-title {

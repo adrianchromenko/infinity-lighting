@@ -42,8 +42,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 3rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .contact-form-section h2 {
@@ -294,8 +293,7 @@
 }
 
 .map-container {
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .map-placeholder {
@@ -417,7 +415,7 @@
   .service-areas,
   .contact-map,
   .contact-cta {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
 }
 
@@ -475,11 +473,11 @@
   .service-areas,
   .contact-map,
   .contact-cta {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
   
   .contact-hero {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
   
   .contact-hero-title {

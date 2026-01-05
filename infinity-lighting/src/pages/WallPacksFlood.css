@@ -68,8 +68,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .solution-card {
@@ -230,8 +229,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .product-category {
@@ -275,8 +273,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .app-card {
@@ -345,8 +342,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .stat-card {
@@ -512,7 +508,7 @@
   .wpf-stats,
   .wpf-final-cta,
   .wpf-cta {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
 }
 
@@ -577,11 +573,11 @@
   .wpf-stats,
   .wpf-final-cta,
   .wpf-cta {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
   
   .wpf-hero {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
   
   .wpf-hero-title {

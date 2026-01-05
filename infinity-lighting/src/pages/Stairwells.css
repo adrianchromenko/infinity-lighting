@@ -78,8 +78,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .stat-card {
@@ -129,8 +128,7 @@
 }
 
 .solution-content {
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .section-title {
@@ -227,8 +225,7 @@
 }
 
 .case-study-card {
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
   background: white;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -321,8 +318,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .benefit-card {
@@ -419,7 +415,7 @@
   .sw-case-study,
   .sw-benefits,
   .sw-cta {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
 }
 
@@ -485,7 +481,7 @@
   .sw-case-study,
   .sw-benefits,
   .sw-cta {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
   
   .sw-hero-title {

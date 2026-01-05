@@ -272,8 +272,7 @@
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
   align-items: center;
-  max-width: 1500px;
-  margin: 0 auto;
+  /* Uses .container class for consistent width */
 }
 
 .video-info h3 {
@@ -382,7 +381,7 @@
 @media (max-width: 768px) {
   /* Hero adjustments */
   .pg-hero {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
   
   .pg-hero-title {
@@ -401,7 +400,7 @@
   .pg-projects,
   .pg-video,
   .pg-cta {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
   
   /* Typography adjustments */

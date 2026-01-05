@@ -1,0 +1,240 @@
+/* Base styles for all page sections to ensure consistency */
+
+/* All page sections should follow these rules */
+.page-section {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Hero sections across all pages */
+.page-hero {
+  width: 100%;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(165, 41, 41, 0.1), transparent 60%);
+  pointer-events: none;
+}
+
+.page-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Content sections */
+.content-section {
+  width: 100%;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.content-section.bg-gray {
+  background: #f8f9fa;
+}
+
+.content-section.bg-white {
+  background: white;
+}
+
+/* Ensure all containers are consistent */
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Standard spacing between sections */
+.section-spacing {
+  margin-bottom: 4rem;
+}
+
+/* Consistent heading styles */
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #1a1a1a;
+}
+
+.section-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Grid layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  width: 100%;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Cards and boxes */
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* CTA sections */
+.cta-section {
+  width: 100%;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(165, 41, 41, 0.2), transparent 60%);
+  pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 968px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .content-section {
+    padding: 3rem 0;
+  }
+  
+  .page-hero {
+    padding: 3rem 0;
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .content-section {
+    padding: 2.5rem 0;
+  }
+  
+  .page-hero {
+    padding: 2.5rem 0;
+    min-height: 300px;
+  }
+  
+  .section-spacing {
+    margin-bottom: 3rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .content-section {
+    padding: 2rem 0;
+  }
+  
+  .page-hero {
+    padding: 2rem 0;
+    min-height: 250px;
+  }
+  
+  .section-spacing {
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    padding: 1.25rem;
+    border-radius: 10px;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Consistent list styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Consistent link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
