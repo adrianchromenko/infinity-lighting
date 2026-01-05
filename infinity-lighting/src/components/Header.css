@@ -231,7 +231,7 @@
   }
   
   .header-actions {
-    margin-right: 0.5rem;
+    display: none;
   }
   
   .nav-item-dropdown {
