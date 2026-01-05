@@ -26,47 +26,49 @@ const Stats = () => {
         <div className="supporting-stats">
           <div className="support-stat">
             <div className="support-stat-icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
               </svg>
             </div>
-            <h3 className="support-stat-title">Greatest Impact Potential</h3>
+            <h3 className="support-stat-title">Maximum Energy Impact</h3>
+            <div className="stat-highlight">
+              <span className="highlight-number">#1 Technology</span>
+              <span className="highlight-text">Most effective energy-saving solution for commercial properties</span>
+            </div>
             <p className="support-stat-text">
-              LED lighting represents the single most effective energy-saving technology available for commercial buildings today
+              LED technology delivers immediate ROI with up to 90% energy reduction compared to traditional lighting
             </p>
           </div>
           
           <div className="support-stat">
             <div className="support-stat-icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 6v6l4 2"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
               </svg>
             </div>
-            <h3 className="support-stat-title">By 2027</h3>
+            <h3 className="support-stat-title">2027 Projection</h3>
             <div className="stat-highlight">
               <span className="highlight-number">348,000 MWh</span>
-              <span className="highlight-text">Annual Electricity Savings</span>
+              <span className="highlight-text">Annual electricity savings nationwide</span>
             </div>
             <p className="support-stat-text">
-              Equivalent to 44 power plants' output
+              Equivalent to removing 44 large power plants from the grid - a massive environmental impact
             </p>
           </div>
           
           <div className="support-stat">
             <div className="support-stat-icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <line x1="12" y1="1" x2="12" y2="23"/>
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>
-            <h3 className="support-stat-title">Save Money</h3>
+            <h3 className="support-stat-title">Your Savings Potential</h3>
             <div className="stat-highlight">
               <span className="highlight-number">$30+ Billion</span>
-              <span className="highlight-text">Annual Savings Potential</span>
+              <span className="highlight-text">Total annual savings opportunity</span>
             </div>
             <p className="support-stat-text">
-              At today's electricity prices
+              Join thousands of businesses already cutting energy costs by 50-90% with LED upgrades
             </p>
           </div>
         </div>

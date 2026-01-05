@@ -111,79 +111,105 @@
 /* Supporting Stats Grid */
 .supporting-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
   margin-bottom: 4rem;
 }
 
 .support-stat {
   background: white;
-  padding: 2rem;
-  border-radius: 16px;
-  text-align: center;
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: left;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
   position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.support-stat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #a52929, #ff6b6b);
 }
 
 .support-stat:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(165, 41, 41, 0.15);
-  border-color: rgba(165, 41, 41, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(165, 41, 41, 0.15);
 }
 
 .support-stat-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 1.5rem;
-  background: linear-gradient(135deg, rgba(165, 41, 41, 0.1), rgba(255, 107, 107, 0.1));
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #a52929, #ff6b6b);
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 8px 20px rgba(165, 41, 41, 0.2);
 }
 
 .support-stat-icon svg {
-  color: #a52929;
+  color: white;
+  width: 32px;
+  height: 32px;
 }
 
 .support-stat-title {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 1rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
 }
 
 .stat-highlight {
-  background: linear-gradient(135deg, #a52929, #ff6b6b);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 50px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
+  padding: 0;
+  background: none;
+  color: #333;
+  display: block;
+  border-radius: 0;
 }
 
 .highlight-number {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   font-weight: 900;
+  color: #a52929;
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  background: linear-gradient(135deg, #a52929, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .highlight-text {
-  font-size: 0.85rem;
-  font-weight: 500;
-  opacity: 0.95;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  text-transform: none;
+  letter-spacing: 0;
+  display: block;
+  line-height: 1.4;
+  opacity: 1;
 }
 
 .support-stat-text {
-  font-size: 1rem;
-  color: #666;
+  font-size: 0.95rem;
+  color: #777;
   line-height: 1.6;
   margin-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 1rem;
 }
 
 /* CTA Section */
@@ -316,23 +342,36 @@
     font-size: 2rem;
   }
   
+  .supporting-stats {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
   .support-stat {
-    padding: 1.75rem;
+    padding: 2rem;
   }
   
   .support-stat-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 1rem;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1.25rem;
   }
   
   .support-stat-icon svg {
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
+  }
+  
+  .support-stat-title {
+    font-size: 1.1rem;
   }
   
   .highlight-number {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  .highlight-text {
+    font-size: 0.9rem;
   }
   
   .upgrade-cta {
@@ -384,28 +423,44 @@
     font-size: 1rem;
   }
   
+  .supporting-stats {
+    gap: 1.5rem;
+  }
+  
   .support-stat {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+  
+  .support-stat-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+  }
+  
+  .support-stat-icon svg {
+    width: 24px;
+    height: 24px;
   }
   
   .support-stat-title {
-    font-size: 1.25rem;
-  }
-  
-  .stat-highlight {
-    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
   
   .highlight-number {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
   }
   
   .highlight-text {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.3;
   }
   
   .support-stat-text {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    padding-top: 0.75rem;
   }
   
   .upgrade-headline {
