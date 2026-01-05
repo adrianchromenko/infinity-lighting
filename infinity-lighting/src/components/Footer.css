@@ -9,7 +9,7 @@
 
 .footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1.5fr 1.5fr 1fr;
   gap: 3rem;
   margin-bottom: 3rem;
   padding-bottom: 3rem;
@@ -17,27 +17,65 @@
   width: 100%;
 }
 
-.footer-info h3,
+.footer-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.footer-logo-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer-nav h3,
 .footer-social h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #a52929;
+  color: white;
 }
 
-.footer-info p {
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+.footer-nav ul li a:hover {
+  color: #a52929;
+  transform: translateX(3px);
+}
+
+.footer-logo-section p {
   margin-bottom: 0.5rem;
-  color: #ccc;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
   line-height: 1.6;
 }
 
-.footer-info a {
-  color: #a52929;
+.footer-logo-section a {
+  color: white;
+  text-decoration: none;
   transition: color 0.3s;
 }
 
-.footer-info a:hover {
-  color: #ff6b6b;
+.footer-logo-section a:hover {
+  color: #a52929;
+  text-decoration: underline;
 }
 
 .social-links {
@@ -52,13 +90,16 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: #333;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  transition: background 0.3s, transform 0.3s;
+  transition: background 0.3s, transform 0.3s, border-color 0.3s;
+  color: white;
 }
 
 .social-links a:hover {
   background: #a52929;
+  border-color: #a52929;
   transform: translateY(-3px);
 }
 
@@ -97,6 +138,10 @@
     padding: 0 1rem 2rem;
   }
   
+  .footer-logo {
+    width: 120px;
+  }
+  
   .footer {
     padding: 3rem 0 1rem;
   }
@@ -113,6 +158,14 @@
     padding: 3rem 1rem 1rem;
   }
   
+  .footer-logo {
+    margin: 0 auto 1rem;
+  }
+  
+  .footer-nav ul li {
+    margin-bottom: 0.5rem;
+  }
+  
   .social-links {
     justify-content: center;
     gap: 1.5rem;
@@ -124,13 +177,14 @@
     height: 45px;
   }
   
-  .footer-info h3,
+  .footer-logo-section h3,
+  .footer-nav h3,
   .footer-social h3 {
     font-size: 1.35rem;
     margin-bottom: 1.25rem;
   }
   
-  .footer-info p {
+  .footer-logo-section p {
     font-size: 0.95rem;
     line-height: 1.7;
     margin-bottom: 0.75rem;
@@ -147,15 +201,20 @@
     padding-bottom: 1.5rem;
   }
   
-  .footer-info h3,
+  .footer-logo-section h3,
+  .footer-nav h3,
   .footer-social h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
   
-  .footer-info p {
+  .footer-logo-section p {
     font-size: 0.9rem;
     line-height: 1.6;
+  }
+  
+  .footer-logo {
+    width: 100px;
   }
   
   .footer-bottom p {
