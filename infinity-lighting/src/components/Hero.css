@@ -1,0 +1,163 @@
+.hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  padding: 6rem 0;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(165, 41, 41, 0.1), transparent 60%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding-left: 0;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: clamp(2.25rem, 4vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+.hero-title .highlight {
+  color: #a52929;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  color: #d0d0d0;
+  max-width: 700px;
+  text-align: left;
+}
+
+.hero-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  color: #a52929;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.hero-location svg {
+  flex-shrink: 0;
+}
+
+.hero-cta {
+  display: inline-block;
+  background: #a52929;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.3s, transform 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-cta:hover {
+  background: #8a2323;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(165, 41, 41, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+    min-height: auto;
+  }
+  
+  .hero-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .hero-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-description {
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+  
+  .hero-location {
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-cta {
+    padding: 0.875rem 2rem;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2.5rem 1rem;
+  }
+  
+  .hero-title {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .hero-description {
+    font-size: 0.9rem;
+  }
+  
+  .hero-cta {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

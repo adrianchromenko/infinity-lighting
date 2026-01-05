@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Lighting Solutions - LED Lighting Systems</title>
+    <link rel="icon" type="image/png" href="Logo-V2.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- React and Babel for JSX -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: #a52929;
+            color: white;
+            padding: 0.5rem 0;
+            font-size: 0.875rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar-left {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .top-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .top-bar a:hover {
+            opacity: 0.8;
+        }
+
+        /* Header Styles */
+        .header {
+            background: #fff;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 41px;
+            z-index: 999;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.25rem 0;
+        }
+
+        .logo img {
+            height: 80px;
+            width: auto;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            margin: 0 2rem;
+        }
+
+        .nav-link {
+            color: #333;
+            font-weight: 500;
+            font-size: 0.875rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            white-space: nowrap;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #a52929;
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #a52929;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #a52929 0%, #8a2323 100%);
+            color: white;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(165, 41, 41, 0.2);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(165, 41, 41, 0.3);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: #333;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Hero Styles */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 6rem 0;
+            min-height: 65vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top right, rgba(165, 41, 41, 0.1), transparent 60%);
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.3));
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        .hero-title {
+            font-size: clamp(2.25rem, 4vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .highlight {
+            color: #a52929;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+            font-weight: 400;
+            margin-bottom: 2rem;
+            color: #f0f0f0;
+            letter-spacing: 1px;
+        }
+
+        .hero-description {
+            font-size: 1rem;
+            line-height: 1.75;
+            margin-bottom: 2.5rem;
+            color: #d0d0d0;
+            max-width: 750px;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: linear-gradient(135deg, #a52929 0%, #ff6b6b 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            box-shadow: 0 10px 30px rgba(165, 41, 41, 0.3);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            border: none;
+        }
+
+        .hero-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(165, 41, 41, 0.4);
+        }
+
+        .hero-cta:hover::before {
+            left: 100%;
+        }
+
+        /* Stats Styles */
+        .stats {
+            background: #f8f8f8;
+            padding: 4rem 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            align-items: center;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #a52929, #ff6b6b);
+        }
+
+        .stat-number {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            color: #a52929;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .stat-description {
+            font-size: 1.05rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .stat-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .stat-text {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .stat-text:first-child {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .upgrade-section {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        .upgrade-title {
+            font-size: 1.75rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        /* Services Styles */
+        .services {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .services-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .services-title {
+            font-size: 1rem;
+            color: #a52929;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .services-subtitle {
+            font-size: clamp(1.5rem, 2.5vw, 2rem);
+            color: #333;
+            font-weight: 700;
+            line-height: 1.4;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto 3rem;
+            max-width: 800px;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+            border-radius: 12px;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .benefit-item:hover {
+            transform: translateX(15px);
+            border-color: #a52929;
+            box-shadow: 0 10px 30px rgba(165, 41, 41, 0.1);
+        }
+
+        .benefit-icon {
+            color: #a52929;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .benefit-item span:last-child {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .services-cta {
+            display: block;
+            background: #333;
+            color: white;
+            padding: 0.875rem 2.25rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            max-width: fit-content;
+            margin: 0 auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            border: none;
+        }
+
+        .services-cta:hover {
+            background: #a52929;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(165, 41, 41, 0.3);
+        }
+
+        /* Clients Section */
+        .clients-partners {
+            background: #f8f8f8;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #333;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #a52929;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 5rem 0 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #a52929, #ff6b6b, #a52929);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-brand {
+            max-width: 350px;
+        }
+
+        .footer-logo {
+            height: 60px;
+            margin-bottom: 1rem;
+            filter: brightness(0) invert(1);
+            opacity: 0.9;
+        }
+
+        .footer-brand p {
+            color: #aaa;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: #a52929;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-column a {
+            color: #aaa;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .footer-column a:hover {
+            color: #a52929;
+            transform: translateX(5px);
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            color: #aaa;
+        }
+
+        .footer-contact-item svg {
+            width: 18px;
+            height: 18px;
+            color: #a52929;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(165, 41, 41, 0.1);
+            border: 1px solid rgba(165, 41, 41, 0.3);
+            border-radius: 50%;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .social-links a:hover {
+            background: #a52929;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(165, 41, 41, 0.3);
+            border-color: #a52929;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+        }
+
+        .footer-bottom p {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-bottom-links a {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .footer-bottom-links a:hover {
+            color: #a52929;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 968px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 120px;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+                padding: 2rem 0;
+                margin: 0;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .menu-toggle {
+                display: flex;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .footer-bottom-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .top-bar-content {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo img {
+                height: 60px;
+            }
+            
+            .cta-button {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                padding: 3rem 0;
+                min-height: auto;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+
+            .hero-description {
+                font-size: 0.95rem;
+            }
+
+            .benefit-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .benefit-icon {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .search-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input {
+            padding: 0.75rem 1rem;
+            border: 2px solid #f0f0f0;
+            border-radius: 50px;
+            width: 250px;
+            transition: all 0.3s;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #a52929;
+            box-shadow: 0 0 0 3px rgba(165, 41, 41, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState } = React;
+
+        // TopBar Component
+        const TopBar = () => {
+            return (
+                <div className="top-bar">
+                    <div className="container">
+                        <div className="top-bar-content">
+                            <div className="top-bar-left">
+                                <div className="top-bar-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M3 5.5a2.5 2.5 0 0 1 2.5-2.5h13A2.5 2.5 0 0 1 21 5.5v10a2.5 2.5 0 0 1-2.5 2.5H14l-4 4v-4H5.5A2.5 2.5 0 0 1 3 15.5z"/>
+                                    </svg>
+                                    <a href="tel:2812024625">(281) 202-4625</a>
+                                </div>
+                                <div className="top-bar-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                        <path d="m22 7-10 5L2 7"/>
+                                    </svg>
+                                    <a href="mailto:Sales@Inflighting.com">Sales@Inflighting.com</a>
+                                </div>
+                            </div>
+                            <div className="top-bar-right">
+                                <span>Energy-Efficient LED Solutions Since 2003</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        // Header Component
+        const Header = () => {
+            const [menuOpen, setMenuOpen] = useState(false);
+
+            return (
+                <header className="header">
+                    <div className="container">
+                        <div className="nav-wrapper">
+                            <div className="logo">
+                                <img src="Logo-V2.png" alt="Infinity Lighting Solutions" />
+                            </div>
+                            
+                            <nav className={`nav-menu ${menuOpen ? 'active' : ''}`}>
+                                <a className="nav-link">Home</a>
+                                <a className="nav-link">Applications</a>
+                                <a className="nav-link">Services</a>
+                                <a className="nav-link">Projects</a>
+                                <a className="nav-link">Contact</a>
+                            </nav>
+
+                            <div className="header-actions">
+                                <div className="search-box">
+                                    <input type="text" placeholder="Type & Hit Enter.." />
+                                </div>
+                                <button className="cta-button">Free Energy Audit</button>
+                            </div>
+
+                            <button 
+                                className="menu-toggle"
+                                onClick={() => setMenuOpen(!menuOpen)}
+                            >
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+            );
+        };
+
+        // Hero Component
+        const Hero = () => {
+            return (
+                <section className="hero">
+                    <div className="container">
+                        <div className="hero-content">
+                            <h1 className="hero-title">
+                                <span className="highlight">Infinite</span> Lighting Possibilities
+                            </h1>
+                            <h2 className="hero-subtitle">Definite Lighting Solutions</h2>
+                            <p className="hero-description">
+                                Infinity Lighting Solutions is leading the transformation of commercial and industrial 
+                                properties with leading-edge, energy-efficient LED lighting systems. With over 20 years 
+                                of experience in the lighting industry and a broad range of successful projects, our 
+                                upgrades are found in parking garages, warehouses, industrial buildings, schools, gyms, 
+                                churches, hotels, casinos, nursing homes, restaurants, and retail establishments.
+                            </p>
+                            <button className="hero-cta">SEE OUR PROJECTS</button>
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        // Stats Component
+        const Stats = () => {
+            return (
+                <section className="stats">
+                    <div className="container">
+                        <div className="stats-grid">
+                            <div className="stat-card">
+                                <h2 className="stat-number">$1.2 Trillion Dollars</h2>
+                                <p className="stat-description">
+                                    is the cost of wasted energy in US buildings annually
+                                </p>
+                            </div>
+                            
+                            <div className="stat-info">
+                                <p className="stat-text">
+                                    Widespread use of LED lighting has the greatest potential impact on energy savings 
+                                    in the United States.
+                                </p>
+                                <p className="stat-text">
+                                    By 2027, widespread use of LED's could save about 348,000 Mwh of electricity per year. 
+                                    This is equivalent to the annual electrical output of 44 large electrical power plants 
+                                    and a savings of more than $30 Billion dollars at today's electricity prices.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div className="upgrade-section">
+                            <h3 className="upgrade-title">Upgrade Your Office Building Lighting</h3>
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        // Services Component
+        const Services = () => {
+            const benefits = [
+                "Increase the market value of your property",
+                "Decrease lighting energy use by 50%+",
+                "Increase light levels and enhance light quality",
+                "Decrease maintenance costs",
+                "Improve the safety of your building environment",
+                "With our quality products, realize the highest return on investment"
+            ];
+
+            return (
+                <section className="services">
+                    <div className="container">
+                        <div className="services-content">
+                            <div className="services-header">
+                                <h2 className="services-title">SIMPLY PUT...</h2>
+                                <h3 className="services-subtitle">
+                                    Energy efficiency is about using less energy to get the same job done
+                                </h3>
+                            </div>
+                            
+                            <ul className="benefits-list">
+                                {benefits.map((benefit, index) => (
+                                    <li key={index} className="benefit-item">
+                                        <span className="benefit-icon">✓</span>
+                                        <span>{benefit}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                            
+                            <button className="services-cta">DISCOVER OUR LED LIGHTING SERVICES</button>
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        // ClientsPartners Component
+        const ClientsPartners = () => {
+            return (
+                <section className="clients-partners">
+                    <div className="container">
+                        <h2 className="section-title">Clients & Partners</h2>
+                        <div className="partners-grid">
+                            {/* Partner logos can be added here */}
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        // Footer Component
+        const Footer = () => {
+            return (
+                <footer className="footer">
+                    <div className="container">
+                        <div className="footer-content">
+                            <div className="footer-brand">
+                                <img src="Logo-V2.png" alt="Infinity Lighting Solutions" className="footer-logo" />
+                                <p>Leading the transformation of commercial and industrial properties with cutting-edge, energy-efficient LED lighting systems for over 20 years.</p>
+                                <div className="social-links">
+                                    <a aria-label="Facebook">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                        </svg>
+                                    </a>
+                                    <a aria-label="LinkedIn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                        </svg>
+                                    </a>
+                                    <a aria-label="Twitter">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div className="footer-column">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a>LED Services</a></li>
+                                    <li><a>Applications</a></li>
+                                    <li><a>Projects</a></li>
+                                    <li><a>Energy Audit</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div className="footer-column">
+                                <h3>Industries</h3>
+                                <ul>
+                                    <li><a>Warehouses</a></li>
+                                    <li><a>Office Buildings</a></li>
+                                    <li><a>Parking Garages</a></li>
+                                    <li><a>Hotels & Casinos</a></li>
+                                    <li><a>Schools & Gyms</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div className="footer-column">
+                                <h3>Contact Info</h3>
+                                <div className="footer-contact-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    <span>Richmond, TX 77407</span>
+                                </div>
+                                <div className="footer-contact-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                    <div>
+                                        <a href="tel:2812024625">(281) 202-4625</a><br/>
+                                        <a href="tel:3185723212">(318) 572-3212</a>
+                                    </div>
+                                </div>
+                                <div className="footer-contact-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                        <path d="m22 7-10 5L2 7"/>
+                                    </svg>
+                                    <a href="mailto:Sales@Inflighting.com">Sales@Inflighting.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="footer-bottom">
+                            <p>© 2024 Infinity Lighting Solutions. All Rights Reserved.</p>
+                            <div className="footer-bottom-links">
+                                <a>Privacy Policy</a>
+                                <a>Terms of Service</a>
+                                <a>Sitemap</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            );
+        };
+
+        // Main App Component
+        const App = () => {
+            return (
+                <div className="App">
+                    <TopBar />
+                    <Header />
+                    <Hero />
+                    <Stats />
+                    <Services />
+                    <ClientsPartners />
+                    <Footer />
+                </div>
+            );
+        };
+
+        // Render the App
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>

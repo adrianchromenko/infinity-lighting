@@ -1,0 +1,80 @@
+.floating-phone {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #a52929, #8a2323);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(165, 41, 41, 0.4);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.floating-phone:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(165, 41, 41, 0.5);
+}
+
+.floating-phone:active {
+  transform: scale(0.95);
+}
+
+.floating-phone svg {
+  animation: ring 2s ease-in-out infinite;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-15deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Show only on mobile devices */
+@media (max-width: 768px) {
+  .floating-phone {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-phone {
+    width: 50px;
+    height: 50px;
+    bottom: 12px;
+    right: 12px;
+    box-shadow: 0 3px 10px rgba(165, 41, 41, 0.4);
+  }
+  
+  .floating-phone svg {
+    width: 24px;
+    height: 24px;
+  }
+}

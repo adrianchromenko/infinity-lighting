@@ -1,0 +1,699 @@
+.wallpacks-flood-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+/* Hero Section */
+.wpf-hero {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.wpf-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.wpf-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.wpf-hero-subtitle {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Highlight Section */
+.wpf-highlight {
+  background: #f8f8f8;
+  padding: 3rem 0;
+}
+
+.highlight-box {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.highlight-title {
+  font-size: 1.75rem;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.highlight-title .accent {
+  color: #a52929;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* Solutions Section */
+.wpf-solutions {
+  background: white;
+  padding: 5rem 0;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.solution-card {
+  background: #f8f8f8;
+  border-radius: 20px;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.solution-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #a52929, #f39c12);
+}
+
+.solution-card.flood::before {
+  background: linear-gradient(90deg, #3498db, #2980b9);
+}
+
+.solution-card.wallpack::before {
+  background: linear-gradient(90deg, #e74c3c, #c0392b);
+}
+
+.solution-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.solution-card h3 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.solution-description {
+  font-size: 1.05rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.solution-features h4,
+.solution-benefits h4 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.solution-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.solution-features li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+}
+
+.solution-features li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.wattage-range {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+}
+
+.range-label {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.range-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.range-min,
+.range-max {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.range-bar {
+  flex: 1;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  border-radius: 2px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.benefit-item span:last-child {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Products Section */
+.wpf-products {
+  background: #f8f8f8;
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.15rem;
+  color: #666;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-category {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.product-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.category-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-category h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.product-category p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Applications Section */
+.wpf-applications {
+  background: white;
+  padding: 5rem 0;
+}
+
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.app-header {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #34495e, #2c3e50);
+  color: white;
+}
+
+.app-header.walkways {
+  background: linear-gradient(135deg, #27ae60, #229954);
+}
+
+.app-header.driveways {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.app-header.buildings {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.app-header.outdoor {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.app-header.flags {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.app-header.security {
+  background: linear-gradient(135deg, #34495e, #2c3e50);
+}
+
+.app-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.app-card p {
+  padding: 1.5rem;
+  background: white;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Statistics Section */
+.wpf-stats {
+  background: #f8f8f8;
+  padding: 5rem 0;
+}
+
+.stats-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.stat-card.primary {
+  background: linear-gradient(135deg, #a52929, #8a2323);
+  color: white;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card.primary .stat-number {
+  color: white;
+}
+
+.stat-card:not(.primary) .stat-number {
+  color: #a52929;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card.primary .stat-label {
+  color: white;
+}
+
+.stat-card:not(.primary) .stat-label {
+  color: #333;
+}
+
+.stat-description {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.stat-card.primary .stat-description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.stat-card:not(.primary) .stat-description {
+  color: #666;
+}
+
+/* Final CTA Section */
+.wpf-final-cta {
+  background: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.final-message {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.final-highlight {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.wpf-cta {
+  background: linear-gradient(135deg, #a52929, #8a2323);
+  padding: 5rem 0;
+  text-align: center;
+  color: white;
+}
+
+.cta-content h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.cta-content h2:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: white;
+  color: #a52929;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button-secondary {
+  background: transparent;
+  color: white;
+  padding: 1rem 2.5rem;
+  border: 2px solid white;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.cta-button-secondary:hover {
+  background: white;
+  color: #a52929;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .solutions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .applications-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .stats-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .wpf-highlight,
+  .wpf-solutions,
+  .wpf-products,
+  .wpf-applications,
+  .wpf-stats,
+  .wpf-final-cta,
+  .wpf-cta {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wpf-hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .wpf-hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .highlight-title {
+    font-size: 1.5rem;
+  }
+  
+  .highlight-title .accent {
+    font-size: 1.75rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .solution-card,
+  .product-category,
+  .stat-card {
+    padding: 1.5rem;
+  }
+  
+  .app-header {
+    padding: 1rem 1.5rem;
+  }
+  
+  .app-card p {
+    padding: 1rem 1.5rem;
+  }
+  
+  .cta-button,
+  .cta-button-secondary {
+    min-height: 44px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wpf-highlight,
+  .wpf-solutions,
+  .wpf-products,
+  .wpf-applications,
+  .wpf-stats,
+  .wpf-final-cta,
+  .wpf-cta {
+    padding: 2rem 1rem;
+  }
+  
+  .wpf-hero {
+    padding: 3rem 1rem;
+  }
+  
+  .wpf-hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .wpf-hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .highlight-title {
+    font-size: 1.25rem;
+  }
+  
+  .highlight-title .accent {
+    font-size: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .highlight-box {
+    padding: 1rem;
+  }
+  
+  .solution-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .solution-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .solution-features li {
+    font-size: 0.9rem;
+  }
+  
+  .wattage-range {
+    padding: 1rem;
+  }
+  
+  .benefit-item {
+    padding: 0.5rem;
+  }
+  
+  .benefit-item span:last-child {
+    font-size: 0.85rem;
+  }
+  
+  .product-category {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .category-icon {
+    font-size: 2rem;
+  }
+  
+  .product-category h3 {
+    font-size: 1.1rem;
+  }
+  
+  .product-category p {
+    font-size: 0.85rem;
+  }
+  
+  .stats-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .stat-card {
+    padding: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .app-card {
+    margin-bottom: 1rem;
+  }
+  
+  .app-header {
+    padding: 1rem;
+  }
+  
+  .app-card p {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .final-highlight {
+    font-size: 1.25rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-button,
+  .cta-button-secondary {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    margin: 0.5rem auto;
+    padding: 1rem 1.5rem;
+  }
+}

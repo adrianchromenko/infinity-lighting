@@ -1,0 +1,92 @@
+.top-bar {
+  background: #a52929;
+  color: white;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.top-bar-left {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.top-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.top-bar a:hover {
+  opacity: 0.8;
+}
+
+.top-bar-right {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .top-bar-content {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .top-bar-left {
+    gap: 1rem;
+  }
+  
+  .top-bar-item {
+    gap: 0.3rem;
+  }
+  
+  .top-bar-item svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .top-bar-right {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .top-bar-content {
+    justify-content: center;
+  }
+  
+  .top-bar-left {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .top-bar-item {
+    justify-content: center;
+  }
+}

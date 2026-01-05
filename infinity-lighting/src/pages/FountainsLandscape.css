@@ -1,0 +1,594 @@
+.fountains-landscape-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+/* Hero Section */
+.fl-hero {
+  background: linear-gradient(135deg, #006994 0%, #004d6d 100%);
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.fl-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+  pointer-events: none;
+}
+
+.fl-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.fl-hero-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.fl-hero-subtitle {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Technology Section */
+.fl-technology {
+  background: white;
+  padding: 5rem 0;
+}
+
+.tech-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech-highlight {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+  border-radius: 16px;
+}
+
+.tech-lead {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.tech-text {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.tech-features {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.tech-features h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.feature-list li:hover {
+  background: #006994;
+  color: white;
+  transform: translateX(5px);
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.feature-list span:last-child {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Benefits Section */
+.fl-benefits {
+  background: #f8f8f8;
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s;
+  border-top: 4px solid transparent;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-top-color: #006994;
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.benefit-card h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Features Section */
+.fl-features {
+  background: white;
+  padding: 5rem 0;
+}
+
+.features-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.features-content h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.control-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.control-item {
+  padding: 1.5rem;
+  background: #f8f8f8;
+  border-radius: 12px;
+  border-left: 4px solid #006994;
+}
+
+.control-item h4 {
+  font-size: 1.15rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.control-item p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.visual-card {
+  background: linear-gradient(135deg, #006994, #004d6d);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 105, 148, 0.3);
+}
+
+.visual-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.visual-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.visual-card p {
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+/* Projects Section */
+.fl-projects {
+  background: #f8f8f8;
+  padding: 5rem 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background: linear-gradient(135deg, #006994, #004d6d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card.bollards .project-image {
+  background: linear-gradient(135deg, #8B4513, #654321);
+}
+
+.project-card.landscape .project-image {
+  background: linear-gradient(135deg, #228B22, #006400);
+}
+
+.project-card.fountain .project-image {
+  background: linear-gradient(135deg, #4682B4, #1E90FF);
+}
+
+.project-type-badge {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-info h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.project-info p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.project-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #006994;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* CTA Section */
+.fl-cta {
+  background: linear-gradient(135deg, #a52929, #8a2323);
+  padding: 5rem 0;
+  text-align: center;
+  color: white;
+}
+
+.cta-content h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.cta-content h2:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: white;
+  color: #a52929;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .tech-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .features-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .control-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .fl-technology,
+  .fl-benefits,
+  .fl-features,
+  .fl-projects,
+  .fl-cta {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fl-hero-title {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+  
+  .fl-hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .tech-lead {
+    font-size: 1.2rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .tech-highlight,
+  .tech-features,
+  .benefit-card,
+  .project-card {
+    padding: 1.5rem;
+  }
+  
+  .visual-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .control-item {
+    padding: 1rem;
+  }
+  
+  .cta-button {
+    min-height: 44px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fl-technology,
+  .fl-benefits,
+  .fl-features,
+  .fl-projects,
+  .fl-cta {
+    padding: 2rem 1rem;
+  }
+  
+  .fl-hero {
+    padding: 3rem 1rem;
+  }
+  
+  .fl-hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .fl-hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .tech-lead {
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tech-highlight {
+    padding: 1rem;
+  }
+  
+  .tech-features {
+    padding: 1rem;
+  }
+  
+  .tech-features h3 {
+    font-size: 1.1rem;
+  }
+  
+  .feature-list li {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  
+  .benefit-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .benefit-icon {
+    font-size: 2rem;
+  }
+  
+  .benefit-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .benefit-card p {
+    font-size: 0.85rem;
+  }
+  
+  .control-features {
+    gap: 1rem;
+  }
+  
+  .control-item {
+    padding: 0.75rem;
+  }
+  
+  .control-item h4 {
+    font-size: 1rem;
+  }
+  
+  .control-item p {
+    font-size: 0.85rem;
+  }
+  
+  .visual-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .visual-icon {
+    font-size: 3rem;
+  }
+  
+  .visual-card h3 {
+    font-size: 1.25rem;
+  }
+  
+  .visual-card p {
+    font-size: 0.9rem;
+  }
+  
+  .project-card {
+    margin-bottom: 1rem;
+  }
+  
+  .project-info {
+    padding: 1rem;
+  }
+  
+  .project-info h3 {
+    font-size: 1.1rem;
+  }
+  
+  .project-info p {
+    font-size: 0.85rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding: 1rem 1.5rem;
+  }
+}

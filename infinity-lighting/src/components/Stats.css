@@ -1,0 +1,166 @@
+.stats {
+  background: #f8f8f8;
+  padding: 4rem 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  width: 100%;
+}
+
+.stat-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #a52929, #ff6b6b);
+}
+
+.stat-number {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #a52929;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.stat-description {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stat-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.stat-text:first-child {
+  font-weight: 600;
+  color: #333;
+}
+
+.upgrade-section {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+.upgrade-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+@media (max-width: 968px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .stat-card {
+    padding: 2.5rem 2rem;
+  }
+  
+  .stat-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats {
+    padding: 3rem 1rem;
+  }
+  
+  .stat-card {
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .stat-description {
+    font-size: 1rem;
+  }
+  
+  .stat-text {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .upgrade-section {
+    padding-top: 1.5rem;
+  }
+  
+  .upgrade-title {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    padding: 2.5rem 0.75rem;
+  }
+  
+  .stats-grid {
+    gap: 1.5rem;
+  }
+  
+  .stat-card {
+    padding: 1.75rem 1.25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .stat-info {
+    gap: 1rem;
+  }
+  
+  .stat-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .upgrade-title {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+  }
+}
