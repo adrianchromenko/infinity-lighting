@@ -175,31 +175,28 @@
 
 .stat-highlight {
   margin: 1.5rem 0;
-  padding: 0;
-  background: none;
-  color: #333;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #a52929, #d63333);
+  color: white;
   display: block;
-  border-radius: 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(165, 41, 41, 0.2);
 }
 
 .highlight-number {
   font-size: 2.25rem;
   font-weight: 900;
-  color: #a52929;
+  color: white;
   display: block;
   margin-bottom: 0.5rem;
   line-height: 1;
-  background: linear-gradient(135deg, #a52929, #d63333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0 2px 4px rgba(165, 41, 41, 0.1);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .highlight-text {
   font-size: 0.95rem;
-  font-weight: 600;
-  color: #4a4a4a;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
   text-transform: none;
   letter-spacing: 0;
   display: block;
@@ -370,6 +367,11 @@
     font-size: 1.1rem;
   }
   
+  .stat-highlight {
+    padding: 1rem;
+    margin: 1.25rem 0;
+  }
+  
   .highlight-number {
     font-size: 2rem;
   }
@@ -450,6 +452,12 @@
   .support-stat-title {
     font-size: 1rem;
     margin-bottom: 1rem;
+  }
+  
+  .stat-highlight {
+    padding: 0.875rem;
+    border-radius: 10px;
+    margin: 1rem 0;
   }
   
   .highlight-number {
