@@ -173,7 +173,7 @@
 }
 
 .project-image.parking-garage {
-  background: linear-gradient(135deg, #34495e, #2c3e50);
+  background: linear-gradient(135deg, #a52929, #8a2323);
 }
 
 .project-image.warehouse {
@@ -185,7 +185,7 @@
 }
 
 .project-image.office {
-  background: linear-gradient(135deg, #3498db, #2980b9);
+  background: linear-gradient(135deg, #c0392b, #a52929);
 }
 
 .project-image.parking-lot {

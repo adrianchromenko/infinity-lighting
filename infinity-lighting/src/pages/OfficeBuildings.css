@@ -6,7 +6,7 @@
 
 /* Hero Section */
 .ob-hero {
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   padding: 4rem 0;
   text-align: center;
 }
@@ -226,12 +226,12 @@
 }
 
 .highlight-box {
-  background: linear-gradient(135deg, #2c3e50, #34495e);
+  background: linear-gradient(135deg, #a52929, #8a2323);
   color: white;
   padding: 3rem 2rem;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px rgba(165, 41, 41, 0.3);
 }
 
 .highlight-box h3 {
@@ -242,7 +242,7 @@
 
 .demo-button {
   background: white;
-  color: #2c3e50;
+  color: #a52929;
   padding: 1rem 2rem;
   border: none;
   border-radius: 50px;
@@ -292,7 +292,7 @@
 }
 
 .project-card.entrance .project-image {
-  background: linear-gradient(135deg, #3498db, #2980b9);
+  background: linear-gradient(135deg, #a52929, #8a2323);
 }
 
 .project-card.lobby .project-image {

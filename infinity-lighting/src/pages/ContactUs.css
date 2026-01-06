@@ -6,7 +6,7 @@
 
 /* Hero Section */
 .contact-hero {
-  background: linear-gradient(135deg, #1a4d70 0%, #0d3349 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   padding: 4rem 0;
   text-align: center;
 }
@@ -359,7 +359,7 @@
 
 /* CTA Section */
 .contact-cta {
-  background: linear-gradient(135deg, #2c3e50, #34495e);
+  background: linear-gradient(135deg, #a52929, #8a2323);
   padding: 5rem 0;
   text-align: center;
   color: white;
@@ -386,7 +386,7 @@
 
 .cta-button {
   background: white;
-  color: #2c3e50;
+  color: #a52929;
   padding: 1rem 2.5rem;
   border-radius: 50px;
   font-weight: 600;
@@ -418,7 +418,7 @@
 
 .cta-button-secondary:hover {
   background: white;
-  color: #2c3e50;
+  color: #a52929;
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }

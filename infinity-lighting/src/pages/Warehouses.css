@@ -6,7 +6,7 @@
 
 /* Hero Section */
 .wh-hero {
-  background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   padding: 4rem 0 5rem;
   text-align: center;
 }
@@ -308,7 +308,7 @@
 }
 
 .project-header {
-  background: linear-gradient(135deg, #34495e, #2c3e50);
+  background: linear-gradient(135deg, #a52929, #8a2323);
   color: white;
   padding: 1.5rem 2rem;
   display: flex;

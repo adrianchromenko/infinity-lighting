@@ -59,7 +59,7 @@ const Header = () => {
           </nav>
 
           <div className="header-actions">
-            <a href="#audit" className="cta-button">Free Energy Audit</a>
+            <Link to="/contact" className="cta-button">Free Energy Audit</Link>
           </div>
 
           <button 

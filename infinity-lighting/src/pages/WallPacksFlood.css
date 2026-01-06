@@ -6,7 +6,7 @@
 
 /* Hero Section */
 .wpf-hero {
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   padding: 4rem 0;
   text-align: center;
 }
@@ -90,7 +90,7 @@
 }
 
 .solution-card.flood::before {
-  background: linear-gradient(90deg, #3498db, #2980b9);
+  background: linear-gradient(90deg, #a52929, #8a2323);
 }
 
 .solution-card.wallpack::before {
@@ -140,7 +140,7 @@
   content: "▸";
   position: absolute;
   left: 0;
-  color: #3498db;
+  color: #a52929;
   font-weight: bold;
 }
 
@@ -178,7 +178,7 @@
 .range-bar {
   flex: 1;
   height: 4px;
-  background: linear-gradient(90deg, #3498db, #2980b9);
+  background: linear-gradient(90deg, #a52929, #8a2323);
   border-radius: 2px;
 }
 
@@ -290,7 +290,7 @@
 
 .app-header {
   padding: 1.5rem;
-  background: linear-gradient(135deg, #34495e, #2c3e50);
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
   color: white;
 }
 
@@ -299,7 +299,7 @@
 }
 
 .app-header.driveways {
-  background: linear-gradient(135deg, #3498db, #2980b9);
+  background: linear-gradient(135deg, #a52929, #8a2323);
 }
 
 .app-header.buildings {
@@ -315,7 +315,7 @@
 }
 
 .app-header.security {
-  background: linear-gradient(135deg, #34495e, #2c3e50);
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
 }
 
 .app-header h3 {

@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo-section">
-            <img src="/Logo-V2.png" alt="Infinity Lighting Solutions" className="footer-logo" />
+            <img src="/inflighting-white.png" alt="Infinity Lighting Solutions" className="footer-logo" />
             <h3>Houston LED Lighting Experts</h3>
             <p>Richmond, TX 77407</p>
             <p>Serving Houston, Sugar Land, Katy, The Woodlands & All of Greater Houston</p>

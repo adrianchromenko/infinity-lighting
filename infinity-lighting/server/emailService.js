@@ -3,10 +3,16 @@ const BREVO_API_URL = 'https://api.brevo.com/v3/smtp/email'
 export async function sendContactEmail(data) {
   const { name, company, email, phone, propertyType, location, message, formSource } = data
 
-  const adminEmail = process.env.ADMIN_EMAIL
   const senderEmail = process.env.SENDER_EMAIL
   const senderName = process.env.SENDER_NAME
   const apiKey = process.env.BREVO_API_KEY
+
+  // Multiple admin recipients
+  const adminEmails = [
+    { email: 'bart@primarydm.com', name: 'Bart' },
+    { email: 'Sales@Inflighting.com', name: 'Infinity Lighting Sales' },
+    { email: 'mark@inflighting.com', name: 'Mark' }
+  ]
 
   if (!apiKey) {
     throw new Error('Brevo API key not configured')
@@ -18,12 +24,7 @@ export async function sendContactEmail(data) {
       name: senderName,
       email: senderEmail
     },
-    to: [
-      {
-        email: adminEmail,
-        name: 'Infinity Lighting Sales'
-      }
-    ],
+    to: adminEmails,
     replyTo: {
       email: email,
       name: name
