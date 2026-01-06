@@ -8,8 +8,18 @@ dotenv.config()
 const app = express()
 const PORT = process.env.PORT || 3001
 
-app.use(cors())
+// CORS configuration for production
+app.use(cors({
+  origin: ['https://inflighting.com', 'https://www.inflighting.com', 'http://localhost:3000'],
+  methods: ['GET', 'POST'],
+  credentials: true
+}))
 app.use(express.json())
+
+// Root endpoint for Render health checks
+app.get('/', (req, res) => {
+  res.json({ status: 'Infinity Lighting API is running' })
+})
 
 // Contact form endpoint
 app.post('/api/contact', async (req, res) => {
