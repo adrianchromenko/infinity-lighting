@@ -93,13 +93,24 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   border-radius: 8px;
   padding: 0.5rem 0;
-  margin-top: 15px;
+  padding-top: calc(0.5rem + 15px);
+  margin-top: 0;
   z-index: 1000;
   border: 1px solid #f0f0f0;
   display: none;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
+}
+
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: transparent;
 }
 
 .dropdown-item {
