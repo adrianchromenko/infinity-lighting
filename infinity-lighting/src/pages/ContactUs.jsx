@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './ContactUs.css'
 import SEO from '../components/SEO'
 import TopBar from '../components/TopBar'
@@ -5,7 +6,69 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    company: '',
+    email: '',
+    phone: '',
+    propertyType: '',
+    location: '',
+    message: ''
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' })
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData(prev => ({ ...prev, [name]: value }))
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus({ type: '', message: '' })
+
+    try {
+      const response = await fetch(`${API_URL}/api/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          ...formData,
+          formSource: 'Contact Us Page'
+        })
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setSubmitStatus({ type: 'success', message: data.message })
+        setFormData({
+          name: '',
+          company: '',
+          email: '',
+          phone: '',
+          propertyType: '',
+          location: '',
+          message: ''
+        })
+      } else {
+        setSubmitStatus({ type: 'error', message: data.message })
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Failed to send your inquiry. Please try again or call us directly at (281) 202-4625.'
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <div className="contact-us-page">
       <SEO 
@@ -40,89 +103,120 @@ const ContactUs = () => {
                 within 24 hours to schedule your free consultation.
               </p>
               
-              <form className="contact-form">
+              <form className="contact-form" onSubmit={handleSubmit}>
+                {submitStatus.message && (
+                  <div className={`form-status ${submitStatus.type}`}>
+                    {submitStatus.message}
+                  </div>
+                )}
+
                 <div className="form-group">
                   <label htmlFor="name">Name *</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    required 
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
                     placeholder="Your Full Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    disabled={isSubmitting}
                   />
                 </div>
-                
+
                 <div className="form-group">
                   <label htmlFor="company">Company Name *</label>
-                  <input 
-                    type="text" 
-                    id="company" 
-                    name="company" 
-                    required 
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    required
                     placeholder="Your Company Name"
+                    value={formData.company}
+                    onChange={handleChange}
+                    disabled={isSubmitting}
                   />
                 </div>
-                
+
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="email">Email *</label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      name="email" 
-                      required 
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
                       placeholder="email@company.com"
+                      value={formData.email}
+                      onChange={handleChange}
+                      disabled={isSubmitting}
                     />
                   </div>
-                  
+
                   <div className="form-group">
                     <label htmlFor="phone">Phone *</label>
-                    <input 
-                      type="tel" 
-                      id="phone" 
-                      name="phone" 
-                      required 
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required
                       placeholder="(713) 555-0000"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      disabled={isSubmitting}
                     />
                   </div>
                 </div>
-                
+
                 <div className="form-group">
-                  <label htmlFor="property-type">Property Type *</label>
-                  <select id="property-type" name="property-type" required>
+                  <label htmlFor="propertyType">Property Type *</label>
+                  <select
+                    id="propertyType"
+                    name="propertyType"
+                    required
+                    value={formData.propertyType}
+                    onChange={handleChange}
+                    disabled={isSubmitting}
+                  >
                     <option value="">Select Property Type</option>
-                    <option value="parking-garage">Parking Garage</option>
-                    <option value="office-building">Office Building</option>
-                    <option value="warehouse">Warehouse</option>
-                    <option value="retail">Retail Space</option>
-                    <option value="hotel">Hotel</option>
-                    <option value="school">School/Gym</option>
-                    <option value="other">Other</option>
+                    <option value="Parking Garage">Parking Garage</option>
+                    <option value="Office Building">Office Building</option>
+                    <option value="Warehouse">Warehouse</option>
+                    <option value="Retail Space">Retail Space</option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="School/Gym">School/Gym</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
-                
+
                 <div className="form-group">
                   <label htmlFor="location">Property Location</label>
-                  <input 
-                    type="text" 
-                    id="location" 
-                    name="location" 
+                  <input
+                    type="text"
+                    id="location"
+                    name="location"
                     placeholder="Houston, TX"
+                    value={formData.location}
+                    onChange={handleChange}
+                    disabled={isSubmitting}
                   />
                 </div>
-                
+
                 <div className="form-group">
                   <label htmlFor="message">Message / Project Details</label>
-                  <textarea 
-                    id="message" 
-                    name="message" 
+                  <textarea
+                    id="message"
+                    name="message"
                     rows="5"
                     placeholder="Tell us about your lighting needs and current challenges..."
+                    value={formData.message}
+                    onChange={handleChange}
+                    disabled={isSubmitting}
                   ></textarea>
                 </div>
-                
-                <button type="submit" className="submit-btn">
-                  Request Free Energy Assessment
+
+                <button type="submit" className="submit-btn" disabled={isSubmitting}>
+                  {isSubmitting ? 'Sending...' : 'Request Free Energy Assessment'}
                 </button>
               </form>
             </div>
