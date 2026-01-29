@@ -55,6 +55,7 @@
 .warranty-badge svg {
   width: 24px;
   height: 24px;
+  flex-shrink: 0;
 }
 
 .projects-section {
@@ -182,6 +183,7 @@
   height: 16px;
   color: #a52929;
   flex-shrink: 0;
+  min-width: 16px;
 }
 
 .project-link {
@@ -192,6 +194,12 @@
   font-weight: 600;
   text-decoration: none;
   transition: gap 0.3s ease;
+}
+
+.project-link svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 .project-link:hover {
@@ -287,6 +295,12 @@
   gap: 10px;
 }
 
+.cta-button svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
 .cta-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -318,6 +332,16 @@
     font-size: 1.1rem;
   }
   
+  .warranty-badge {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+  
+  .warranty-badge svg {
+    width: 20px;
+    height: 20px;
+  }
+  
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -330,5 +354,15 @@
   .highlights-grid {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+  
+  .project-link svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .cta-button svg {
+    width: 18px;
+    height: 18px;
   }
 }

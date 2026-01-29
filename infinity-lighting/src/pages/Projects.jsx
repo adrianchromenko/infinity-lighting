@@ -121,7 +121,7 @@ const Projects = () => {
               Full-Service Electrical & LED Lighting Solutions with Industry-Leading 5-Year Warranty Coverage
             </p>
             <div className="warranty-badge">
-              <svg fill="currentColor" viewBox="0 0 24 24">
+              <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
               </svg>
               5-Year Warranty on All Work
@@ -155,7 +155,7 @@ const Projects = () => {
                   <ul className="project-features">
                     {project.features.slice(0, 3).map((feature, index) => (
                       <li key={index}>
-                        <svg fill="currentColor" viewBox="0 0 20 20">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                         </svg>
                         {feature}
@@ -164,7 +164,7 @@ const Projects = () => {
                   </ul>
                   <span className="project-link">
                     View Project Details
-                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </span>
@@ -186,7 +186,7 @@ const Projects = () => {
           <div className="highlights-grid">
             <div className="highlight-card">
               <div className="highlight-icon">
-                <svg fill="currentColor" viewBox="0 0 24 24">
+                <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
                   <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
                 </svg>
@@ -199,7 +199,7 @@ const Projects = () => {
             
             <div className="highlight-card">
               <div className="highlight-icon">
-                <svg fill="currentColor" viewBox="0 0 24 24">
+                <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6A4.997 4.997 0 017 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/>
                 </svg>
               </div>
@@ -211,7 +211,7 @@ const Projects = () => {
             
             <div className="highlight-card">
               <div className="highlight-icon">
-                <svg fill="currentColor" viewBox="0 0 24 24">
+                <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
                 </svg>
               </div>
