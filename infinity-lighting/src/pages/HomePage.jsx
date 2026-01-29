@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Stats from '../components/Stats'
 import Services from '../components/Services'
+import WarrantySection from '../components/WarrantySection'
 import ClientsPartners from '../components/ClientsPartners'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
@@ -21,6 +22,7 @@ const HomePage = () => {
       <Hero />
       <Stats />
       <Services />
+      <WarrantySection />
       <ClientsPartners />
       <Footer />
       <FloatingPhone />

@@ -76,6 +76,31 @@
   flex-shrink: 0;
 }
 
+.hero-badges {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.warranty-badge-hero,
+.service-badge-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(165, 41, 41, 0.15);
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 2px solid #a52929;
+  font-weight: 600;
+  color: white;
+}
+
+.warranty-badge-hero svg,
+.service-badge-hero svg {
+  color: #a52929;
+}
+
 .hero-cta {
   display: inline-block;
   background: #a52929;
@@ -87,6 +112,7 @@
   transition: background 0.3s, transform 0.2s;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .hero-cta:hover {

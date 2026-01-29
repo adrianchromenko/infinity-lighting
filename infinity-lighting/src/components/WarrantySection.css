@@ -1,0 +1,135 @@
+.warranty-section {
+  background: linear-gradient(135deg, #a52929 0%, #8a2323 100%);
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.warranty-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/pattern.png') repeat;
+  opacity: 0.1;
+}
+
+.warranty-content {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.warranty-icon-main {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  backdrop-filter: blur(10px);
+}
+
+.warranty-icon-main svg {
+  width: 45px;
+  height: 45px;
+  color: white;
+}
+
+.warranty-title-main {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.warranty-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.warranty-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+.warranty-feature {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.warranty-feature-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.warranty-feature-icon svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.warranty-feature-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.warranty-feature-desc {
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.warranty-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  color: #a52929;
+  padding: 15px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.warranty-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .warranty-section {
+    padding: 40px 20px;
+  }
+  
+  .warranty-title-main {
+    font-size: 2rem;
+  }
+  
+  .warranty-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .warranty-features {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

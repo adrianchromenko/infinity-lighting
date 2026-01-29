@@ -11,7 +11,8 @@ import WallPacksFlood from './pages/WallPacksFlood'
 import ParkingLots from './pages/ParkingLots'
 import EnergyAudit from './pages/EnergyAudit'
 import LightingProposal from './pages/LightingProposal'
-import ProjectsNews from './pages/ProjectsNews'
+import Projects from './pages/Projects'
+import ProjectDetail from './pages/ProjectDetail'
 import ContactUs from './pages/ContactUs'
 import FloatingPhone from './components/FloatingPhone'
 
@@ -32,8 +33,9 @@ function App() {
           <Route path="/parking-lots" element={<ParkingLots />} />
           <Route path="/energy-audit" element={<EnergyAudit />} />
           <Route path="/lighting-proposal" element={<LightingProposal />} />
-          <Route path="/projects" element={<ProjectsNews />} />
-          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
         </div>
       </Router>

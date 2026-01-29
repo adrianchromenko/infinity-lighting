@@ -54,12 +54,12 @@ const Header = () => {
               </div>
             </div>
             
-            <Link to="/projects" className="nav-link">Projects & News</Link>
-            <Link to="/contact" className="nav-link">Contact Us</Link>
+            <Link to="/projects" className="nav-link">Projects</Link>
+            <Link to="/contact-us" className="nav-link">Contact Us</Link>
           </nav>
 
           <div className="header-actions">
-            <Link to="/contact" className="cta-button">Free Energy Audit</Link>
+            <Link to="/contact-us" className="cta-button">Free Energy Audit</Link>
           </div>
 
           <button 
