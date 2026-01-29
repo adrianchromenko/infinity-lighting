@@ -10,7 +10,7 @@ export async function sendContactEmail(data) {
   // Multiple admin recipients
   const adminEmails = [
     { email: 'bart@primarydm.com', name: 'Bart' },
-    { email: 'Sales@Inflighting.com', name: 'Infinity Lighting Sales' },
+    { email: 'mark@inflighting.com', name: 'Infinity Lighting Sales' },
     { email: 'mark@inflighting.com', name: 'Mark' }
   ]
 
@@ -161,7 +161,7 @@ export async function sendContactEmail(data) {
             <strong>Infinity Lighting Solutions</strong>
           </p>
           <p style="color: #999; margin: 0; font-size: 12px;">
-            Richmond, TX 77407 | (281) 202-4625 | Sales@Inflighting.com
+            Richmond, TX 77407 | (281) 202-4625 | mark@inflighting.com
           </p>
         </div>
       </div>

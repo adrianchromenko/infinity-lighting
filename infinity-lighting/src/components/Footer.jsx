@@ -11,7 +11,7 @@ const Footer = () => {
             <h3>Houston LED Lighting Experts</h3>
             <p>Richmond, TX 77407</p>
             <p>Serving Houston, Sugar Land, Katy, The Woodlands & All of Greater Houston</p>
-            <p>E: <a href="mailto:Sales@Inflighting.com">Sales@Inflighting.com</a></p>
+            <p>E: <a href="mailto:mark@inflighting.com">mark@inflighting.com</a></p>
             <p>P: <a href="tel:2812024625">(281) 202-4625</a> or <a href="tel:3185723212">(318) 572-3212</a></p>
           </div>
           

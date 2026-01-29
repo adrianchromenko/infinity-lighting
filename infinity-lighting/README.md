@@ -74,7 +74,7 @@ Serving the Greater Houston area including:
 
 ## 📞 Contact
 
-**Email**: Sales@Inflighting.com  
+**Email**: mark@inflighting.com  
 **Phone**: (281) 202-4625 or (318) 572-3212  
 **Location**: Richmond, TX 77407
 

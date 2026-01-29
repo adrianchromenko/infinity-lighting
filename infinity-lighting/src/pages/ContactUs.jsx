@@ -73,7 +73,7 @@ const ContactUs = () => {
     <div className="contact-us-page">
       <SEO 
         title="Contact Us - Houston LED Lighting"
-        description="Contact Infinity Lighting Solutions for Houston commercial LED lighting. Free consultations, energy audits. Call (281) 202-4625 or email Sales@Inflighting.com"
+        description="Contact Infinity Lighting Solutions for Houston commercial LED lighting. Free consultations, energy audits. Call (281) 202-4625 or email mark@inflighting.com"
         keywords="contact LED lighting Houston, commercial lighting consultation, LED lighting contractor Houston, Infinity Lighting Solutions contact"
         canonical="/contact-us"
       />
@@ -251,7 +251,7 @@ const ContactUs = () => {
                     <polyline points="22,6 12,13 2,6"/>
                   </svg>
                   <div>
-                    <p><a href="mailto:Sales@Inflighting.com">Sales@Inflighting.com</a></p>
+                    <p><a href="mailto:mark@inflighting.com">mark@inflighting.com</a></p>
                   </div>
                 </div>
               </div>
@@ -357,7 +357,7 @@ const ContactUs = () => {
             <p>Join hundreds of Houston businesses that have upgraded to LED</p>
             <div className="cta-buttons">
               <a href="tel:2812024625" className="cta-button">Call (281) 202-4625</a>
-              <a href="mailto:Sales@Inflighting.com" className="cta-button-secondary">Email Us</a>
+              <a href="mailto:mark@inflighting.com" className="cta-button-secondary">Email Us</a>
             </div>
           </div>
         </div>

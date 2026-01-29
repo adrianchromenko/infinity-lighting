@@ -17,7 +17,7 @@ const TopBar = () => {
                 <rect x="2" y="4" width="20" height="16" rx="2"/>
                 <path d="m22 7-10 5L2 7"/>
               </svg>
-              <a href="mailto:Sales@Inflighting.com">Sales@Inflighting.com</a>
+              <a href="mailto:mark@inflighting.com">mark@inflighting.com</a>
             </div>
           </div>
           <div className="top-bar-right">
