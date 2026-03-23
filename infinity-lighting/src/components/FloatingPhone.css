@@ -73,7 +73,8 @@
     width: 55px;
     height: 55px;
     bottom: 15px;
-    right: 15px;
+    left: 15px;
+    right: auto;
   }
 }
 
@@ -82,7 +83,8 @@
     width: 50px;
     height: 50px;
     bottom: 12px;
-    right: 12px;
+    left: 12px;
+    right: auto;
     box-shadow: 0 3px 10px rgba(165, 41, 41, 0.4);
   }
   

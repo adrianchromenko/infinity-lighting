@@ -15,6 +15,7 @@ import Projects from './pages/Projects'
 import ProjectDetail from './pages/ProjectDetail'
 import ContactUs from './pages/ContactUs'
 import FloatingPhone from './components/FloatingPhone'
+import ChatBot from './components/ChatBot'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Router>
         <div className="App">
           <FloatingPhone />
+          <ChatBot />
           <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/parking-garages" element={<ParkingGarages />} />

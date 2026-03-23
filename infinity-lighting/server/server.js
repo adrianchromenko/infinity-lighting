@@ -26,8 +26,9 @@ app.post('/api/contact', async (req, res) => {
   try {
     const { name, company, email, phone, propertyType, location, message, formSource } = req.body
 
-    // Validate required fields
-    if (!name || !company || !email || !phone || !propertyType) {
+    // Validate required fields (company and propertyType optional for chatbot submissions)
+    const isChatbot = formSource && formSource.startsWith('Chatbot')
+    if (!name || !email || !phone || (!isChatbot && (!company || !propertyType))) {
       return res.status(400).json({
         success: false,
         message: 'Please fill in all required fields'
