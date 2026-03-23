@@ -9,10 +9,10 @@ import FloatingPhone from '../components/FloatingPhone'
 const EnergyAudit = () => {
   return (
     <div className="energy-audit-page">
-      <SEO 
-        title="Free LED Lighting Energy Audit"
-        description="Get a free commercial LED lighting energy audit in Houston. Discover potential savings, ROI analysis, utility rebates. No obligation assessment."
-        keywords="LED energy audit Houston, free lighting assessment, commercial energy audit, LED lighting savings Houston, energy efficiency audit"
+      <SEO
+        title="Free Commercial LED Energy Audit Houston TX"
+        description="Get a free commercial LED lighting energy audit in Houston TX. Discover potential energy savings up to 75%, ROI analysis, and available utility rebates. No obligation assessment for Houston area businesses."
+        keywords="LED energy audit Houston, free lighting assessment Houston TX, commercial energy audit Houston, LED lighting savings Houston TX, energy efficiency audit Houston, free lighting audit Houston"
         canonical="/energy-audit"
       />
       <TopBar />

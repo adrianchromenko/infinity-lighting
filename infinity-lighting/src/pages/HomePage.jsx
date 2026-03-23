@@ -12,9 +12,9 @@ import FloatingPhone from '../components/FloatingPhone'
 const HomePage = () => {
   return (
     <>
-      <SEO 
-        description="Infinity Lighting Solutions - Houston's premier commercial LED lighting company. Save up to 75% on energy costs with professional LED upgrades. Free energy audits. Serving Greater Houston area."
-        keywords="commercial LED lighting Houston, LED lighting Houston, energy efficient lighting, LED retrofit Houston, commercial lighting contractor, LED lighting services Houston"
+      <SEO
+        description="Houston's #1 commercial LED lighting company. Save up to 75% on energy costs with professional LED upgrades for parking garages, offices, and warehouses. Free energy audits available. Serving Houston, Sugar Land, Katy, and The Woodlands TX."
+        keywords="commercial LED lighting Houston, LED lighting Houston TX, energy efficient lighting Houston, LED retrofit Houston, commercial lighting contractor Houston TX, LED lighting installation Houston, LED upgrade Houston, commercial electrician Houston"
         canonical="/"
       />
       <TopBar />

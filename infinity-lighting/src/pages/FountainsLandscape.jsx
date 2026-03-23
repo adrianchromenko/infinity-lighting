@@ -32,10 +32,10 @@ const FountainsLandscape = () => {
 
   return (
     <div className="fountains-landscape-page">
-      <SEO 
-        title="Fountain & Landscape LED Lighting"
-        description="Beautiful LED lighting for Houston fountains and commercial landscapes. Energy-efficient outdoor illumination. Professional design and installation."
-        keywords="fountain lighting Houston, landscape lighting Houston, outdoor LED lighting, commercial landscape lighting, decorative lighting Houston"
+      <SEO
+        title="Fountain & Landscape LED Lighting Houston TX"
+        description="Stunning LED fountain and commercial landscape lighting in Houston TX. Energy-efficient outdoor illumination, professional design, and expert installation. Transform your Houston property's curb appeal."
+        keywords="fountain lighting Houston, landscape lighting Houston TX, outdoor LED lighting Houston, commercial landscape lighting Houston TX, decorative lighting Houston, outdoor lighting installation Houston"
         canonical="/fountains-landscape"
       />
       <TopBar />

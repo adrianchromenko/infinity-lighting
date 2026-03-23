@@ -71,10 +71,10 @@ const ContactUs = () => {
 
   return (
     <div className="contact-us-page">
-      <SEO 
-        title="Contact Us - Houston LED Lighting"
-        description="Contact Infinity Lighting Solutions for Houston commercial LED lighting. Free consultations, energy audits. Call (281) 202-4625 or email mark@inflighting.com"
-        keywords="contact LED lighting Houston, commercial lighting consultation, LED lighting contractor Houston, Infinity Lighting Solutions contact"
+      <SEO
+        title="Contact Us - Houston TX LED Lighting Experts"
+        description="Contact Infinity Lighting Solutions for commercial LED lighting in Houston TX. Free consultations and energy audits. Call (281) 202-4625 or request a quote online. Serving Houston, Sugar Land, Katy, and The Woodlands."
+        keywords="contact LED lighting Houston, commercial lighting consultation Houston TX, LED lighting contractor Houston TX, Infinity Lighting Solutions Houston, Houston LED lighting quote, commercial electrician Houston TX"
         canonical="/contact-us"
       />
       <TopBar />

@@ -8,10 +8,10 @@ import FloatingPhone from '../components/FloatingPhone'
 const LightingProposal = () => {
   return (
     <div className="lighting-proposal-page">
-      <SEO 
-        title="Commercial LED Lighting Proposal"
-        description="Comprehensive LED lighting proposals for Houston businesses. Detailed cost analysis, energy savings projections, financing options available."
-        keywords="LED lighting proposal Houston, commercial lighting design, LED lighting cost analysis, energy savings proposal, LED lighting ROI Houston"
+      <SEO
+        title="Commercial LED Lighting Proposal Houston TX"
+        description="Comprehensive LED lighting proposals for Houston TX businesses. Detailed cost analysis, energy savings projections up to 75%, and flexible financing options. Custom lighting design for your Houston commercial property."
+        keywords="LED lighting proposal Houston, commercial lighting design Houston TX, LED lighting cost analysis Houston, energy savings proposal Houston TX, LED lighting ROI Houston, commercial lighting plan Houston"
         canonical="/lighting-proposal"
       />
       <TopBar />

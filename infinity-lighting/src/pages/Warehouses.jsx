@@ -8,10 +8,10 @@ import FloatingPhone from '../components/FloatingPhone'
 const Warehouses = () => {
   return (
     <div className="warehouses-page">
-      <SEO 
-        title="Warehouse LED Lighting"
-        description="Industrial LED lighting for Houston warehouses. High-bay fixtures, motion sensors, dramatic energy savings. Expert installation across Greater Houston."
-        keywords="warehouse lighting Houston, LED high bay lighting, industrial lighting Houston, warehouse LED retrofit, high bay LED fixtures Houston"
+      <SEO
+        title="Warehouse & High Bay LED Lighting Houston TX"
+        description="Industrial LED high bay lighting for Houston TX warehouses and distribution centers. Motion sensors, energy savings up to 75%, and improved worker safety. Expert installation across Greater Houston area."
+        keywords="warehouse lighting Houston, LED high bay lighting Houston TX, industrial lighting Houston TX, warehouse LED retrofit Houston, high bay LED fixtures Houston, distribution center lighting Houston"
         canonical="/warehouses"
       />
       <TopBar />

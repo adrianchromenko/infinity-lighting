@@ -25,10 +25,10 @@ const ParkingLots = () => {
 
   return (
     <div className="parking-lots-page">
-      <SEO 
-        title="Parking Lot LED Lighting"
-        description="LED parking lot lighting solutions for Houston businesses. Improve safety, reduce liability, cut energy costs. Free lighting assessment available."
-        keywords="parking lot lighting Houston, LED parking lot lights, commercial parking lighting, pole lighting Houston, parking area lighting"
+      <SEO
+        title="Parking Lot LED Lighting Houston TX"
+        description="LED parking lot lighting for Houston TX businesses. Improve safety, reduce liability, and cut energy costs by up to 75%. Free lighting assessment available. Professional pole light and area light installation across Greater Houston."
+        keywords="parking lot lighting Houston, LED parking lot lights Houston TX, commercial parking lighting Houston, pole lighting Houston TX, parking area lighting Houston, LED pole lights Houston"
         canonical="/parking-lots"
       />
       <TopBar />

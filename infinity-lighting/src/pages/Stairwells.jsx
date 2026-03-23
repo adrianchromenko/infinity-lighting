@@ -8,10 +8,10 @@ import FloatingPhone from '../components/FloatingPhone'
 const Stairwells = () => {
   return (
     <div className="stairwells-page">
-      <SEO 
-        title="Stairwell LED Lighting"
-        description="Upgrade stairwell lighting in Houston buildings with LED solutions. 24/7 reliability, enhanced safety, 75% energy savings. Professional installation throughout Houston TX."
-        keywords="stairwell lighting Houston, LED stairwell lights, motion sensor stairwell lighting, commercial stairwell LED, building stairwell lighting Houston"
+      <SEO
+        title="Stairwell LED Lighting Houston TX"
+        description="Professional stairwell LED lighting installation in Houston TX. Motion sensor technology, 24/7 reliability, enhanced building safety, and 75% energy savings. Serving commercial buildings across Greater Houston."
+        keywords="stairwell lighting Houston, LED stairwell lights Houston TX, motion sensor stairwell lighting Houston, commercial stairwell LED Texas, building stairwell lighting Houston, emergency stairwell lighting Houston"
         canonical="/stairwells"
       />
       <TopBar />

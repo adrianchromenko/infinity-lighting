@@ -49,10 +49,10 @@ const OfficeBuildings = () => {
 
   return (
     <div className="office-buildings-page">
-      <SEO 
-        title="Office Building LED Lighting"
-        description="Modern LED lighting solutions for Houston office buildings. Boost productivity, reduce energy costs, improve workplace environment. Serving Houston's business district."
-        keywords="office building lighting Houston, commercial LED office lighting, LED troffer lighting, office lighting retrofit Houston, workplace lighting Houston"
+      <SEO
+        title="Office Building LED Lighting Houston TX"
+        description="Modern LED lighting for Houston TX office buildings. Boost employee productivity, reduce energy costs by up to 75%, and improve workplace environment. Professional office LED retrofits serving Houston's business district."
+        keywords="office building lighting Houston, commercial LED office lighting Houston TX, LED troffer lighting Houston, office lighting retrofit Houston TX, workplace lighting Houston, office LED installation Houston"
         canonical="/office-buildings"
       />
       <TopBar />

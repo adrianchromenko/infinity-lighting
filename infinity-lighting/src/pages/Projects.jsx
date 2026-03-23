@@ -103,10 +103,10 @@ const Projects = () => {
 
   return (
     <div className="projects-page">
-      <SEO 
-        title="Projects - Commercial LED Lighting Houston"
-        description="View our portfolio of successful LED lighting projects in Houston. Parking garages, offices, hotels, and more. Full-service electrical with 5-year warranty."
-        keywords="LED lighting projects Houston, commercial lighting portfolio, parking garage lighting, office lighting, hotel lighting renovation"
+      <SEO
+        title="LED Lighting Projects Houston TX"
+        description="View our portfolio of successful commercial LED lighting projects across Houston TX. Parking garages, offices, hotels, warehouses and more. Full-service electrical with 5-year warranty. Serving Greater Houston since 2003."
+        keywords="LED lighting projects Houston, commercial lighting portfolio Houston TX, parking garage lighting project Houston, office lighting project Houston, hotel lighting renovation Houston, LED case studies Houston TX"
         canonical="/projects"
       />
       <TopBar />

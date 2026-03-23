@@ -35,10 +35,10 @@ const ParkingGarages = () => {
 
   return (
     <div className="parking-garages-page">
-      <SEO 
-        title="Parking Garage LED Lighting"
-        description="Transform your Houston parking garage with energy-efficient LED lighting. Improve safety, reduce costs by up to 75%. Free energy audit. Serving Greater Houston area."
-        keywords="parking garage lighting Houston, LED garage lighting, parking structure lighting, garage LED retrofit Houston, commercial garage lighting"
+      <SEO
+        title="Parking Garage LED Lighting Houston TX"
+        description="Houston parking garage LED lighting experts. Improve safety, visibility, and reduce energy costs by up to 75% with professional LED retrofits. Free energy audit for Houston TX parking structures. 5-year warranty included."
+        keywords="parking garage lighting Houston, LED garage lighting Houston TX, parking structure lighting Houston, garage LED retrofit Houston, commercial garage lighting Texas, parking garage electrician Houston"
         canonical="/parking-garages"
       />
       <TopBar />

@@ -8,11 +8,11 @@ import FloatingPhone from '../components/FloatingPhone'
 const WallPacksFlood = () => {
   return (
     <div className="wallpacks-flood-page">
-      <SEO 
-        title="Wall Pack & Flood LED Lighting"
-        description="Commercial wall pack and flood LED lighting in Houston. Secure perimeter lighting, parking lot illumination. Save up to 75% on energy."
-        keywords="wall pack lighting Houston, LED flood lighting, commercial exterior lighting, perimeter lighting Houston, security lighting Houston"
-        canonical="/wall-packs-flood"
+      <SEO
+        title="Wall Pack & Flood LED Lighting Houston TX"
+        description="Commercial wall pack and flood LED lighting in Houston TX. Secure perimeter lighting, building exterior illumination, and parking area safety. Save up to 75% on energy costs with professional installation."
+        keywords="wall pack lighting Houston, LED flood lighting Houston TX, commercial exterior lighting Houston, perimeter lighting Houston TX, security lighting Houston, outdoor wall pack LED Houston, flood light installation Houston"
+        canonical="/wallpacks-flood"
       />
       <TopBar />
       <Header />
