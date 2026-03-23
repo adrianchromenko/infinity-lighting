@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(jsx|css|js\\)$\")",
+      "Bash(grep -E \"\\\\.\\(js|json|env\\)$\")",
+      "Bash(ls -la \"C:\\\\Users\\\\User\\\\Desktop\\\\infinity-lighting\\\\infinity-lighting\\\\server\"\" | grep -E \"env)",
+      "Bash(.js \")",
+      "Bash(grep -r api/contact /c/Users/User/Desktop/infinity-lighting/infinity-lighting/src --include=*.js --include=*.jsx)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

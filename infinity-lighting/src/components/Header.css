@@ -120,7 +120,7 @@
   background: white;
   min-width: 260px;
   box-shadow: 0 12px 40px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06);
-  border-radius: 12px;
+  border-radius: 0;
   padding: 0.6rem 0;
   padding-top: calc(0.6rem + 12px);
   margin-top: 0;
@@ -169,7 +169,7 @@
   letter-spacing: normal;
   border-left: 3px solid transparent;
   margin: 0 0.4rem;
-  border-radius: 6px;
+  border-radius: 0;
 }
 
 .dropdown-item:hover {
@@ -186,10 +186,10 @@
 }
 
 .cta-button {
-  background: linear-gradient(135deg, #a52929 0%, #8a2323 100%);
-  color: white;
+  background: #a52929;
+  color: #fff;
   padding: 0.6rem 1.25rem;
-  border-radius: 50px;
+  border-radius: 4px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
@@ -354,7 +354,7 @@
   .cta-button {
     padding: 0.5rem 1rem;
     font-size: 0.65rem;
-    border-radius: 25px;
+    border-radius: 4px;
   }
   
   .nav-wrapper {
