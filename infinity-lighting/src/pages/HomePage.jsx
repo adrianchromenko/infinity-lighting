@@ -2,7 +2,6 @@ import SEO from '../components/SEO'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import Stats from '../components/Stats'
 import Services from '../components/Services'
 import WarrantySection from '../components/WarrantySection'
 import ClientsPartners from '../components/ClientsPartners'
@@ -20,7 +19,6 @@ const HomePage = () => {
       <TopBar />
       <Header />
       <Hero />
-      <Stats />
       <Services />
       <WarrantySection />
       <ClientsPartners />
