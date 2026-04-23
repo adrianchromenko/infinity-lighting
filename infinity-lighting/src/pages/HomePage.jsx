@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import Services from '../components/Services'
 import WarrantySection from '../components/WarrantySection'
 import ClientsPartners from '../components/ClientsPartners'
+import FeaturedProjects from '../components/FeaturedProjects'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
@@ -22,6 +23,7 @@ const HomePage = () => {
       <Services />
       <WarrantySection />
       <ClientsPartners />
+      <FeaturedProjects />
       <Footer />
       <FloatingPhone />
     </>
