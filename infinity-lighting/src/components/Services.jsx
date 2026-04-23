@@ -14,24 +14,29 @@ const Services = () => {
     <section className="services">
       <div className="container">
         <div className="services-content">
-          <div className="services-header">
-            <h2 className="services-title">HOUSTON'S LED LIGHTING EXPERTS</h2>
-            <h3 className="services-subtitle">
-              Energy efficiency is about using less energy to get the same job done - 
-              saving Houston businesses thousands on energy costs
-            </h3>
+          <div className="services-grid">
+            <div className="services-left">
+              <div className="services-header">
+                <h2 className="services-title">HOUSTON'S LED LIGHTING EXPERTS</h2>
+                <h3 className="services-subtitle">
+                  Energy efficiency is about using less energy to get the same job done -
+                  saving Houston businesses thousands on energy costs
+                </h3>
+              </div>
+              <a href="#services" className="services-cta">DISCOVER OUR HOUSTON LED LIGHTING SERVICES</a>
+            </div>
+
+            <div className="services-right">
+              <ul className="benefits-list">
+                {benefits.map((benefit, index) => (
+                  <li key={index} className="benefit-item">
+                    <span className="benefit-icon">✓</span>
+                    <span>{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          
-          <ul className="benefits-list">
-            {benefits.map((benefit, index) => (
-              <li key={index} className="benefit-item">
-                <span className="benefit-icon">✓</span>
-                <span>{benefit}</span>
-              </li>
-            ))}
-          </ul>
-          
-          <a href="#services" className="services-cta">DISCOVER OUR HOUSTON LED LIGHTING SERVICES</a>
         </div>
       </div>
     </section>
