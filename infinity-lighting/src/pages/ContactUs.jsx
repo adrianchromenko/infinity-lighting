@@ -264,8 +264,9 @@ const ContactUs = () => {
                   <li>Maximum Utility Rebates</li>
                   <li>50%+ Energy Savings Guaranteed</li>
                   <li>Professional Installation Team</li>
-                  <li>5-Year Warranty on All Products</li>
+                  <li>10-Year Fixture &amp; 5-Year Labor Warranty*</li>
                 </ul>
+                <p className="warranty-footnote">*Qualifying surge protection devices required. Contact us for full warranty terms.</p>
               </div>
               
               <div className="contact-card emergency">

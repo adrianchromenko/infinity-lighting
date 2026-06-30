@@ -96,6 +96,15 @@
   line-height: 1.6;
 }
 
+.warranty-disclaimer {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  font-style: italic;
+}
+
 .warranty-cta {
   display: inline-flex;
   align-items: center;

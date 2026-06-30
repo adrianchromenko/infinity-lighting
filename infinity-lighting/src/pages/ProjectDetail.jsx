@@ -128,7 +128,7 @@ const ProjectDetail = () => {
     <div className="project-detail-page">
       <SEO 
         title={`${project.title} - LED Lighting Project Houston`}
-        description={`${project.description} Full-service electrical and lighting with 5-year warranty.`}
+        description={`${project.description} Full-service electrical and lighting with a 10-year fixture and 5-year labor warranty.`}
         keywords={`${project.title}, ${project.type} lighting Houston, commercial LED project, electrical contractor Houston`}
         canonical={`/projects/${id}`}
       />
@@ -225,9 +225,10 @@ const ProjectDetail = () => {
                     <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
                   </svg>
                 </div>
-                <h3 className="warranty-title">5-Year Warranty</h3>
+                <h3 className="warranty-title">10-Year Fixture / 5-Year Labor Warranty</h3>
                 <p className="warranty-description">
-                  All our installations come with a comprehensive 5-year warranty covering parts and labor
+                  Our installations are backed by a 10-year fixture warranty and a 5-year labor warranty.
+                  Qualifying surge protection devices required.
                 </p>
               </div>
 

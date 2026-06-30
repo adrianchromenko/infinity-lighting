@@ -12,11 +12,11 @@ const WarrantySection = () => {
             </svg>
           </div>
           
-          <h2 className="warranty-title-main">Industry-Leading 5-Year Warranty</h2>
+          <h2 className="warranty-title-main">Industry-Leading 10-Year Fixture & 5-Year Labor Warranty</h2>
           <p className="warranty-subtitle">
             Full-Service Electrical & LED Lighting with Complete Peace of Mind
           </p>
-          
+
           <div className="warranty-features">
             <div className="warranty-feature">
               <div className="warranty-feature-icon">
@@ -25,24 +25,24 @@ const WarrantySection = () => {
                   <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
                 </svg>
               </div>
-              <h3 className="warranty-feature-title">5 Years Coverage</h3>
+              <h3 className="warranty-feature-title">10-Year Fixture Warranty</h3>
               <p className="warranty-feature-desc">
-                Complete warranty on all electrical work and LED installations
+                Manufacturer-backed coverage on all LED fixtures we install
               </p>
             </div>
-            
+
             <div className="warranty-feature">
               <div className="warranty-feature-icon">
                 <svg fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/>
                 </svg>
               </div>
-              <h3 className="warranty-feature-title">Full-Service Electrical</h3>
+              <h3 className="warranty-feature-title">5-Year Labor Warranty</h3>
               <p className="warranty-feature-desc">
-                Complete electrical services including panel upgrades and wiring
+                We stand behind our installation workmanship for five full years
               </p>
             </div>
-            
+
             <div className="warranty-feature">
               <div className="warranty-feature-icon">
                 <svg fill="currentColor" viewBox="0 0 24 24">
@@ -55,7 +55,12 @@ const WarrantySection = () => {
               </p>
             </div>
           </div>
-          
+
+          <p className="warranty-disclaimer">
+            Warranty coverage requires the installation of qualifying surge protection devices.
+            Contact us for full warranty terms and conditions.
+          </p>
+
           <Link to="/contact-us" className="warranty-cta">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
               <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>

@@ -105,7 +105,7 @@ const Projects = () => {
     <div className="projects-page">
       <SEO
         title="LED Lighting Projects Houston TX"
-        description="View our portfolio of successful commercial LED lighting projects across Houston TX. Parking garages, offices, hotels, warehouses and more. Full-service electrical with 5-year warranty. Serving Greater Houston since 2003."
+        description="View our portfolio of successful commercial LED lighting projects across Houston TX. Parking garages, offices, hotels, warehouses and more. Full-service electrical with a 10-year fixture and 5-year labor warranty. Serving Greater Houston since 2003."
         keywords="LED lighting projects Houston, commercial lighting portfolio Houston TX, parking garage lighting project Houston, office lighting project Houston, hotel lighting renovation Houston, LED case studies Houston TX"
         canonical="/projects"
       />
@@ -118,13 +118,13 @@ const Projects = () => {
           <div className="projects-hero-content">
             <h1 className="projects-hero-title">Our Lighting Projects</h1>
             <p className="projects-hero-subtitle">
-              Full-Service Electrical & LED Lighting Solutions with Industry-Leading 5-Year Warranty Coverage
+              Full-Service Electrical & LED Lighting Solutions with an Industry-Leading 10-Year Fixture & 5-Year Labor Warranty
             </p>
             <div className="warranty-badge">
               <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
               </svg>
-              5-Year Warranty on All Work
+              10-Year Fixture / 5-Year Labor Warranty
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@ const Projects = () => {
             <h2 className="section-title">Transforming Houston's Commercial Spaces</h2>
             <p className="section-description">
               As a full-service electrical and lighting contractor, we handle every aspect of your project 
-              from initial assessment to final installation. Our comprehensive 5-year warranty ensures 
+              from initial assessment to final installation. Our 10-year fixture warranty and 5-year labor warranty ensure
               your investment is protected long after project completion.
             </p>
           </div>
@@ -191,9 +191,10 @@ const Projects = () => {
                   <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
                 </svg>
               </div>
-              <h3 className="highlight-title">5-Year Warranty</h3>
+              <h3 className="highlight-title">10-Year Fixture / 5-Year Labor Warranty</h3>
               <p className="highlight-description">
-                Industry-leading warranty coverage on all electrical work and LED installations
+                Industry-leading coverage: a 10-year warranty on LED fixtures and a 5-year warranty on labor.
+                Qualifying surge protection devices required.
               </p>
             </div>
             

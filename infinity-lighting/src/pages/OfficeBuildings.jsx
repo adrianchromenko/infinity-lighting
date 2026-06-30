@@ -138,8 +138,8 @@ const OfficeBuildings = () => {
               <div className="stat-desc">Cool, Even Lighting</div>
             </div>
             <div className="benefit-stat">
-              <div className="stat-number">5 Years</div>
-              <div className="stat-label">Warranty</div>
+              <div className="stat-number">10 / 5</div>
+              <div className="stat-label">Yr Fixture / Labor Warranty</div>
               <div className="stat-desc">Long-lasting Performance</div>
             </div>
           </div>
