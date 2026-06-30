@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="container">
         <div className="hero-content">
           <h1 className="hero-title">
-            <span className="highlight">Full-Service</span> Electrical & LED Lighting
+            <span className="highlight">Full-Service</span> LED Lighting & Electrical
           </h1>
           <h2 className="hero-subtitle">Houston's Premier Commercial Contractor with a 10-Year Fixture & 5-Year Labor Warranty</h2>
           <p className="hero-description">
