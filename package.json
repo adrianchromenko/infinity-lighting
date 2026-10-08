@@ -1,0 +1,11 @@
+{
+  "name": "infinity-lighting-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix infinity-lighting run dev",
+    "start": "npm --prefix infinity-lighting run dev",
+    "build": "npm --prefix infinity-lighting run build",
+    "preview": "npm --prefix infinity-lighting run preview",
+    "install:app": "npm --prefix infinity-lighting install"
+  }
+}
