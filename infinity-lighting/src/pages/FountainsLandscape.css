@@ -32,7 +32,7 @@
 }
 
 .fl-hero-title {
-  font-size: 2.75rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: white;
   margin-bottom: 1rem;
@@ -42,7 +42,7 @@
 }
 
 .fl-hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.27rem;
   color: rgba(255, 255, 255, 0.95);
   font-weight: 400;
   font-style: italic;
@@ -67,7 +67,7 @@
 }
 
 .tech-lead {
-  font-size: 1.5rem;
+  font-size: 1.27rem;
   color: var(--color-text);
   font-weight: 600;
   line-height: 1.6;
@@ -81,7 +81,7 @@
 }
 
 .tech-text {
-  font-size: 1.1rem;
+  font-size: 0.99rem;
   color: var(--color-text-muted);
   line-height: 1.8;
   margin-bottom: 1.5rem;
@@ -95,7 +95,7 @@
 }
 
 .tech-features h3 {
-  font-size: 1.3rem;
+  font-size: 1.11rem;
   color: var(--color-text);
   margin-bottom: 1.5rem;
   text-align: center;
@@ -124,12 +124,12 @@
 }
 
 .feature-icon {
-  font-size: 1.5rem;
+  font-size: 1.27rem;
   flex-shrink: 0;
 }
 
 .feature-list span:last-child {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
 }
 
@@ -140,7 +140,7 @@
 }
 
 .section-title {
-  font-size: 2.25rem;
+  font-size: 1.8rem;
   color: var(--color-text);
   font-weight: 700;
   text-align: center;
@@ -170,13 +170,13 @@
 }
 
 .benefit-icon {
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
   display: inline-block;
 }
 
 .benefit-card h3 {
-  font-size: 1.3rem;
+  font-size: 1.11rem;
   color: var(--color-text);
   margin-bottom: 1rem;
   font-weight: 600;
@@ -203,7 +203,7 @@
 }
 
 .features-content h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--color-text);
   margin-bottom: 2rem;
   font-weight: 600;
@@ -223,7 +223,7 @@
 }
 
 .control-item h4 {
-  font-size: 1.15rem;
+  font-size: 1.03rem;
   color: var(--color-text);
   margin-bottom: 0.5rem;
   font-weight: 600;
@@ -245,17 +245,17 @@
 }
 
 .visual-icon {
-  font-size: 4rem;
+  font-size: 3.2rem;
   margin-bottom: 1rem;
 }
 
 .visual-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.27rem;
   margin-bottom: 1rem;
 }
 
 .visual-card p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   opacity: 0.95;
 }
 
@@ -323,7 +323,7 @@
 }
 
 .project-info h3 {
-  font-size: 1.25rem;
+  font-size: 1.13rem;
   color: var(--color-text);
   margin-bottom: 0.75rem;
   font-weight: 600;
@@ -354,7 +354,7 @@
 }
 
 .cta-content h2 {
-  font-size: 2.25rem;
+  font-size: 1.8rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.3;
@@ -375,7 +375,7 @@
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .cta-button:hover {
@@ -416,20 +416,20 @@
 
 @media (max-width: 768px) {
   .fl-hero-title {
-    font-size: 1.75rem;
+    font-size: 1.49rem;
     line-height: 1.2;
   }
   
   .fl-hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.08rem;
   }
   
   .tech-lead {
-    font-size: 1.2rem;
+    font-size: 1.08rem;
   }
   
   .section-title {
-    font-size: 1.75rem;
+    font-size: 1.49rem;
   }
   
   .benefits-grid {
@@ -437,7 +437,7 @@
   }
   
   .cta-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.27rem;
   }
   
   .tech-highlight,
@@ -475,20 +475,20 @@
   }
   
   .fl-hero-title {
-    font-size: 1.5rem;
+    font-size: 1.27rem;
     margin-bottom: 1rem;
   }
   
   .fl-hero-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   
   .tech-lead {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   
   .section-title {
-    font-size: 1.5rem;
+    font-size: 1.27rem;
     margin-bottom: 2rem;
   }
   
@@ -501,7 +501,7 @@
   }
   
   .tech-features h3 {
-    font-size: 1.1rem;
+    font-size: 0.99rem;
   }
   
   .feature-list li {
@@ -515,11 +515,11 @@
   }
   
   .benefit-icon {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   
   .benefit-card h3 {
-    font-size: 1.1rem;
+    font-size: 0.99rem;
   }
   
   .benefit-card p {
@@ -535,7 +535,7 @@
   }
   
   .control-item h4 {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   
   .control-item p {
@@ -547,11 +547,11 @@
   }
   
   .visual-icon {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
   
   .visual-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.13rem;
   }
   
   .visual-card p {
@@ -567,7 +567,7 @@
   }
   
   .project-info h3 {
-    font-size: 1.1rem;
+    font-size: 0.99rem;
   }
   
   .project-info p {
@@ -575,7 +575,7 @@
   }
   
   .cta-content h2 {
-    font-size: 1.25rem;
+    font-size: 1.13rem;
     line-height: 1.3;
     margin-bottom: 1rem;
   }

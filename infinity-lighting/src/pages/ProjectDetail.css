@@ -46,7 +46,7 @@
 }
 
 .project-detail-title {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 800;
   margin-bottom: 15px;
 }
@@ -79,7 +79,7 @@
 }
 
 .project-description {
-  font-size: 1.2rem;
+  font-size: 1.08rem;
   color: var(--color-text-muted);
   line-height: 1.8;
   margin-bottom: 40px;
@@ -92,7 +92,7 @@
 }
 
 .gallery-title {
-  font-size: 1.8rem;
+  font-size: 1.53rem;
   font-weight: 700;
   color: var(--color-dark);
   margin-bottom: 30px;
@@ -188,7 +188,7 @@
 }
 
 .info-card-title {
-  font-size: 1.3rem;
+  font-size: 1.11rem;
   font-weight: 700;
   color: var(--color-dark);
   margin-bottom: 20px;
@@ -248,7 +248,7 @@
 }
 
 .warranty-title {
-  font-size: 1.5rem;
+  font-size: 1.27rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -267,7 +267,7 @@
 }
 
 .cta-card-title {
-  font-size: 1.4rem;
+  font-size: 1.19rem;
   font-weight: 700;
   color: var(--color-dark);
   margin-bottom: 15px;
@@ -336,7 +336,7 @@
 }
 
 .related-projects-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
   text-align: center;
   margin-bottom: 50px;
@@ -428,7 +428,7 @@
   }
   
   .project-detail-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   
   .gallery-grid {
@@ -476,7 +476,7 @@
 
 .project-stat-value {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.36rem;
   font-weight: 800;
   color: var(--color-primary);
   line-height: 1.1;

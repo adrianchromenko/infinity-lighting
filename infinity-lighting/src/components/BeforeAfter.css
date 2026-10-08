@@ -20,7 +20,7 @@
 }
 
 .before-after-title {
-  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-size: clamp(1.6rem, 3.4vw, 2.2rem);
   font-weight: 700;
   color: var(--color-dark);
   margin-bottom: 1rem;
@@ -28,7 +28,7 @@
 
 .before-after-subtitle {
   color: var(--color-text-muted);
-  font-size: 1.1rem;
+  font-size: 0.99rem;
   line-height: 1.6;
 }
 
@@ -102,7 +102,7 @@
 }
 
 .before-after-body h3 {
-  font-size: 1.1rem;
+  font-size: 0.99rem;
   font-weight: 700;
   color: var(--color-dark);
   margin-bottom: 0.4rem;
@@ -130,7 +130,7 @@
 
 .before-after-stat-value {
   display: block;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 800;
   color: var(--color-primary);
   line-height: 1.1;
@@ -169,6 +169,6 @@
   }
 
   .before-after-stat-value {
-    font-size: 1.75rem;
+    font-size: 1.49rem;
   }
 }

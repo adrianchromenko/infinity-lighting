@@ -24,7 +24,7 @@
 }
 
 .featured-projects-title {
-  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-size: clamp(1.6rem, 2.55vw, 2.2rem);
   color: var(--color-dark);
   font-weight: 800;
   margin: 0 0 1rem;
@@ -32,7 +32,7 @@
 
 .featured-projects-subtitle {
   color: var(--color-text-soft);
-  font-size: 1.1rem;
+  font-size: 0.99rem;
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
@@ -101,7 +101,7 @@
 }
 
 .featured-project-title {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--color-dark);
   margin: 0 0 0.5rem;
@@ -175,7 +175,7 @@
   }
 
   .featured-projects-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .featured-projects-grid {

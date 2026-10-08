@@ -25,13 +25,13 @@
 }
 
 .footer-logo-section h3 {
-  font-size: 1.5rem;
+  font-size: 1.27rem;
   margin-bottom: 1rem;
   color: white;
 }
 
 .footer-nav h3 {
-  font-size: 1.5rem;
+  font-size: 1.27rem;
   margin-bottom: 1rem;
   color: white;
 }
@@ -62,7 +62,7 @@
 .footer-logo-section p {
   margin-bottom: 0.5rem;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.6;
 }
 
@@ -137,7 +137,7 @@
   
   .footer-logo-section h3,
   .footer-nav h3 {
-    font-size: 1.35rem;
+    font-size: 1.15rem;
     margin-bottom: 1.25rem;
   }
   
@@ -160,7 +160,7 @@
   
   .footer-logo-section h3,
   .footer-nav h3 {
-    font-size: 1.2rem;
+    font-size: 1.08rem;
     margin-bottom: 1rem;
   }
 

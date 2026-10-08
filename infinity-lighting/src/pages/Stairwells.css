@@ -17,7 +17,7 @@
 }
 
 .sw-hero-title {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: white;
   margin-bottom: 1rem;
@@ -26,7 +26,7 @@
 }
 
 .sw-hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.13rem;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 400;
 }
@@ -44,14 +44,14 @@
 }
 
 .waste-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--color-text);
   margin-bottom: 2rem;
   font-weight: 700;
 }
 
 .waste-highlight {
-  font-size: 1.5rem;
+  font-size: 1.27rem;
   color: var(--color-text);
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -63,7 +63,7 @@
 }
 
 .waste-description {
-  font-size: 1.1rem;
+  font-size: 0.99rem;
   color: var(--color-text-muted);
   line-height: 1.8;
 }
@@ -95,19 +95,19 @@
 }
 
 .stat-icon {
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
 }
 
 .stat-number {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 800;
   color: var(--color-primary);
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
-  font-size: 1.1rem;
+  font-size: 0.99rem;
   font-weight: 600;
   color: var(--color-text);
   margin-bottom: 1rem;
@@ -132,7 +132,7 @@
 }
 
 .section-title {
-  font-size: 2.25rem;
+  font-size: 1.8rem;
   color: var(--color-text);
   font-weight: 700;
   margin-bottom: 3rem;
@@ -147,14 +147,14 @@
 }
 
 .solution-main h3 {
-  font-size: 1.75rem;
+  font-size: 1.49rem;
   color: var(--color-text);
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
 
 .solution-main p {
-  font-size: 1.1rem;
+  font-size: 0.99rem;
   color: var(--color-text-muted);
   line-height: 1.8;
   margin-bottom: 2rem;
@@ -169,7 +169,7 @@
   padding: 0.75rem 0;
   padding-left: 2rem;
   position: relative;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: var(--color-text-soft);
   line-height: 1.6;
 }
@@ -180,7 +180,7 @@
   left: 0;
   color: var(--color-primary);
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.08rem;
 }
 
 .highlight-card {
@@ -193,7 +193,7 @@
 }
 
 .highlight-card h4 {
-  font-size: 1.1rem;
+  font-size: 0.99rem;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -201,13 +201,13 @@
 }
 
 .highlight-stat {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
 }
 
 .highlight-label {
-  font-size: 1.1rem;
+  font-size: 0.99rem;
   margin-bottom: 1rem;
   opacity: 0.95;
 }
@@ -242,13 +242,13 @@
 }
 
 .case-logo {
-  font-size: 1.5rem;
+  font-size: 1.27rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 .case-location {
-  font-size: 1rem;
+  font-size: 0.95rem;
   opacity: 0.9;
 }
 
@@ -262,14 +262,14 @@
 }
 
 .case-study-content h3 {
-  font-size: 1.3rem;
+  font-size: 1.11rem;
   color: var(--color-primary);
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .case-study-content p {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: var(--color-text-muted);
   line-height: 1.7;
 }
@@ -294,7 +294,7 @@
 
 .result-value {
   display: block;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: 0.5rem;
@@ -335,12 +335,12 @@
 }
 
 .benefit-icon {
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
 }
 
 .benefit-card h3 {
-  font-size: 1.3rem;
+  font-size: 1.11rem;
   color: var(--color-text);
   margin-bottom: 1rem;
   font-weight: 600;
@@ -361,13 +361,13 @@
 }
 
 .cta-content h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .cta-content p {
-  font-size: 1.25rem;
+  font-size: 1.13rem;
   margin-bottom: 2rem;
   opacity: 0.95;
 }
@@ -383,7 +383,7 @@
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .cta-button:hover {
@@ -421,27 +421,27 @@
 
 @media (max-width: 768px) {
   .sw-hero-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.2;
   }
   
   .waste-title {
-    font-size: 1.75rem;
+    font-size: 1.49rem;
     margin-bottom: 1.5rem;
   }
   
   .waste-highlight {
-    font-size: 1.25rem;
+    font-size: 1.13rem;
     margin-bottom: 1rem;
   }
   
   .section-title {
-    font-size: 1.75rem;
+    font-size: 1.49rem;
   }
   
   .stat-number,
   .highlight-stat {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .benefits-grid {
@@ -453,7 +453,7 @@
   }
   
   .cta-content h2 {
-    font-size: 1.75rem;
+    font-size: 1.49rem;
   }
   
   .cta-button {
@@ -485,30 +485,30 @@
   }
   
   .sw-hero-title {
-    font-size: 1.5rem;
+    font-size: 1.27rem;
     margin-bottom: 1rem;
   }
   
   .sw-hero-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   
   .waste-title {
-    font-size: 1.5rem;
+    font-size: 1.27rem;
   }
   
   .waste-highlight {
-    font-size: 1.1rem;
+    font-size: 0.99rem;
   }
   
   .section-title {
-    font-size: 1.5rem;
+    font-size: 1.27rem;
     margin-bottom: 2rem;
   }
   
   .stat-number,
   .highlight-stat {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   
   .stat-card,
@@ -527,7 +527,7 @@
   }
   
   .cta-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.27rem;
     line-height: 1.3;
   }
   
@@ -546,6 +546,6 @@
   
   .waste-description,
   .stat-description {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }

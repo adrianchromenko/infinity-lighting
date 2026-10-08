@@ -7,7 +7,7 @@
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--color-text);
   font-weight: 700;
   margin-bottom: 3rem;
@@ -39,7 +39,7 @@
   }
   
   .section-title {
-    font-size: 1.75rem;
+    font-size: 1.49rem;
     margin-bottom: 2.5rem;
   }
   
@@ -56,7 +56,7 @@
   }
   
   .section-title {
-    font-size: 1.5rem;
+    font-size: 1.27rem;
     margin-bottom: 2rem;
   }
   

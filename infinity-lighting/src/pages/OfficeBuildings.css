@@ -17,7 +17,7 @@
 }
 
 .ob-hero-title {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: white;
   margin-bottom: 1rem;
@@ -26,7 +26,7 @@
 }
 
 .ob-hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.13rem;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 400;
 }
@@ -42,7 +42,7 @@
 }
 
 .transformation-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--color-text);
   text-align: center;
   margin-bottom: 3rem;
@@ -79,13 +79,13 @@
 }
 
 .trans-icon {
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin-bottom: 1.5rem;
   display: inline-block;
 }
 
 .transformation-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.27rem;
   color: var(--color-text);
   margin-bottom: 1rem;
   font-weight: 600;
@@ -118,14 +118,14 @@
 }
 
 .section-title {
-  font-size: 2.25rem;
+  font-size: 1.8rem;
   color: var(--color-text);
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .section-subtitle {
-  font-size: 1.15rem;
+  font-size: 1.03rem;
   color: var(--color-text-muted);
   max-width: 700px;
   margin: 0 auto;
@@ -148,14 +148,14 @@
 }
 
 .stat-number {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 800;
   color: var(--color-primary);
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
-  font-size: 1.1rem;
+  font-size: 0.99rem;
   font-weight: 600;
   color: var(--color-text);
   margin-bottom: 0.5rem;
@@ -181,7 +181,7 @@
 }
 
 .feature-content h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--color-text);
   margin-bottom: 2rem;
   font-weight: 600;
@@ -203,12 +203,12 @@
   position: absolute;
   left: 0;
   color: var(--color-primary);
-  font-size: 1.5rem;
+  font-size: 1.27rem;
   font-weight: bold;
 }
 
 .feature-item h4 {
-  font-size: 1.2rem;
+  font-size: 1.08rem;
   color: var(--color-text);
   margin-bottom: 0.5rem;
   font-weight: 600;
@@ -235,7 +235,7 @@
 }
 
 .highlight-box h3 {
-  font-size: 1.3rem;
+  font-size: 1.11rem;
   margin-bottom: 2rem;
   line-height: 1.5;
 }
@@ -316,7 +316,7 @@
 }
 
 .project-info h3 {
-  font-size: 1.25rem;
+  font-size: 1.13rem;
   color: var(--color-text);
   margin-bottom: 0.75rem;
   font-weight: 600;
@@ -347,7 +347,7 @@
 }
 
 .cta-content h2 {
-  font-size: 2.25rem;
+  font-size: 1.8rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.3;
@@ -368,7 +368,7 @@
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .cta-button:hover {
@@ -404,17 +404,17 @@
 
 @media (max-width: 768px) {
   .ob-hero-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.2;
   }
   
   .transformation-title {
-    font-size: 1.75rem;
+    font-size: 1.49rem;
     margin-bottom: 2rem;
   }
   
   .section-title {
-    font-size: 1.75rem;
+    font-size: 1.49rem;
   }
   
   .benefits-stats {
@@ -422,11 +422,11 @@
   }
   
   .stat-number {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .cta-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.27rem;
   }
   
   .transformation-card,
@@ -460,20 +460,20 @@
   }
   
   .ob-hero-title {
-    font-size: 1.5rem;
+    font-size: 1.27rem;
     margin-bottom: 1rem;
   }
   
   .ob-hero-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   
   .transformation-title {
-    font-size: 1.5rem;
+    font-size: 1.27rem;
   }
   
   .section-title {
-    font-size: 1.5rem;
+    font-size: 1.27rem;
     margin-bottom: 2rem;
   }
   
@@ -483,7 +483,7 @@
   }
   
   .stat-number {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   
   .transformation-card {
@@ -509,7 +509,7 @@
   }
   
   .cta-content h2 {
-    font-size: 1.25rem;
+    font-size: 1.13rem;
     line-height: 1.3;
     margin-bottom: 1rem;
   }
@@ -524,12 +524,12 @@
   
   .trans-icon,
   .benefit-icon {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   
   .transformation-card h3,
   .project-info h3 {
-    font-size: 1.1rem;
+    font-size: 0.99rem;
   }
   
   .transformation-card p,
