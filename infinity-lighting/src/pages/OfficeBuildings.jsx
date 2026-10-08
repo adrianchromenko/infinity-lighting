@@ -56,6 +56,7 @@ const OfficeBuildings = () => {
         description="Modern LED lighting for Houston TX office buildings. Boost employee productivity, reduce energy costs by up to 75%, and improve workplace environment. Professional office LED retrofits serving Houston's business district."
         keywords="office building lighting Houston, commercial LED office lighting Houston TX, LED troffer lighting Houston, office lighting retrofit Houston TX, workplace lighting Houston, office LED installation Houston"
         canonical="/office-buildings"
+        service
       />
       <TopBar />
       <Header />

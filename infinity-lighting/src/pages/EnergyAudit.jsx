@@ -14,6 +14,7 @@ const EnergyAudit = () => {
         description="Get a free commercial LED lighting energy audit in Houston TX. Discover potential energy savings up to 75%, ROI analysis, and available utility rebates. No obligation assessment for Houston area businesses."
         keywords="LED energy audit Houston, free lighting assessment Houston TX, commercial energy audit Houston, LED lighting savings Houston TX, energy efficiency audit Houston, free lighting audit Houston"
         canonical="/energy-audit"
+        service
       />
       <TopBar />
       <Header />
@@ -22,8 +23,7 @@ const EnergyAudit = () => {
       <section className="ea-hero">
         <div className="container">
           <div className="ea-hero-content">
-            <h1 className="ea-hero-title">Houston Commercial LED Lighting Assessment</h1>
-            <h1 className="ea-hero-title">&amp; Energy Audit</h1>
+            <h1 className="ea-hero-title">Houston Commercial LED Lighting Assessment<br />&amp; Energy Audit</h1>
             <div className="ea-hero-highlight">
               <p>Most clients save more than <span className="accent">50%</span></p>
               <p>on energy cost with LED lighting.</p>

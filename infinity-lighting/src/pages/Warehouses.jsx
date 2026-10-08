@@ -13,6 +13,7 @@ const Warehouses = () => {
         description="Industrial LED high bay lighting for Houston TX warehouses and distribution centers. Motion sensors, energy savings up to 75%, and improved worker safety. Expert installation across Greater Houston area."
         keywords="warehouse lighting Houston, LED high bay lighting Houston TX, industrial lighting Houston TX, warehouse LED retrofit Houston, high bay LED fixtures Houston, distribution center lighting Houston"
         canonical="/warehouses"
+        service
       />
       <TopBar />
       <Header />

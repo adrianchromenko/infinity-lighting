@@ -89,3 +89,18 @@ Designed by [Primary Digital Marketing](https://primarydm.com)
 ---
 
 **Website**: [https://inflighting.com](https://inflighting.com)
+
+## 🔎 SEO & prerendering
+
+`npm run build` produces a fully static site, not just an app shell:
+
+1. `vite build` builds the client bundle.
+2. `vite build --ssr` builds a small server bundle of the same components.
+3. `scripts/prerender.mjs` renders every route (including each `/projects/:id`) to its own
+   `dist/<route>/index.html` with the page's title, description, canonical URL, Open Graph tags
+   and JSON-LD already in the HTML. It also writes `dist/404.html` (noindex) and regenerates
+   `sitemap.xml` from the route list in `src/routes.jsx` and the projects in `src/data/projects.js`.
+
+Per-page tags live in each page's `<SEO ... />` (see `src/components/SEO.jsx`). Site-wide
+business schema lives in `index.html`. Adding a page means adding it to `src/routes.jsx`
+(both the `<Route>` and the `staticRoutes` list); new projects only need a `src/data/projects.js` entry.

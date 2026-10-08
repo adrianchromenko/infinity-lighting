@@ -4,89 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#7a2227" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Infinity Lighting Solutions - Commercial LED Lighting Houston TX</title>
-    <meta name="title" content="Infinity Lighting Solutions - Commercial LED Lighting Houston TX" />
-    <meta name="description" content="Houston's premier commercial LED lighting solutions provider. Specializing in parking garages, office buildings, warehouses, and more. Save up to 75% on energy costs. Serving Houston, Sugar Land, Katy, and The Woodlands. Free energy audit available." />
-    <meta name="keywords" content="LED lighting Houston, commercial lighting, parking garage lighting, office building lighting, warehouse lighting, energy efficient lighting, LED retrofit Houston, lighting solutions Texas, commercial LED installation, Houston lighting contractor" />
     <meta name="author" content="Infinity Lighting Solutions" />
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/Logo-V2.png" />
     <link rel="apple-touch-icon" href="/Logo-V2.png" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://inflighting.com/" />
-    <meta property="og:title" content="Infinity Lighting Solutions - Commercial LED Lighting Houston TX" />
-    <meta property="og:description" content="Houston's premier commercial LED lighting solutions provider. Save up to 75% on energy costs. Free energy audit available. Serving Greater Houston area." />
-    <meta property="og:image" content="https://inflighting.com/Logo-V2.png" />
-    <meta property="og:site_name" content="Infinity Lighting Solutions" />
-    <meta property="og:locale" content="en_US" />
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://inflighting.com/" />
-    <meta property="twitter:title" content="Infinity Lighting Solutions - Commercial LED Lighting Houston TX" />
-    <meta property="twitter:description" content="Houston's premier commercial LED lighting solutions provider. Save up to 75% on energy costs. Free energy audit available." />
-    <meta property="twitter:image" content="https://inflighting.com/Logo-V2.png" />
-    
-    <!-- Local Business Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ElectricalContractor",
-      "@id": "https://inflighting.com/#business",
-      "name": "Infinity Lighting Solutions",
-      "description": "Commercial LED lighting solutions provider serving the Greater Houston area",
-      "url": "https://inflighting.com",
-      "logo": "https://inflighting.com/Logo-V2.png",
-      "image": "https://inflighting.com/Logo-V2.png",
-      "telephone": "281-202-4625",
-      "email": "mark@inflighting.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Richmond",
-        "addressRegion": "TX",
-        "postalCode": "77407",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "29.5816",
-        "longitude": "-95.7606"
-      },
-      "areaServed": [
-        "Houston",
-        "Sugar Land",
-        "Katy",
-        "The Woodlands",
-        "Richmond",
-        "Greater Houston"
-      ],
-      "priceRange": "$$",
-      "openingHours": "Mo-Fr 08:00-17:00",
-      "sameAs": [
-        "https://www.facebook.com/infinitylightingsolutions",
-        "https://www.linkedin.com/company/infinity-lighting-solutions"
-      ]
-    }
-    </script>
-    
-    <!-- Additional SEO -->
-    <link rel="canonical" href="https://inflighting.com/" />
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="language" content="English" />
+
+    <!-- Fonts load faster with an early connection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Local business / geo signals (site-wide) -->
     <meta name="geo.region" content="US-TX" />
     <meta name="geo.placename" content="Houston" />
     <meta name="geo.position" content="29.5816;-95.7606" />
     <meta name="ICBM" content="29.5816, -95.7606" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ElectricalContractor",
+          "@id": "https://inflighting.com/#business",
+          "name": "Infinity Lighting Solutions",
+          "description": "Commercial LED lighting and full-service electrical contractor serving the Greater Houston area. LED retrofits for parking garages, stairwells, office buildings, hotels, warehouses and parking lots.",
+          "url": "https://inflighting.com",
+          "logo": "https://inflighting.com/Logo-V2.png",
+          "image": "https://inflighting.com/images/garage-night.jpg",
+          "telephone": "+1-281-202-4625",
+          "email": "mark@inflighting.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Richmond",
+            "addressRegion": "TX",
+            "postalCode": "77407",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "29.5816",
+            "longitude": "-95.7606"
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Houston" },
+            { "@type": "City", "name": "Sugar Land" },
+            { "@type": "City", "name": "Katy" },
+            { "@type": "City", "name": "The Woodlands" },
+            { "@type": "City", "name": "Richmond" },
+            { "@type": "City", "name": "Spring" }
+          ],
+          "priceRange": "$$",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Commercial LED Lighting Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Parking Garage LED Lighting", "url": "https://inflighting.com/parking-garages" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stairwell LED Lighting", "url": "https://inflighting.com/stairwells" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Office Building LED Lighting", "url": "https://inflighting.com/office-buildings" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warehouse High Bay LED Lighting", "url": "https://inflighting.com/warehouses" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fountain & Landscape Lighting", "url": "https://inflighting.com/fountains-landscape" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wall Pack & Flood Lighting", "url": "https://inflighting.com/wallpacks-flood" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Parking Lot LED Lighting", "url": "https://inflighting.com/parking-lots" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Free Commercial Energy Audit", "url": "https://inflighting.com/energy-audit" } }
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://inflighting.com/#website",
+          "url": "https://inflighting.com",
+          "name": "Infinity Lighting Solutions",
+          "publisher": { "@id": "https://inflighting.com/#business" },
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Per-page title, description, canonical, Open Graph and JSON-LD are injected here at build time
+         by scripts/prerender.mjs and kept in sync on the client by src/components/SEO.jsx -->
+    <!--app-head-->
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><!--app-html--></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

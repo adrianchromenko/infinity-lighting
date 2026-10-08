@@ -13,6 +13,7 @@ const Stairwells = () => {
         description="Professional stairwell LED lighting installation in Houston TX. Motion sensor technology, 24/7 reliability, enhanced building safety, and 75% energy savings. Serving commercial buildings across Greater Houston."
         keywords="stairwell lighting Houston, LED stairwell lights Houston TX, motion sensor stairwell lighting Houston, commercial stairwell LED Texas, building stairwell lighting Houston, emergency stairwell lighting Houston"
         canonical="/stairwells"
+        service
       />
       <TopBar />
       <Header />

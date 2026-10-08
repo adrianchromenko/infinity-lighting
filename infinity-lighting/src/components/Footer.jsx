@@ -23,7 +23,7 @@ const Footer = () => {
               <li><Link to="/stairwells">Stairwells</Link></li>
               <li><Link to="/office-buildings">Office Buildings</Link></li>
               <li><Link to="/warehouses">Warehouses</Link></li>
-              <li><Link to="/wall-packs-flood">Wall Packs & Flood Lights</Link></li>
+              <li><Link to="/wallpacks-flood">Wall Packs & Flood Lights</Link></li>
               <li><Link to="/fountains-landscape">Fountains & Landscape</Link></li>
             </ul>
           </div>
@@ -32,7 +32,7 @@ const Footer = () => {
             <h3>Company</h3>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/projects-news">Projects & News</Link></li>
+              <li><Link to="/projects">Projects</Link></li>
               <li><Link to="/energy-audit">Energy Audit</Link></li>
               <li><Link to="/lighting-proposal">Lighting Proposal</Link></li>
               <li><Link to="/contact-us">Contact Us</Link></li>

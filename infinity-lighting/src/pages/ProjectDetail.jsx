@@ -7,6 +7,7 @@ import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
+import NotFound from './NotFound'
 
 const ProjectDetail = () => {
   const { id } = useParams()
@@ -15,7 +16,7 @@ const ProjectDetail = () => {
   const project = projectsById[id]
 
   if (!project) {
-    return <div>Project not found</div>
+    return <NotFound title="Project Not Found" message="We couldn't find that project. Browse our full portfolio instead." />
   }
 
   const beforeImages = project.images.filter(img => img.isBefore)
@@ -31,6 +32,7 @@ const ProjectDetail = () => {
         description={`${project.description} Full-service electrical and lighting with a 10-year fixture and 5-year labor warranty.`}
         keywords={`${project.title}, ${project.type} lighting Houston, commercial LED project, electrical contractor Houston`}
         canonical={`/projects/${id}`}
+        image={project.image}
       />
       <TopBar />
       <Header />

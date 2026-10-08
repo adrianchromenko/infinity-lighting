@@ -39,6 +39,7 @@ const FountainsLandscape = () => {
         description="Stunning LED fountain and commercial landscape lighting in Houston TX. Energy-efficient outdoor illumination, professional design, and expert installation. Transform your Houston property's curb appeal."
         keywords="fountain lighting Houston, landscape lighting Houston TX, outdoor LED lighting Houston, commercial landscape lighting Houston TX, decorative lighting Houston, outdoor lighting installation Houston"
         canonical="/fountains-landscape"
+        service
       />
       <TopBar />
       <Header />

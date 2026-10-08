@@ -13,6 +13,7 @@ const WallPacksFlood = () => {
         description="Commercial wall pack and flood LED lighting in Houston TX. Secure perimeter lighting, building exterior illumination, and parking area safety. Save up to 75% on energy costs with professional installation."
         keywords="wall pack lighting Houston, LED flood lighting Houston TX, commercial exterior lighting Houston, perimeter lighting Houston TX, security lighting Houston, outdoor wall pack LED Houston, flood light installation Houston"
         canonical="/wallpacks-flood"
+        service
       />
       <TopBar />
       <Header />

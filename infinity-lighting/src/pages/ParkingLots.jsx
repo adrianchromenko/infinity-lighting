@@ -30,6 +30,7 @@ const ParkingLots = () => {
         description="LED parking lot lighting for Houston TX businesses. Improve safety, reduce liability, and cut energy costs by up to 75%. Free lighting assessment available. Professional pole light and area light installation across Greater Houston."
         keywords="parking lot lighting Houston, LED parking lot lights Houston TX, commercial parking lighting Houston, pole lighting Houston TX, parking area lighting Houston, LED pole lights Houston"
         canonical="/parking-lots"
+        service
       />
       <TopBar />
       <Header />

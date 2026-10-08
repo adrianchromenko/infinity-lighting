@@ -13,6 +13,7 @@ const LightingProposal = () => {
         description="Comprehensive LED lighting proposals for Houston TX businesses. Detailed cost analysis, energy savings projections up to 75%, and flexible financing options. Custom lighting design for your Houston commercial property."
         keywords="LED lighting proposal Houston, commercial lighting design Houston TX, LED lighting cost analysis Houston, energy savings proposal Houston TX, LED lighting ROI Houston, commercial lighting plan Houston"
         canonical="/lighting-proposal"
+        service
       />
       <TopBar />
       <Header />

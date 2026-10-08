@@ -1,0 +1,3 @@
+# Every real page is prerendered to its own index.html at build time.
+# Anything else is a genuine 404 (noindex) rather than a soft 404 of the home page.
+/*  /404.html  404
