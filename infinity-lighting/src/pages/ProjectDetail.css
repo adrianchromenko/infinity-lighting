@@ -1,10 +1,10 @@
 .project-detail-page {
   min-height: 100vh;
-  background: #f5f5f5;
+  background: var(--color-surface-2);
 }
 
 .project-detail-hero {
-  background: linear-gradient(135deg, #a52929 0%, #8a2323 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   padding: 60px 0;
   position: relative;
 }
@@ -80,11 +80,11 @@
 
 .project-description {
   font-size: 1.2rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.8;
   margin-bottom: 40px;
   padding-bottom: 30px;
-  border-bottom: 2px solid #f0f0f0;
+  border-bottom: 2px solid var(--color-surface-3);
 }
 
 .project-gallery {
@@ -94,7 +94,7 @@
 .gallery-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--color-dark);
   margin-bottom: 30px;
 }
 
@@ -110,7 +110,7 @@
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
-  background: #f0f0f0;
+  background: var(--color-surface-3);
   aspect-ratio: 16 / 12;
 }
 
@@ -166,11 +166,11 @@
 }
 
 .before-label {
-  background: rgba(165, 41, 41, 0.9);
+  background: rgba(var(--color-primary-rgb), 0.9);
 }
 
 .after-label {
-  background: rgba(34, 197, 94, 0.9);
+  background: rgba(58, 157, 122, 0.9);
 }
 
 .project-sidebar {
@@ -190,10 +190,10 @@
 .info-card-title {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--color-dark);
   margin-bottom: 20px;
   padding-bottom: 15px;
-  border-bottom: 2px solid #f0f0f0;
+  border-bottom: 2px solid var(--color-surface-3);
 }
 
 .project-features-list {
@@ -206,8 +206,8 @@
   align-items: start;
   gap: 12px;
   padding: 12px 0;
-  border-bottom: 1px solid #f5f5f5;
-  color: #666;
+  border-bottom: 1px solid var(--color-surface-2);
+  color: var(--color-text-muted);
   line-height: 1.6;
 }
 
@@ -224,7 +224,7 @@
 }
 
 .warranty-card {
-  background: linear-gradient(135deg, #a52929, #c73434);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
   color: white;
   text-align: center;
   padding: 25px;
@@ -269,12 +269,12 @@
 .cta-card-title {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--color-dark);
   margin-bottom: 15px;
 }
 
 .cta-card-description {
-  color: #666;
+  color: var(--color-text-muted);
   margin-bottom: 25px;
   line-height: 1.6;
 }
@@ -286,7 +286,7 @@
 }
 
 .cta-card-button {
-  background: #a52929;
+  background: var(--color-primary);
   color: white;
   padding: 14px 25px;
   border-radius: 50px;
@@ -300,9 +300,9 @@
 }
 
 .cta-card-button:hover {
-  background: #8a2323;
+  background: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(165, 41, 41, 0.3);
+  box-shadow: 0 5px 15px rgba(var(--color-primary-rgb), 0.3);
 }
 
 .cta-card-button svg {
@@ -312,8 +312,8 @@
 
 .cta-card-button-secondary {
   background: transparent;
-  color: #a52929;
-  border: 2px solid #a52929;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
   padding: 14px 25px;
   border-radius: 50px;
   text-decoration: none;
@@ -326,7 +326,7 @@
 }
 
 .cta-card-button-secondary:hover {
-  background: #a52929;
+  background: var(--color-primary);
   color: white;
 }
 
@@ -340,7 +340,7 @@
   font-weight: 800;
   text-align: center;
   margin-bottom: 50px;
-  color: #1a1a1a;
+  color: var(--color-dark);
 }
 
 .related-projects-grid {

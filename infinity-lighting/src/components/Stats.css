@@ -1,5 +1,5 @@
 .stats {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, var(--color-surface) 0%, #e9ecef 100%);
   padding: 5rem 0;
   width: 100%;
   overflow: hidden;
@@ -13,7 +13,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #a52929, transparent);
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
 }
 
 .stats-header {
@@ -23,7 +23,7 @@
 
 .stats-title {
   font-size: clamp(2rem, 4vw, 3rem);
-  color: #1a1a1a;
+  color: var(--color-dark);
   font-weight: 700;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
 .stats-underline {
   width: 100px;
   height: 4px;
-  background: linear-gradient(90deg, #a52929, #ff6b6b);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
   margin: 0 auto;
   border-radius: 2px;
 }
@@ -44,7 +44,7 @@
   border-radius: 20px;
   padding: 3rem;
   margin-bottom: 4rem;
-  box-shadow: 0 20px 60px rgba(165, 41, 41, 0.1);
+  box-shadow: 0 20px 60px rgba(var(--color-primary-rgb), 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -56,7 +56,7 @@
   right: -10%;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(165, 41, 41, 0.05), transparent);
+  background: radial-gradient(circle, rgba(var(--color-primary-rgb), 0.05), transparent);
   border-radius: 50%;
 }
 
@@ -76,17 +76,17 @@
 
 .dollar-sign {
   font-size: clamp(2rem, 4vw, 3rem);
-  color: #a52929;
+  color: var(--color-primary);
   font-weight: 300;
   opacity: 0.8;
 }
 
 .stat-value {
   font-size: clamp(3.5rem, 7vw, 5rem);
-  color: #a52929;
+  color: var(--color-primary);
   font-weight: 900;
   line-height: 1;
-  background: linear-gradient(135deg, #a52929, #ff6b6b);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -94,14 +94,14 @@
 
 .stat-unit {
   font-size: clamp(2rem, 4vw, 3rem);
-  color: #333;
+  color: var(--color-text);
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .main-stat-description {
   font-size: clamp(1.1rem, 2vw, 1.4rem);
-  color: #666;
+  color: var(--color-text-muted);
   font-weight: 500;
   max-width: 600px;
   margin: 0 auto;
@@ -117,15 +117,15 @@
 }
 
 .support-stat {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  background: linear-gradient(135deg, #ffffff 0%, var(--color-surface) 100%);
   padding: 2.5rem;
   border-radius: 20px;
   text-align: left;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(165, 41, 41, 0.08);
-  border: 1px solid rgba(165, 41, 41, 0.05);
+  box-shadow: 0 10px 40px rgba(var(--color-primary-rgb), 0.08);
+  border: 1px solid rgba(var(--color-primary-rgb), 0.05);
 }
 
 .support-stat::before {
@@ -135,13 +135,13 @@
   left: 0;
   width: 100%;
   height: 5px;
-  background: linear-gradient(90deg, #a52929, #ff6b6b);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
 }
 
 .support-stat:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 60px rgba(165, 41, 41, 0.12);
-  border-color: rgba(165, 41, 41, 0.1);
+  box-shadow: 0 20px 60px rgba(var(--color-primary-rgb), 0.12);
+  border-color: rgba(var(--color-primary-rgb), 0.1);
   background: linear-gradient(135deg, #ffffff 0%, #fef5f5 100%);
 }
 
@@ -149,12 +149,12 @@
   width: 60px;
   height: 60px;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #a52929, #ff6b6b);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 20px rgba(165, 41, 41, 0.2);
+  box-shadow: 0 8px 20px rgba(var(--color-primary-rgb), 0.2);
 }
 
 .support-stat-icon svg {
@@ -165,7 +165,7 @@
 
 .support-stat-title {
   font-size: 1.1rem;
-  color: #a52929;
+  color: var(--color-primary);
   margin-bottom: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -176,12 +176,12 @@
 .stat-highlight {
   margin: 1.25rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-2) 100%);
   color: white;
   display: block;
   border-radius: 14px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  border-left: 4px solid #a52929;
+  border-left: 4px solid var(--color-primary);
 }
 
 .highlight-number {
@@ -208,13 +208,13 @@
   color: #ffffff;
   line-height: 1.7;
   margin-top: 1rem;
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid var(--color-border-soft);
   padding-top: 1rem;
 }
 
 /* CTA Section */
 .upgrade-cta {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-2) 100%);
   color: white;
   padding: 3rem;
   border-radius: 20px;
@@ -230,7 +230,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at top right, rgba(165, 41, 41, 0.2), transparent 60%);
+  background: radial-gradient(circle at top right, rgba(var(--color-primary-rgb), 0.2), transparent 60%);
 }
 
 .upgrade-headline {
@@ -259,14 +259,14 @@
 }
 
 .cta-primary {
-  background: linear-gradient(135deg, #a52929, #8a2323);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   color: white;
   padding: 1rem 2rem;
   border-radius: 50px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
-  box-shadow: 0 10px 30px rgba(165, 41, 41, 0.3);
+  box-shadow: 0 10px 30px rgba(var(--color-primary-rgb), 0.3);
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
@@ -275,8 +275,8 @@
 
 .cta-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(165, 41, 41, 0.4);
-  background: linear-gradient(135deg, #8a2323, #a52929);
+  box-shadow: 0 15px 40px rgba(var(--color-primary-rgb), 0.4);
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
 }
 
 .cta-secondary {

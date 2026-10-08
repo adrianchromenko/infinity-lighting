@@ -6,7 +6,7 @@
 
 /* Hero Section */
 .wh-hero {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-2) 100%);
   padding: 4rem 0 5rem;
   text-align: center;
 }
@@ -34,7 +34,7 @@
 }
 
 .wh-hero-message .highlight {
-  color: #f39c12;
+  color: #d9a441;
   font-weight: 700;
   text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
@@ -55,30 +55,30 @@
 
 .intro-highlight {
   font-size: 1.35rem;
-  color: #333;
+  color: var(--color-text);
   font-weight: 600;
   line-height: 1.6;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #f39c12;
+  border-bottom: 2px solid #d9a441;
 }
 
 .intro-text {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
 
 .intro-benefits {
-  background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+  background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-3) 100%);
   padding: 2rem;
   border-radius: 16px;
 }
 
 .intro-benefits h3 {
   font-size: 1.5rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -111,13 +111,13 @@
 
 .benefit-item span:last-child {
   font-size: 1rem;
-  color: #333;
+  color: var(--color-text);
   font-weight: 500;
 }
 
 /* Comparison Section */
 .wh-comparison {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
 }
 
@@ -127,7 +127,7 @@
 
 .section-title {
   font-size: 2.25rem;
-  color: #333;
+  color: var(--color-text);
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
@@ -147,16 +147,16 @@
 }
 
 .comparison-card.traditional {
-  border-top: 4px solid #e74c3c;
+  border-top: 4px solid #d26b5f;
 }
 
 .comparison-card.led {
-  border-top: 4px solid #27ae60;
+  border-top: 4px solid #3a9d7a;
 }
 
 .comparison-card h3 {
   font-size: 1.5rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -175,20 +175,20 @@
 }
 
 .comparison-list li.negative {
-  color: #666;
+  color: var(--color-text-muted);
 }
 
 .comparison-list li.negative::before {
   content: "✗";
   position: absolute;
   left: 0;
-  color: #e74c3c;
+  color: #d26b5f;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .comparison-list li.positive {
-  color: #333;
+  color: var(--color-text);
   font-weight: 500;
 }
 
@@ -196,7 +196,7 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: #27ae60;
+  color: #3a9d7a;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -217,14 +217,14 @@
 
 .solution-text h2 {
   font-size: 2rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
 
 .solution-lead {
   font-size: 1.2rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.6;
   margin-bottom: 2.5rem;
 }
@@ -237,25 +237,25 @@
 
 .feature h4 {
   font-size: 1.25rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .feature p {
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.6;
   padding-left: 1rem;
-  border-left: 3px solid #f39c12;
+  border-left: 3px solid #d9a441;
 }
 
 .highlight-card {
-  background: linear-gradient(135deg, #f39c12, #e67e22);
+  background: linear-gradient(135deg, #d9a441, #c98a3a);
   color: white;
   padding: 3rem 2rem;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(243, 156, 18, 0.3);
+  box-shadow: 0 20px 40px rgba(217, 164, 65, 0.3);
 }
 
 .highlight-stat {
@@ -285,7 +285,7 @@
 
 /* Projects Section */
 .wh-projects {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
 }
 
@@ -308,7 +308,7 @@
 }
 
 .project-header {
-  background: linear-gradient(135deg, #a52929, #8a2323);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   color: white;
   padding: 1.5rem 2rem;
   display: flex;
@@ -322,7 +322,7 @@
 }
 
 .project-badge {
-  background: #f39c12;
+  background: #d9a441;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -337,29 +337,29 @@
 
 .project-description {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.7;
   margin-bottom: 2rem;
 }
 
 .project-testimonial {
-  background: linear-gradient(135deg, #f8f8f8, #f0f0f0);
+  background: linear-gradient(135deg, var(--color-surface), var(--color-surface-3));
   padding: 1.5rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
-  border-left: 4px solid #f39c12;
+  border-left: 4px solid #d9a441;
 }
 
 .project-testimonial p {
   font-size: 1.25rem;
-  color: #333;
+  color: var(--color-text);
   font-style: italic;
   margin-bottom: 0.5rem;
 }
 
 .project-testimonial span {
   font-size: 0.95rem;
-  color: #666;
+  color: var(--color-text-muted);
   font-weight: 500;
 }
 
@@ -367,7 +367,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #a52929;
+  color: var(--color-primary);
   font-size: 0.95rem;
   font-weight: 500;
   margin-bottom: 2rem;
@@ -383,7 +383,7 @@
 .project-stats .stat {
   text-align: center;
   padding: 1rem;
-  background: #f8f8f8;
+  background: var(--color-surface);
   border-radius: 8px;
 }
 
@@ -391,13 +391,13 @@
   display: block;
   font-size: 1.75rem;
   font-weight: 700;
-  color: #f39c12;
+  color: #d9a441;
   margin-bottom: 0.25rem;
 }
 
 .stat-label {
   font-size: 0.85rem;
-  color: #666;
+  color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -412,7 +412,7 @@
   flex: 1;
   text-align: center;
   padding: 1rem;
-  background: #f8f8f8;
+  background: var(--color-surface);
   border-radius: 8px;
 }
 
@@ -420,18 +420,18 @@
   display: block;
   font-size: 1.75rem;
   font-weight: 700;
-  color: #f39c12;
+  color: #d9a441;
   margin-bottom: 0.25rem;
 }
 
 .highlight-text {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-muted);
 }
 
 /* CTA Section */
 .wh-cta {
-  background: linear-gradient(135deg, #a52929, #8a2323);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   padding: 5rem 0;
   text-align: center;
   color: white;
@@ -450,7 +450,7 @@
 
 .cta-button {
   background: white;
-  color: #a52929;
+  color: var(--color-primary);
   padding: 1rem 2.5rem;
   border: none;
   border-radius: 50px;

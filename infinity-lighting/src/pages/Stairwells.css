@@ -6,7 +6,7 @@
 
 /* Hero Section */
 .sw-hero {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-2) 100%);
   padding: 4rem 0;
   text-align: center;
 }
@@ -33,7 +33,7 @@
 
 /* Waste Section */
 .sw-waste {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
 }
 
@@ -45,26 +45,26 @@
 
 .waste-title {
   font-size: 2.5rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 2rem;
   font-weight: 700;
 }
 
 .waste-highlight {
   font-size: 1.5rem;
-  color: #333;
+  color: var(--color-text);
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
 
 .waste-highlight .highlight {
-  color: #a52929;
+  color: var(--color-primary);
   font-weight: 700;
 }
 
 .waste-description {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.8;
 }
 
@@ -85,7 +85,7 @@
   text-align: center;
   padding: 2rem;
   border-radius: 12px;
-  background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+  background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-3) 100%);
   transition: all 0.3s;
 }
 
@@ -102,14 +102,14 @@
 .stat-number {
   font-size: 3rem;
   font-weight: 800;
-  color: #a52929;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -117,13 +117,13 @@
 
 .stat-description {
   font-size: 0.95rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.6;
 }
 
 /* Solution Section */
 .sw-solution {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
 }
 
@@ -133,7 +133,7 @@
 
 .section-title {
   font-size: 2.25rem;
-  color: #333;
+  color: var(--color-text);
   font-weight: 700;
   margin-bottom: 3rem;
   text-align: center;
@@ -148,14 +148,14 @@
 
 .solution-main h3 {
   font-size: 1.75rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
 
 .solution-main p {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.8;
   margin-bottom: 2rem;
 }
@@ -170,7 +170,7 @@
   padding-left: 2rem;
   position: relative;
   font-size: 1.05rem;
-  color: #555;
+  color: var(--color-text-soft);
   line-height: 1.6;
 }
 
@@ -178,18 +178,18 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: #a52929;
+  color: var(--color-primary);
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .highlight-card {
-  background: linear-gradient(135deg, #a52929, #8a2323);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   color: white;
   padding: 2.5rem;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(165, 41, 41, 0.2);
+  box-shadow: 0 20px 40px rgba(var(--color-primary-rgb), 0.2);
 }
 
 .highlight-card h4 {
@@ -233,7 +233,7 @@
 }
 
 .case-study-header {
-  background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+  background: linear-gradient(135deg, var(--color-dark-2), var(--color-dark));
   padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
@@ -263,19 +263,19 @@
 
 .case-study-content h3 {
   font-size: 1.3rem;
-  color: #a52929;
+  color: var(--color-primary);
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .case-study-content p {
   font-size: 1.05rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.7;
 }
 
 .case-results {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 2rem;
   border-radius: 12px;
   margin-top: 2rem;
@@ -296,21 +296,21 @@
   display: block;
   font-size: 2rem;
   font-weight: 700;
-  color: #a52929;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
 }
 
 .result-label {
   display: block;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 /* Benefits Section */
 .sw-benefits {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
 }
 
@@ -341,20 +341,20 @@
 
 .benefit-card h3 {
   font-size: 1.3rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .benefit-card p {
   font-size: 0.95rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.6;
 }
 
 /* CTA Section */
 .sw-cta {
-  background: linear-gradient(135deg, #a52929, #8a2323);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   padding: 5rem 0;
   text-align: center;
   color: white;
@@ -374,7 +374,7 @@
 
 .cta-button {
   background: white;
-  color: #a52929;
+  color: var(--color-primary);
   padding: 1rem 2.5rem;
   border: none;
   border-radius: 50px;

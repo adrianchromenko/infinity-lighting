@@ -6,7 +6,7 @@
 
 /* Hero Section */
 .lp-hero {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-2) 100%);
   padding: 4rem 0;
   text-align: center;
 }
@@ -34,13 +34,13 @@
 
 /* Overview Section */
 .lp-overview {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 3rem 0;
 }
 
 .overview-text {
   font-size: 1.25rem;
-  color: #333;
+  color: var(--color-text);
   line-height: 1.6;
   text-align: center;
   max-width: 800px;
@@ -64,14 +64,14 @@
 
 .details-main h2 {
   font-size: 2rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
 
 .details-lead {
   font-size: 1.15rem;
-  color: #333;
+  color: var(--color-text);
   line-height: 1.7;
   margin-bottom: 1rem;
   font-weight: 500;
@@ -79,7 +79,7 @@
 
 .details-text {
   font-size: 1.05rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.7;
   margin-bottom: 2rem;
 }
@@ -91,7 +91,7 @@
 }
 
 .component-card {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 2rem;
   border-radius: 16px;
   border-top: 4px solid #1e3c72;
@@ -104,7 +104,7 @@
 
 .component-card h3 {
   font-size: 1.25rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -118,7 +118,7 @@
   padding: 0.5rem 0;
   padding-left: 1.5rem;
   position: relative;
-  color: #666;
+  color: var(--color-text-muted);
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -159,7 +159,7 @@
 
 .benefit-icon {
   font-size: 1.25rem;
-  color: #90EE90;
+  color: #9fd8b8;
 }
 
 .benefit-item span:last-child {
@@ -169,13 +169,13 @@
 
 /* Savings Section */
 .lp-savings {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
 }
 
 .section-title {
   font-size: 2.25rem;
-  color: #333;
+  color: var(--color-text);
   font-weight: 700;
   text-align: center;
   margin-bottom: 1.5rem;
@@ -183,7 +183,7 @@
 
 .savings-intro {
   font-size: 1.15rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.7;
   text-align: center;
   max-width: 900px;
@@ -218,14 +218,14 @@
 
 .savings-card h3 {
   font-size: 1.25rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
 
 .savings-card p {
   font-size: 0.95rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.5;
 }
 
@@ -245,14 +245,14 @@
 
 .incentives-text h2 {
   font-size: 2rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
 
 .incentives-lead {
   font-size: 1.2rem;
-  color: #333;
+  color: var(--color-text);
   line-height: 1.6;
   margin-bottom: 1rem;
   font-weight: 500;
@@ -260,14 +260,14 @@
 
 .incentives-detail {
   font-size: 1.05rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.7;
   margin-bottom: 2rem;
 }
 
 .incentive-benefits h3 {
   font-size: 1.25rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -281,7 +281,7 @@
   padding: 0.75rem 0;
   padding-left: 1.5rem;
   position: relative;
-  color: #555;
+  color: var(--color-text-soft);
   line-height: 1.5;
 }
 
@@ -289,13 +289,13 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: #27ae60;
+  color: #3a9d7a;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .partner-card {
-  background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+  background: linear-gradient(135deg, var(--color-surface), var(--color-border));
   padding: 2.5rem;
   border-radius: 16px;
   text-align: center;
@@ -303,13 +303,13 @@
 
 .partner-card h3 {
   font-size: 1.3rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .partner-card p {
-  color: #666;
+  color: var(--color-text-muted);
   margin-bottom: 2rem;
   line-height: 1.5;
 }
@@ -337,14 +337,14 @@
 .stat-label {
   display: block;
   font-size: 0.85rem;
-  color: #666;
+  color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 /* Calculator Section */
 .lp-calculator {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
 }
 
@@ -372,17 +372,17 @@
 
 .calc-item.current {
   background: #ffebeb;
-  border: 2px solid #e74c3c;
+  border: 2px solid #d26b5f;
 }
 
 .calc-item.new {
   background: #e8f8e8;
-  border: 2px solid #27ae60;
+  border: 2px solid #3a9d7a;
 }
 
 .calc-item h3 {
   font-size: 1.3rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1.5rem;
   text-align: center;
   font-weight: 600;
@@ -400,18 +400,18 @@
 }
 
 .calc-row span:first-child {
-  color: #666;
+  color: var(--color-text-muted);
   font-size: 0.95rem;
 }
 
 .calc-row .value {
   font-weight: 600;
-  color: #333;
+  color: var(--color-text);
 }
 
 .calc-arrow {
   font-size: 2rem;
-  color: #666;
+  color: var(--color-text-muted);
 }
 
 .savings-summary {
@@ -442,13 +442,13 @@
 }
 
 .summary-value.highlight {
-  color: #90EE90;
+  color: #9fd8b8;
   font-size: 1.75rem;
 }
 
 /* CTA Section */
 .lp-cta {
-  background: linear-gradient(135deg, #a52929, #8a2323);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   padding: 5rem 0;
   text-align: center;
   color: white;
@@ -467,7 +467,7 @@
 
 .cta-button {
   background: white;
-  color: #a52929;
+  color: var(--color-primary);
   padding: 1rem 2.5rem;
   border: none;
   border-radius: 50px;

@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
+/* ---------------------------------------------------------------
+   Brand palette (cool / calm refresh, Oct 2026)
+   Change these values to re-theme the whole site.
+   --------------------------------------------------------------- */
+:root {
+  /* Primary accent: deep, calm teal-blue (replaces the old red var(--color-primary)) */
+  --color-primary: #2b6777;
+  --color-primary-dark: #1f4f5c;     /* hover / pressed */
+  --color-primary-light: #5aa0b0;    /* gradient ends, link hover on dark */
+  --color-primary-rgb: 43, 103, 119; /* for rgba() tints and shadows */
+  --color-primary-tint: #eef4f7;     /* very light hover background */
+
+  /* Dark sections (hero, footer, CTA bands): cool charcoal-navy instead of pure black */
+  --color-dark: #1c2b36;
+  --color-dark-2: #2a3f4d;
+
+  /* Text */
+  --color-text: #2e3b45;
+  --color-text-soft: #4b5a65;
+  --color-text-muted: #5c6b76;
+  --color-text-faint: #8a97a1;
+  --color-text-on-dark: #e8eef2;
+  --color-text-on-dark-soft: #c9d3da;
+
+  /* Surfaces & borders */
+  --color-surface: #f4f7f9;
+  --color-surface-2: #f1f5f7;
+  --color-surface-3: #e8eef2;
+  --color-border: #d8e0e6;
+  --color-border-soft: #e1e8ed;
+}
+
 *,
 *::before,
 *::after {
@@ -22,7 +54,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffffff;
-  color: #333;
+  color: var(--color-text);
   line-height: 1.6;
   overflow-x: hidden;
   min-width: 320px;

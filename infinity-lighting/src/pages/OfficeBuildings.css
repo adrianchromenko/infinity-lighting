@@ -6,7 +6,7 @@
 
 /* Hero Section */
 .ob-hero {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-2) 100%);
   padding: 4rem 0;
   text-align: center;
 }
@@ -43,14 +43,14 @@
 
 .transformation-title {
   font-size: 2.5rem;
-  color: #333;
+  color: var(--color-text);
   text-align: center;
   margin-bottom: 3rem;
   font-weight: 600;
 }
 
 .transformation-title .highlight {
-  color: #a52929;
+  color: var(--color-primary);
   font-weight: 700;
   font-style: italic;
 }
@@ -62,7 +62,7 @@
 }
 
 .transformation-card {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 2.5rem;
   border-radius: 16px;
   transition: all 0.3s;
@@ -74,8 +74,8 @@
 }
 
 .transformation-card.featured {
-  background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
-  border: 2px solid #a52929;
+  background: linear-gradient(135deg, #fff 0%, var(--color-surface-3) 100%);
+  border: 2px solid var(--color-primary);
 }
 
 .trans-icon {
@@ -86,21 +86,21 @@
 
 .transformation-card h3 {
   font-size: 1.5rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .transformation-card p {
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.7;
   margin-bottom: 1rem;
 }
 
 .trans-highlight {
-  color: #333;
+  color: var(--color-text);
   font-weight: 500;
-  background: rgba(165, 41, 41, 0.05);
+  background: rgba(var(--color-primary-rgb), 0.05);
   padding: 1rem;
   border-radius: 8px;
   margin-top: 1rem;
@@ -108,7 +108,7 @@
 
 /* Benefits Section */
 .ob-benefits {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
 }
 
@@ -119,14 +119,14 @@
 
 .section-title {
   font-size: 2.25rem;
-  color: #333;
+  color: var(--color-text);
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .section-subtitle {
   font-size: 1.15rem;
-  color: #666;
+  color: var(--color-text-muted);
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
@@ -150,20 +150,20 @@
 .stat-number {
   font-size: 3rem;
   font-weight: 800;
-  color: #a52929;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 0.5rem;
 }
 
 .stat-desc {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-muted);
 }
 
 /* Features Section */
@@ -182,7 +182,7 @@
 
 .feature-content h2 {
   font-size: 2rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 2rem;
   font-weight: 600;
 }
@@ -202,20 +202,20 @@
   content: "→";
   position: absolute;
   left: 0;
-  color: #a52929;
+  color: var(--color-primary);
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 .feature-item h4 {
   font-size: 1.2rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .feature-item p {
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.6;
 }
 
@@ -226,12 +226,12 @@
 }
 
 .highlight-box {
-  background: linear-gradient(135deg, #a52929, #8a2323);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   color: white;
   padding: 3rem 2rem;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(165, 41, 41, 0.3);
+  box-shadow: 0 20px 40px rgba(var(--color-primary-rgb), 0.3);
 }
 
 .highlight-box h3 {
@@ -242,7 +242,7 @@
 
 .demo-button {
   background: white;
-  color: #a52929;
+  color: var(--color-primary);
   padding: 1rem 2rem;
   border: none;
   border-radius: 50px;
@@ -261,7 +261,7 @@
 
 /* Projects Gallery Section */
 .ob-projects {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
 }
 
@@ -292,19 +292,19 @@
 }
 
 .project-card.entrance .project-image {
-  background: linear-gradient(135deg, #a52929, #8a2323);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
 }
 
 .project-card.lobby .project-image {
-  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  background: linear-gradient(135deg, #d26b5f, #b85a4e);
 }
 
 .project-card.hospitality .project-image {
-  background: linear-gradient(135deg, #f39c12, #e67e22);
+  background: linear-gradient(135deg, #d9a441, #c98a3a);
 }
 
 .project-card.cove .project-image {
-  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+  background: linear-gradient(135deg, #7d72ad, #6b5f9e);
 }
 
 .project-card.conference .project-image {
@@ -317,13 +317,13 @@
 
 .project-info h3 {
   font-size: 1.25rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
 
 .project-info p {
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.5;
   margin-bottom: 0.75rem;
 }
@@ -332,7 +332,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #a52929;
+  color: var(--color-primary);
   font-size: 0.9rem;
   font-weight: 500;
   margin-top: 0.5rem;
@@ -340,7 +340,7 @@
 
 /* CTA Section */
 .ob-cta {
-  background: linear-gradient(135deg, #a52929, #8a2323);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   padding: 5rem 0;
   text-align: center;
   color: white;
@@ -359,7 +359,7 @@
 
 .cta-button {
   background: white;
-  color: #a52929;
+  color: var(--color-primary);
   padding: 1rem 2.5rem;
   border: none;
   border-radius: 50px;

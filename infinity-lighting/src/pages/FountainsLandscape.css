@@ -6,7 +6,7 @@
 
 /* Hero Section */
 .fl-hero {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-2) 100%);
   padding: 4rem 0;
   text-align: center;
   position: relative;
@@ -62,13 +62,13 @@
   text-align: center;
   margin-bottom: 3rem;
   padding: 2rem;
-  background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+  background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-3) 100%);
   border-radius: 16px;
 }
 
 .tech-lead {
   font-size: 1.5rem;
-  color: #333;
+  color: var(--color-text);
   font-weight: 600;
   line-height: 1.6;
 }
@@ -82,7 +82,7 @@
 
 .tech-text {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
@@ -96,7 +96,7 @@
 
 .tech-features h3 {
   font-size: 1.3rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -112,7 +112,7 @@
   gap: 1rem;
   padding: 0.75rem;
   margin-bottom: 0.5rem;
-  background: #f8f8f8;
+  background: var(--color-surface);
   border-radius: 8px;
   transition: all 0.3s;
 }
@@ -135,13 +135,13 @@
 
 /* Benefits Section */
 .fl-benefits {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
 }
 
 .section-title {
   font-size: 2.25rem;
-  color: #333;
+  color: var(--color-text);
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
@@ -177,14 +177,14 @@
 
 .benefit-card h3 {
   font-size: 1.3rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .benefit-card p {
   font-size: 0.95rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.6;
 }
 
@@ -204,7 +204,7 @@
 
 .features-content h2 {
   font-size: 2rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 2rem;
   font-weight: 600;
 }
@@ -217,21 +217,21 @@
 
 .control-item {
   padding: 1.5rem;
-  background: #f8f8f8;
+  background: var(--color-surface);
   border-radius: 12px;
   border-left: 4px solid #006994;
 }
 
 .control-item h4 {
   font-size: 1.15rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .control-item p {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.5;
 }
 
@@ -261,7 +261,7 @@
 
 /* Projects Section */
 .fl-projects {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
 }
 
@@ -315,7 +315,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #333;
+  color: var(--color-text);
 }
 
 .project-info {
@@ -324,13 +324,13 @@
 
 .project-info h3 {
   font-size: 1.25rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
 
 .project-info p {
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.6;
   margin-bottom: 1rem;
   font-size: 0.95rem;
@@ -347,7 +347,7 @@
 
 /* CTA Section */
 .fl-cta {
-  background: linear-gradient(135deg, #a52929, #8a2323);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   padding: 5rem 0;
   text-align: center;
   color: white;
@@ -366,7 +366,7 @@
 
 .cta-button {
   background: white;
-  color: #a52929;
+  color: var(--color-primary);
   padding: 1rem 2.5rem;
   border: none;
   border-radius: 50px;

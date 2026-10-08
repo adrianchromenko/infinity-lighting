@@ -43,7 +43,7 @@ const Footer = () => {
         
         <div className="footer-bottom">
           <p>Copyright © Infinity Lighting Solutions | Houston Commercial LED Lighting | All Rights Reserved</p>
-          <p>Designed by <a href="https://primarydm.com" target="_blank" rel="noopener noreferrer" style={{color: '#a52929', textDecoration: 'none', fontWeight: '500'}}>Primary Digital Marketing</a></p>
+          <p>Designed by <a href="https://primarydm.com" target="_blank" rel="noopener noreferrer" style={{color: 'var(--color-primary)', textDecoration: 'none', fontWeight: '500'}}>Primary Digital Marketing</a></p>
         </div>
       </div>
     </footer>

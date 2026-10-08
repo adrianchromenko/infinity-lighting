@@ -11,7 +11,7 @@
 
 /* Floating bubble tooltip */
 .chatbot-bubble {
-  background: #A22828;
+  background: var(--color-primary);
   color: white;
   padding: 10px 16px;
   border-radius: 12px 12px 0 12px;
@@ -19,7 +19,7 @@
   font-weight: 500;
   max-width: 220px;
   line-height: 1.4;
-  box-shadow: 0 4px 20px rgba(162, 40, 40, 0.3);
+  box-shadow: 0 4px 20px rgba(var(--color-primary-rgb), 0.3);
   animation: bubbleFadeIn 0.5s ease 1s both;
 }
 
@@ -39,20 +39,20 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #A22828;
+  background: var(--color-primary);
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 20px rgba(162, 40, 40, 0.35);
+  box-shadow: 0 4px 20px rgba(var(--color-primary-rgb), 0.35);
   transition: transform 0.3s, box-shadow 0.3s;
   flex-shrink: 0;
 }
 
 .chatbot-toggle:hover {
   transform: scale(1.08);
-  box-shadow: 0 6px 28px rgba(162, 40, 40, 0.45);
+  box-shadow: 0 6px 28px rgba(var(--color-primary-rgb), 0.45);
 }
 
 .chatbot-toggle:active {
@@ -85,7 +85,7 @@
 
 /* Panel header */
 .chatbot-panel-header {
-  background: #A22828;
+  background: var(--color-primary);
   color: white;
   padding: 16px 20px;
   display: flex;
@@ -128,12 +128,12 @@
 
 /* Chat message bubble */
 .chatbot-message {
-  background: #f5f5f5;
+  background: var(--color-surface-2);
   padding: 14px 16px;
   border-radius: 14px 14px 14px 4px;
   margin-bottom: 16px;
   font-size: 0.9rem;
-  color: #333;
+  color: var(--color-text);
   line-height: 1.5;
 }
 
@@ -154,22 +154,22 @@
   gap: 14px;
   padding: 14px 16px;
   background: white;
-  border: 1.5px solid #e8e8e8;
+  border: 1.5px solid var(--color-border-soft);
   border-radius: 12px;
   cursor: pointer;
   text-align: left;
   transition: all 0.2s;
-  color: #333;
+  color: var(--color-text);
 }
 
 .chatbot-option:hover {
-  border-color: #A22828;
+  border-color: var(--color-primary);
   background: #fdf5f5;
 }
 
 .chatbot-option svg {
   flex-shrink: 0;
-  color: #A22828;
+  color: var(--color-primary);
 }
 
 .chatbot-option div {
@@ -181,12 +181,12 @@
 .chatbot-option strong {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--color-dark);
 }
 
 .chatbot-option span {
   font-size: 0.78rem;
-  color: #888;
+  color: var(--color-text-faint);
 }
 
 /* Back button */
@@ -196,7 +196,7 @@
   gap: 6px;
   background: none;
   border: none;
-  color: #888;
+  color: var(--color-text-faint);
   font-size: 0.82rem;
   cursor: pointer;
   padding: 0;
@@ -205,7 +205,7 @@
 }
 
 .chatbot-back:hover {
-  color: #A22828;
+  color: var(--color-primary);
 }
 
 /* Contact form */
@@ -219,11 +219,11 @@
 .chatbot-form textarea {
   width: 100%;
   padding: 10px 14px;
-  border: 1.5px solid #e0e0e0;
+  border: 1.5px solid var(--color-border);
   border-radius: 10px;
   font-size: 0.85rem;
   font-family: inherit;
-  color: #333;
+  color: var(--color-text);
   background: #fafafa;
   transition: border-color 0.2s, background 0.2s;
   outline: none;
@@ -232,7 +232,7 @@
 
 .chatbot-form input:focus,
 .chatbot-form textarea:focus {
-  border-color: #A22828;
+  border-color: var(--color-primary);
   background: white;
 }
 
@@ -246,7 +246,7 @@
 }
 
 .chatbot-submit {
-  background: #A22828;
+  background: var(--color-primary);
   color: white;
   border: none;
   padding: 12px;
@@ -284,12 +284,12 @@
   margin: 0;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #333;
+  color: var(--color-text);
 }
 
 /* Error message */
 .chatbot-error {
-  color: #A22828;
+  color: var(--color-primary);
   font-size: 0.82rem;
   margin: 0;
   text-align: center;

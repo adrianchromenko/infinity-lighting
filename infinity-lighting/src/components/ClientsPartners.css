@@ -1,5 +1,5 @@
 .clients-partners {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 4rem 0;
   text-align: center;
   width: 100%;
@@ -8,7 +8,7 @@
 
 .section-title {
   font-size: 2.5rem;
-  color: #333;
+  color: var(--color-text);
   font-weight: 700;
   margin-bottom: 3rem;
   position: relative;
@@ -23,7 +23,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background: #a52929;
+  background: var(--color-primary);
 }
 
 .partners-grid {

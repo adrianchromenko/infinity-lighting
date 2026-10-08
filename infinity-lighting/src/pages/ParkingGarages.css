@@ -6,7 +6,7 @@
 
 /* Hero Section - Clean and Simple */
 .pg-hero {
-  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, var(--color-dark-2) 0%, var(--color-dark) 100%);
   padding: 4rem 0;
   text-align: center;
 }
@@ -33,7 +33,7 @@
 
 /* First Impressions Section */
 .pg-impression {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
   text-align: center;
 }
@@ -46,19 +46,19 @@
 .impression-text h2 {
   font-size: 2.25rem;
   font-weight: 600;
-  color: #333;
+  color: var(--color-text);
   line-height: 1.4;
   margin-bottom: 2rem;
 }
 
 .impression-text .highlight {
-  color: #a52929;
+  color: var(--color-primary);
   font-weight: 700;
 }
 
 .impression-question h3 {
   font-size: 1.75rem;
-  color: #666;
+  color: var(--color-text-muted);
   font-style: italic;
   font-weight: 400;
 }
@@ -78,14 +78,14 @@
 
 .benefit-title {
   font-size: 2.25rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
 
 .benefit-lead {
   font-size: 1.15rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.7;
   margin-bottom: 3rem;
 }
@@ -110,23 +110,23 @@
 
 .feature-text h4 {
   font-size: 1.25rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .feature-text p {
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.6;
 }
 
 .savings-card {
-  background: linear-gradient(135deg, #a52929, #8a2323);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   color: white;
   padding: 3rem 2rem;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(165, 41, 41, 0.2);
+  box-shadow: 0 20px 40px rgba(var(--color-primary-rgb), 0.2);
 }
 
 .savings-label {
@@ -151,7 +151,7 @@
 
 /* Solutions Section */
 .pg-solutions {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
   text-align: center;
 }
@@ -163,7 +163,7 @@
 
 .section-title {
   font-size: 2.25rem;
-  color: #333;
+  color: var(--color-text);
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
@@ -171,14 +171,14 @@
 
 .solutions-text {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.8;
   margin-bottom: 1.5rem;
   text-align: left;
 }
 
 .download-btn {
-  background: #333;
+  background: var(--color-text);
   color: white;
   padding: 1rem 2.5rem;
   border: none;
@@ -193,7 +193,7 @@
 }
 
 .download-btn:hover {
-  background: #a52929;
+  background: var(--color-primary);
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -227,7 +227,7 @@
 .project-image {
   width: 100%;
   height: 200px;
-  background: linear-gradient(135deg, #666, #999);
+  background: linear-gradient(135deg, var(--color-text-muted), var(--color-text-faint));
 }
 
 .project-content {
@@ -236,13 +236,13 @@
 
 .project-content h3 {
   font-size: 1.25rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .project-content p {
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.6;
   margin-bottom: 1rem;
   font-size: 0.95rem;
@@ -252,7 +252,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #a52929;
+  color: var(--color-primary);
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -263,7 +263,7 @@
 
 /* Video Section */
 .pg-video {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
 }
 
@@ -277,13 +277,13 @@
 
 .video-info h3 {
   font-size: 1.75rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .video-info p {
-  color: #666;
+  color: var(--color-text-muted);
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -302,24 +302,24 @@
 .play-btn {
   width: 80px;
   height: 80px;
-  background: #a52929;
+  background: var(--color-primary);
   border: none;
   border-radius: 50%;
   color: white;
   font-size: 2rem;
   cursor: pointer;
   transition: all 0.3s;
-  box-shadow: 0 10px 30px rgba(165, 41, 41, 0.4);
+  box-shadow: 0 10px 30px rgba(var(--color-primary-rgb), 0.4);
 }
 
 .play-btn:hover {
-  background: #8a2323;
+  background: var(--color-primary-dark);
   transform: scale(1.1);
 }
 
 /* CTA Section */
 .pg-cta {
-  background: linear-gradient(135deg, #a52929, #8a2323);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   padding: 5rem 0;
   text-align: center;
   color: white;
@@ -339,7 +339,7 @@
 
 .cta-button {
   background: white;
-  color: #a52929;
+  color: var(--color-primary);
   padding: 1rem 2.5rem;
   border: none;
   border-radius: 50px;

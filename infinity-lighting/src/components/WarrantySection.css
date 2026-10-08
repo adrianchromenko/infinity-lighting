@@ -1,5 +1,5 @@
 .warranty-section {
-  background: linear-gradient(135deg, #a52929 0%, #8a2323 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   padding: 60px 0;
   position: relative;
   overflow: hidden;
@@ -110,7 +110,7 @@
   align-items: center;
   gap: 10px;
   background: white;
-  color: #a52929;
+  color: var(--color-primary);
   padding: 15px 35px;
   border-radius: 50px;
   text-decoration: none;

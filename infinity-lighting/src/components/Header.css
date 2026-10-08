@@ -39,7 +39,7 @@
 }
 
 .nav-link {
-  color: #333;
+  color: var(--color-text);
   font-weight: 700;
   font-size: 0.8rem;
   transition: all 0.3s;
@@ -60,12 +60,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #a52929;
+  background: var(--color-primary);
   transition: width 0.3s;
 }
 
 .nav-link:hover {
-  color: #a52929;
+  color: var(--color-primary);
 }
 
 .nav-link:hover::after {
@@ -173,9 +173,9 @@
 }
 
 .dropdown-item:hover {
-  background: #faf5f5;
-  color: #a52929;
-  border-left-color: #a52929;
+  background: var(--color-primary-tint);
+  color: var(--color-primary);
+  border-left-color: var(--color-primary);
 }
 
 .header-actions {
@@ -186,14 +186,14 @@
 }
 
 .cta-button {
-  background: #a52929;
+  background: var(--color-primary);
   color: #fff;
   padding: 0.6rem 1.25rem;
   border-radius: 4px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
-  box-shadow: 0 4px 15px rgba(165, 41, 41, 0.2);
+  box-shadow: 0 4px 15px rgba(var(--color-primary-rgb), 0.2);
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 0.5px;
@@ -203,7 +203,7 @@
 
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(165, 41, 41, 0.3);
+  box-shadow: 0 8px 25px rgba(var(--color-primary-rgb), 0.3);
 }
 
 .menu-toggle {
@@ -218,7 +218,7 @@
 .menu-toggle span {
   width: 25px;
   height: 3px;
-  background: #333;
+  background: var(--color-text);
   margin: 3px 0;
   transition: 0.3s;
 }
@@ -302,7 +302,7 @@
     padding: 1rem;
     display: block;
     width: 100%;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid var(--color-surface-3);
   }
   
   .dropdown-menu {
@@ -313,7 +313,7 @@
     visibility: visible !important;
     box-shadow: none;
     border: none;
-    background: #f8f8f8;
+    background: var(--color-surface);
     margin-top: 0.5rem;
     width: 100%;
     max-width: none;
@@ -325,7 +325,7 @@
   .dropdown-item {
     padding: 1rem;
     font-size: 0.95rem;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--color-border);
   }
   
   .dropdown-item:hover {

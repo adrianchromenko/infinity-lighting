@@ -6,7 +6,7 @@
 
 /* Hero Section */
 .ea-hero {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-2) 100%);
   padding: 4rem 0;
   text-align: center;
 }
@@ -39,7 +39,7 @@
 
 .ea-hero-highlight .accent {
   font-size: 2.25rem;
-  color: #a52929;
+  color: var(--color-primary);
   font-weight: 700;
 }
 
@@ -55,7 +55,7 @@
 
 .service-title {
   font-size: 1.75rem;
-  color: #333;
+  color: var(--color-text);
   font-weight: 600;
   text-align: center;
   margin-bottom: 3rem;
@@ -64,7 +64,7 @@
 
 .assessment-intro {
   font-size: 1.15rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.8;
   max-width: 900px;
   margin: 0 auto 3rem;
@@ -72,14 +72,14 @@
 }
 
 .assessment-process {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 3rem;
   border-radius: 20px;
 }
 
 .assessment-process h3 {
   font-size: 1.5rem;
-  color: #333;
+  color: var(--color-text);
   text-align: center;
   margin-bottom: 2.5rem;
   font-weight: 600;
@@ -103,7 +103,7 @@
 .process-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  border-color: #2c5f2d;
+  border-color: #2f6b57;
 }
 
 .process-icon {
@@ -113,20 +113,20 @@
 
 .process-item h4 {
   font-size: 1.15rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
 
 .process-item p {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.5;
 }
 
 /* Recommendations Section */
 .ea-recommendations {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 5rem 0;
 }
 
@@ -140,14 +140,14 @@
 
 .recommendations-text h2 {
   font-size: 2rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
 
 .recommendations-lead {
   font-size: 1.2rem;
-  color: #333;
+  color: var(--color-text);
   line-height: 1.6;
   margin-bottom: 1rem;
   font-weight: 500;
@@ -155,7 +155,7 @@
 
 .recommendations-detail {
   font-size: 1.05rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.7;
   margin-bottom: 2rem;
 }
@@ -164,12 +164,12 @@
   background: white;
   padding: 2rem;
   border-radius: 12px;
-  border-left: 4px solid #2c5f2d;
+  border-left: 4px solid #2f6b57;
 }
 
 .deliverables h3 {
   font-size: 1.25rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -183,7 +183,7 @@
   padding: 0.75rem 0;
   padding-left: 1.5rem;
   position: relative;
-  color: #555;
+  color: var(--color-text-soft);
   line-height: 1.5;
 }
 
@@ -191,18 +191,18 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: #2c5f2d;
+  color: #2f6b57;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .savings-calculator {
-  background: linear-gradient(135deg, #2c5f2d, #1a3e1b);
+  background: linear-gradient(135deg, #2f6b57, #244f41);
   color: white;
   padding: 2.5rem;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(44, 95, 45, 0.3);
+  box-shadow: 0 20px 40px rgba(47, 107, 87, 0.3);
 }
 
 .savings-calculator h3 {
@@ -250,7 +250,7 @@
 
 .section-title {
   font-size: 2.25rem;
-  color: #333;
+  color: var(--color-text);
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
@@ -264,7 +264,7 @@
 }
 
 .benefit-card {
-  background: #f8f8f8;
+  background: var(--color-surface);
   padding: 2rem;
   border-radius: 16px;
   text-align: center;
@@ -274,7 +274,7 @@
 .benefit-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  background: linear-gradient(135deg, #f8f8f8, #f0f0f0);
+  background: linear-gradient(135deg, var(--color-surface), var(--color-surface-3));
 }
 
 .benefit-icon {
@@ -284,20 +284,20 @@
 
 .benefit-card h3 {
   font-size: 1.25rem;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
 
 .benefit-card p {
   font-size: 0.95rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.5;
 }
 
 /* CTA Section */
 .ea-cta {
-  background: linear-gradient(135deg, #a52929, #8a2323);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   padding: 5rem 0;
   text-align: center;
   color: white;
@@ -323,7 +323,7 @@
 
 .cta-button {
   background: white;
-  color: #a52929;
+  color: var(--color-primary);
   padding: 1rem 2.5rem;
   border: none;
   border-radius: 50px;
@@ -356,7 +356,7 @@
 
 .cta-button-secondary:hover {
   background: white;
-  color: #a52929;
+  color: var(--color-primary);
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }

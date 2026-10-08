@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-2) 100%);
   color: white;
   padding: 5rem 0 1rem;
   position: relative;
@@ -55,7 +55,7 @@
 }
 
 .footer-nav ul li a:hover {
-  color: #a52929;
+  color: var(--color-primary);
   transform: translateX(3px);
 }
 
@@ -73,7 +73,7 @@
 }
 
 .footer-logo-section a:hover {
-  color: #a52929;
+  color: var(--color-primary);
   text-decoration: underline;
 }
 
@@ -83,20 +83,20 @@
 }
 
 .footer-bottom p {
-  color: #999;
+  color: var(--color-text-faint);
   font-size: 0.9rem;
   margin: 0.5rem 0;
 }
 
 .footer-bottom a {
-  color: #a52929;
+  color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .footer-bottom a:hover {
-  color: #ff6b6b;
+  color: var(--color-primary-light);
   text-decoration: underline;
 }
 
