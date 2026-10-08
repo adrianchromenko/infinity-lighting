@@ -40,13 +40,10 @@ const Warehouses = () => {
                 consistent illumination across all areas of the facility.
               </p>
               <p className="intro-text">
-                Safety and maintenance of warehouses and industrial buildings is reliant on quality lighting. 
-                By replacing existing HID, T8 or T5 fixtures with LED high bay fixtures you will benefit from 
-                increased energy savings, increased safety and increased productivity.
+                Warehouse safety and productivity depend on good light. Replacing HID, T8 or T5 fixtures with LED high bays raises light levels, cuts energy use and makes the floor safer.
               </p>
               <p className="intro-text">
-                With no more bulbs or ballast to be replaced, the maintenance cost will be greatly reduced 
-                and will allow the maintenance department to work on other projects.
+                With no bulbs or ballasts to replace, maintenance drops and your team gets back to real work.
               </p>
             </div>
             <div className="intro-benefits">
@@ -167,9 +164,7 @@ const Warehouses = () => {
               </div>
               <div className="project-content">
                 <p className="project-description">
-                  Transformed Lenexa, Kansas 7-Up warehouse by replacing 20+ year old high bay lighting 
-                  with state of the art LED high bay lighting with motion sensors. After the warehouse 
-                  was completed in 4 days it was virtually unrecognizable!
+                  We replaced 20-year-old high bays in this Lenexa, Kansas warehouse with LED high bays and motion sensors. Four days later the building was unrecognizable.
                 </p>
                 <div className="project-testimonial">
                   <p>"I've been waiting for this for 22 years!"</p>

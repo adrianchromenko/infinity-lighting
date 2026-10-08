@@ -44,9 +44,7 @@ const Projects = () => {
             <p className="section-subtitle">Portfolio</p>
             <h2 className="section-title">Transforming Houston's Commercial Spaces</h2>
             <p className="section-description">
-              As a full-service electrical and lighting contractor, we handle every aspect of your project 
-              from initial assessment to final installation. Our 10-year fixture warranty and 5-year labor warranty ensure
-              your investment is protected long after project completion.
+              We handle every step from assessment to installation, and back it with a 10-year fixture and 5-year labor warranty.
             </p>
           </div>
 

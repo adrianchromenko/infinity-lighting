@@ -121,12 +121,10 @@ const ParkingGarages = () => {
           <div className="solutions-content">
             <h2 className="section-title">Our Solutions</h2>
             <p className="solutions-text">
-              Infinity Lighting Solutions offers a proprietary 4' Linear Luminaire and depending on the type of existing fixtures, 
-              upgrading your parking garage to our proprietary Luminaires with integrated motion sensors can save over 80% in electrical cost.
+              Our proprietary 4-foot linear luminaire with an integrated motion sensor replaces most existing garage fixtures and cuts electrical cost by more than 80%.
             </p>
             <p className="solutions-text">
-              In addition to our proprietary Luminaire, Infinity Lighting Solutions offers different types and all major brands for 
-              different garage applications. Infinity Lighting will match your garage with the most cost-efficient lighting system.
+              We also carry every major brand, so we match your garage to the most cost-effective fixture instead of a one-size-fits-all product.
             </p>
             <button className="download-btn">DOWNLOAD PRODUCT BROCHURE</button>
           </div>
@@ -160,20 +158,6 @@ const ParkingGarages = () => {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className="pg-video">
-        <div className="container">
-          <div className="video-wrapper">
-            <div className="video-info">
-              <h3>See the Transformation</h3>
-              <p>Watch a video tour of our Elevator Lobby project for Four Oaks Place</p>
-            </div>
-            <div className="video-player">
-              <button className="play-btn">▶</button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="pg-cta">

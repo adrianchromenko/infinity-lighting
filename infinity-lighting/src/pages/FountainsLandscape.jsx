@@ -66,14 +66,10 @@ const FountainsLandscape = () => {
             <div className="tech-grid">
               <div className="tech-main">
                 <p className="tech-text">
-                  Infinity Lighting Solutions working with GTL Landscape Lighting offers proprietary state of the art 
-                  technology for fountain and commercial landscaping. Integrate with fountains, landscape, wall washers, 
-                  bollards, and path lights to provide a cohesive experience for your tenants and guests.
+                  Working with GTL Landscape Lighting, we tie fountains, landscape, wall washers, bollards and path lights into one controlled system that tenants and guests notice.
                 </p>
                 <p className="tech-text">
-                  The correct lighting enhances the feel and aesthetics of a property. Upgrading to LED fountain and 
-                  landscape lighting enables you to save energy, reduce high maintenance costs, and enhance the quality 
-                  of your installation.
+                  LED fountain and landscape lighting cuts energy use and maintenance while making the property look its best after dark.
                 </p>
               </div>
               <div className="tech-features">

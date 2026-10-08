@@ -586,3 +586,9 @@
     linear-gradient(100deg, rgba(38, 34, 33, 0.94) 0%, rgba(38, 34, 33, 0.84) 55%, rgba(38, 34, 33, 0.66) 100%),
     url('/images/office-2.jpg') center 45% / cover no-repeat;
 }
+
+
+/* Cards without a photo: one quiet brand gradient instead of six loud colors */
+.ob-projects .project-card .project-image {
+  background: linear-gradient(135deg, var(--color-dark-2), var(--color-dark));
+}

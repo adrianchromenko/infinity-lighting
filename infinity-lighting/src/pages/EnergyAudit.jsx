@@ -43,9 +43,7 @@ const EnergyAudit = () => {
             
             <div className="assessment-details">
               <p className="assessment-intro">
-                The assessment includes a survey of all existing fixtures as to type and wattages, 
-                meter readings of foot candles, color temperature, number of fixtures, detailed 
-                measurements of the property, hours of operation, and kilowatt cost of electricity.
+                We survey every fixture and its wattage, take foot-candle and color-temperature readings, measure the property, and record hours of operation and your kilowatt rate.
               </p>
               
               <div className="assessment-process">

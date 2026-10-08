@@ -87,9 +87,7 @@ const Stairwells = () => {
               <div className="solution-main">
                 <h3>Motion-Activated LED Technology</h3>
                 <p>
-                  Our integrated motion sensor LED fixtures provide instant illumination when someone 
-                  enters the stairwell, then automatically dim or turn off when vacant. This intelligent 
-                  approach ensures safety while maximizing energy efficiency.
+                  Motion-sensor LED fixtures light the stairwell the moment someone enters and dim when it is empty. Safe when occupied, efficient when not.
                 </p>
                 <ul className="solution-benefits">
                   <li>Automatic activation upon entry</li>

@@ -375,3 +375,15 @@
     padding: 0.875rem;
   }
 }
+
+/* Scoped so page-level .cta-button rules (white on burgundy bands) can't restyle the header button */
+.header .header-actions .cta-button {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+}
+
+.header .header-actions .cta-button:hover {
+  background: var(--color-primary-dark);
+  color: #fff;
+}

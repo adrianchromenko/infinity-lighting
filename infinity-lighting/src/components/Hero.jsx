@@ -8,21 +8,11 @@ const Hero = () => {
           <h1 className="hero-title">
             <span className="highlight">Full-Service</span> LED Lighting & Electrical
           </h1>
-          <h2 className="hero-subtitle">Houston's Premier Commercial Contractor with a 10-Year Fixture & 5-Year Labor Warranty</h2>
+          <h2 className="hero-subtitle">Houston's commercial LED lighting and electrical contractor, backed by a 10-year fixture and 5-year labor warranty.</h2>
           <p className="hero-description">
-            Infinity Lighting Solutions provides complete electrical and LED lighting services for commercial and industrial
-            properties throughout Houston. As a full-service electrical contractor with over 20 years of experience, we handle
-            everything from panel upgrades to complete LED retrofits. Our industry-leading <strong>10-year fixture warranty</strong> and
-            <strong> 5-year labor warranty</strong> protect your investment. We serve parking garages, warehouses, office buildings, hotels,
-            and retail establishments across Houston, Katy, Sugar Land, The Woodlands, and all of Harris County.
+            From panel upgrades to full LED retrofits, one team handles design, fixtures, installation and service
+            for parking garages, offices, hotels and warehouses across Greater Houston.
           </p>
-          <div className="hero-location">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-            <span>Proudly Serving Houston, TX and the Greater Houston Area</span>
-          </div>
           <div className="hero-badges">
             <div className="warranty-badge-hero">
               <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -37,7 +27,10 @@ const Hero = () => {
               <span>Full-Service Electrical</span>
             </div>
           </div>
-          <a href="/projects" className="hero-cta">VIEW OUR PROJECTS & WARRANTY</a>
+          <div className="hero-actions">
+            <a href="/energy-audit" className="hero-cta">Get a Free Energy Audit</a>
+            <a href="/projects" className="hero-cta hero-cta-secondary">See Our Work</a>
+          </div>
         </div>
       </div>
     </section>

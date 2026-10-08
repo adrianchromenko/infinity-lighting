@@ -76,9 +76,7 @@ const WallPacksFlood = () => {
               <div className="solution-icon">🏢</div>
               <h3>LED Wall Pack Lighting</h3>
               <p className="solution-description">
-                Wall pack lighting is used primarily to illuminate the exterior building perimeter. 
-                Wall packs add another layer of security to your property by eliminating dark areas 
-                not illuminated by parking lot or floodlights.
+                Wall packs light the building perimeter and remove the dark spots that parking lot and flood lights miss.
               </p>
               <div className="solution-benefits">
                 <h4>Key Benefits:</h4>

@@ -46,9 +46,7 @@ const LightingProposal = () => {
             <div className="details-main">
               <h2>What's Included in Your Proposal</h2>
               <p className="details-lead">
-                Our detailed proposal will include a design layout of the building showing the 
-                positioning of all fixtures, including additional fixtures if required, or removal 
-                of any existing fixtures that will not be utilized.
+                Your proposal includes a fixture-by-fixture layout of the building, showing anything we add or remove.
               </p>
               <p className="details-text">
                 The proposal will include an analysis of the current lighting system and 
@@ -130,10 +128,7 @@ const LightingProposal = () => {
         <div className="container">
           <h2 className="section-title">Comprehensive Savings Analysis</h2>
           <p className="savings-intro">
-            The proposal will also include saving calculations that compare the current amount 
-            of electricity being used, the amount that will be used by the new LED system, 
-            the kilowatt-hours saved, annualized dollars saved based on the kilowatt rate, 
-            the project payback based on savings, and the return on investment.
+            It also compares current electricity use with the new LED system: kilowatt-hours saved, annual dollars saved at your rate, and the payback period.
           </p>
           
           <div className="savings-grid">

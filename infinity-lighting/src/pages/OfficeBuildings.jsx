@@ -82,30 +82,24 @@ const OfficeBuildings = () => {
                 <div className="trans-icon">💡</div>
                 <h3>Recessed Lighting</h3>
                 <p>
-                  Outdated recessed can lights can be replaced with clean, energy LED recessed lighting fixtures. 
-                  With a broad range of applications from a warm glow to a cool white light, upgrading to LED 
-                  recessed lighting can give your business your desired effect.
+                  Swap dated can lights for clean LED recessed fixtures, in any tone from a warm glow to cool white.
                 </p>
               </div>
               <div className="transformation-card featured">
                 <div className="trans-icon">🏢</div>
                 <h3>Troffer Upgrades</h3>
                 <p>
-                  Most office buildings, retail office space, and most retail properties have 2×4 or 2×2 fluorescent fixtures. 
-                  By today's standards, these fixtures are very dated, having either parabolic or acrylic lens.
+                  Most offices still run 2×4 or 2×2 fluorescent troffers with dated parabolic or acrylic lenses.
                 </p>
                 <p className="trans-highlight">
-                  Troffer lights have become the choice for most commercial buildings. Infinity Lighting Solutions offers 
-                  a broad range of Troffers in standard sizes of 1×4, 2×2 and 2×4, enabling a quick change-out into existing ceiling grids.
+                  Our LED troffers come in 1×4, 2×2 and 2×4, so they drop straight into your existing ceiling grid.
                 </p>
               </div>
               <div className="transformation-card">
                 <div className="trans-icon">✨</div>
                 <h3>Cove Lighting</h3>
                 <p>
-                  Existing cove lighting can be very expensive to operate and even more costly to maintain. 
-                  By upgrading to LED systems your business can save up to 90% energy cost and virtually 
-                  eliminate maintenance while maintaining the same dramatic lighting effect.
+                  LED cove lighting keeps the dramatic effect, cuts energy cost by up to 90% and all but eliminates maintenance.
                 </p>
               </div>
             </div>

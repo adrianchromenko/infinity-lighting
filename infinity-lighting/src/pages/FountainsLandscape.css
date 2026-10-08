@@ -637,3 +637,20 @@
     linear-gradient(100deg, rgba(38, 34, 33, 0.94) 0%, rgba(38, 34, 33, 0.84) 55%, rgba(38, 34, 33, 0.66) 100%),
     url('/images/christmas-crepes.jpg') center 55% / cover no-repeat;
 }
+
+
+/* Scoped: ParkingLots.css also defines .visual-card with a light background, which made this white text vanish */
+.fl-features .visual-card {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #fff;
+}
+
+.fl-features .visual-card h3,
+.fl-features .visual-card p {
+  color: #fff;
+}
+
+/* Cards without a photo */
+.fl-projects .project-card .project-image {
+  background: linear-gradient(135deg, var(--color-dark-2), var(--color-dark));
+}

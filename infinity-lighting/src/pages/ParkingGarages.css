@@ -687,3 +687,9 @@
 .pg-benefits .savings-card .savings-period {
   color: #fff;
 }
+
+
+/* Cards without a photo get a quiet brand gradient instead of a leaked blue one */
+.pg-projects .project-card .project-image {
+  background: linear-gradient(135deg, var(--color-dark-2), var(--color-dark));
+}
