@@ -91,8 +91,9 @@
   }
   
   .top-bar-left {
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.25rem;
     text-align: center;
   }
   

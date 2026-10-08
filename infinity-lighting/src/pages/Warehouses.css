@@ -1,6 +1,6 @@
 .warehouses-page {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
   background: #ffffff;
 }
 
@@ -677,7 +677,7 @@
   left: 8px;
   padding: 3px 8px;
   border-radius: 4px;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;

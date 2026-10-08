@@ -1,6 +1,6 @@
 .parking-garages-page {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
   background: #ffffff;
 }
 

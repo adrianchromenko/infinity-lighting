@@ -58,7 +58,6 @@ body {
   background-color: #ffffff;
   color: var(--color-text);
   line-height: 1.6;
-  overflow-x: hidden;
   min-width: 320px;
 }
 
@@ -133,5 +132,26 @@ button, a, input, textarea, select {
   
   h3 {
     font-size: 1.27rem;
+  }
+}
+
+/* Mobile usability */
+@media (max-width: 768px) {
+  /* iOS zooms the page when focusing a field smaller than 16px */
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  /* The chat greeting bubble covers content on small screens */
+  .chatbot-bubble {
+    display: none;
+  }
+
+  /* Keep the floating call/chat buttons out of the open navigation menu */
+  html.menu-open .chatbot-wrapper,
+  html.menu-open .floating-phone {
+    display: none;
   }
 }

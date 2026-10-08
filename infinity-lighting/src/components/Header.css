@@ -1,8 +1,8 @@
 .header {
   background: #fff;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 41px;
+  /* Desktop: scrolls with the page. Mobile (max-width 968px): sticky so the menu button stays reachable. */
+  position: relative;
   z-index: 999;
   width: 100%;
 }
@@ -248,7 +248,7 @@
 @media (max-width: 968px) {
   .header {
     top: 0;
-    position: fixed;
+    position: sticky;
   }
   
   .nav-wrapper {
@@ -258,16 +258,21 @@
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 80px;
+    top: 0;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
     background: white;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: 100vh;
+    height: 100dvh;
     overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
     text-align: center;
     transition: 0.3s ease-in-out;
     box-shadow: 0 10px 27px rgba(0,0,0,0.05);
-    padding: 2rem 1rem;
+    padding: 5.5rem 1rem 6rem;
     margin: 0;
     z-index: 998;
   }
@@ -300,6 +305,7 @@
   .nav-link {
     font-size: 0.95rem;
     padding: 1rem;
+    white-space: normal;
     display: block;
     width: 100%;
     border-bottom: 1px solid var(--color-surface-3);
@@ -325,6 +331,8 @@
   .dropdown-item {
     padding: 1rem;
     font-size: 0.95rem;
+    white-space: normal;
+    text-align: left;
     border-bottom: 1px solid var(--color-border);
   }
   
@@ -337,8 +345,34 @@
   }
   
   /* Add close animation for mobile menu */
-  body.menu-open {
-    overflow: hidden;
+  /* Keep the header pinned at the top while the menu is open so the menu starts below it */
+  html.menu-open .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* White backing above the menu layer so menu items scroll behind the header, not over it */
+  html.menu-open .header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  /* Logo stays visible above the open menu */
+  .logo {
+    position: relative;
+    z-index: 1001;
+  }
+
+  /* Page CTAs reuse .cta-button; let long labels wrap instead of clipping */
+  .cta-button {
+    white-space: normal;
+    line-height: 1.4;
   }
 }
 
@@ -362,8 +396,9 @@
   }
   
   .nav-menu {
-    top: 70px;
-    height: calc(100vh - 70px);
+    top: 0;
+    height: 100vh;
+    height: 100dvh;
   }
   
   .nav-link {
@@ -386,4 +421,18 @@
 .header .header-actions .cta-button:hover {
   background: var(--color-primary-dark);
   color: #fff;
+}
+
+/* Hamburger turns into an X while the mobile menu is open */
+.menu-toggle span {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }

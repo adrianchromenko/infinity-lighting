@@ -139,9 +139,11 @@ const ParkingGarages = () => {
           <div className="projects-grid">
             {projects.map(project => (
               <div key={project.id} className="project-card">
-                <div className="project-image">
-                  {project.image && <img src={project.image} alt={project.title} loading="lazy" />}
-                </div>
+                {project.image && (
+                  <div className="project-image">
+                    <img src={project.image} alt={project.title} loading="lazy" />
+                  </div>
+                  )}
                 <div className="project-content">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>

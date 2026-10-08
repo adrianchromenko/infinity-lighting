@@ -3,7 +3,7 @@
 /* All page sections should follow these rules */
 .page-section {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
   position: relative;
 }
 
@@ -211,11 +211,11 @@
 
 /* Prevent horizontal scroll */
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 #root {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* Ensure images don't overflow */
