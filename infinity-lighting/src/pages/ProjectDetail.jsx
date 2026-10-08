@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
+import { projects, projectsById } from '../data/projects'
 import './ProjectDetail.css'
 import SEO from '../components/SEO'
 import TopBar from '../components/TopBar'
@@ -11,101 +12,7 @@ const ProjectDetail = () => {
   const { id } = useParams()
   const [lightboxImage, setLightboxImage] = useState(null)
 
-  const projectsData = {
-    'shepherd-parking-garage': {
-      title: '2323 S. Shepherd Parking Garage',
-      type: 'Parking Garage',
-      description: 'This comprehensive LED retrofit project transformed a multi-level parking structure in the heart of Houston. We replaced outdated fluorescent and HID fixtures with state-of-the-art LED technology, dramatically improving visibility and safety while reducing energy consumption by 65%. The project included motion sensor integration for additional energy savings during low-traffic hours.',
-      features: [
-        'Complete LED conversion of all parking levels',
-        'Stairwell safety lighting with emergency backup',
-        'Motion sensor integration for automated control',
-        '65% reduction in energy consumption',
-        '24/7 operational reliability with minimal maintenance',
-        'Enhanced security with improved brightness levels',
-        'Full electrical system evaluation and upgrades'
-      ],
-      images: [
-        { url: '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd After 1.jpg', caption: 'Main parking area after LED upgrade' },
-        { url: '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd Night 1 1.JPEG', caption: 'Night view showing improved illumination' },
-        { url: '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd Night 1 2.jpg', caption: 'Enhanced visibility at night' },
-        { url: '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd Night 1 5.jpg', caption: 'Uniform light distribution' },
-        { url: '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd Night 1 6.jpg', caption: 'Improved safety lighting' },
-        { url: '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd Stairwell Split.JPEG', caption: 'Stairwell before and after comparison' }
-      ]
-    },
-    'global-financial': {
-      title: 'Global Financial',
-      type: 'Commercial Office',
-      description: 'Global Financial required a sophisticated lighting solution that would create a professional atmosphere while maximizing energy efficiency. Our team installed a premium track lighting system throughout their offices, providing adjustable illumination that can be customized for different work areas and tasks. The result is a modern, flexible lighting system that enhances productivity and reduces energy costs.',
-      features: [
-        'Premium LED track lighting installation',
-        'Adjustable beam angles for task-specific lighting',
-        'Dimmable controls for ambiance adjustment',
-        'Integration with existing electrical infrastructure',
-        'Energy-efficient design reducing costs by 50%',
-        'Professional atmosphere enhancement',
-        'Full-service electrical upgrades as needed'
-      ],
-      images: [
-        { url: '/projects/Global Financial/Global Financial Track Lighting.jpg', caption: 'Modern track lighting system' },
-        { url: '/projects/Global Financial/Global Financial Track Lighting with First Test Strip.jpg', caption: 'Initial test installation showing light quality' }
-      ]
-    },
-    'greenstreet-parking': {
-      title: 'GreenStreet Parking Garage',
-      type: 'Parking Garage',
-      description: 'The GreenStreet Parking Garage project showcases the dramatic transformation possible with professional LED lighting upgrades. This comprehensive renovation included not just the main parking areas, but also elevator lobbies and valet zones. The before and after comparisons demonstrate the significant improvement in visibility, safety, and aesthetic appeal, while achieving a 70% reduction in energy costs.',
-      features: [
-        'Complete garage lighting system overhaul',
-        'Elevator lobby modernization with accent lighting',
-        'Valet area enhancement for premium service',
-        'Phase-based implementation minimizing disruption',
-        '70% energy cost reduction achieved',
-        'Dramatic improvement in light quality and coverage',
-        'Full electrical service upgrades included'
-      ],
-      images: [
-        { url: '/projects/GreenStreet Parking Garage/GreenStreet Phase 1 Before.jpg', caption: 'Phase 1 before renovation', isBefore: true },
-        { url: '/projects/GreenStreet Parking Garage/GreenStreet Phase 1 After.jpg', caption: 'Phase 1 after LED upgrade', isAfter: true },
-        { url: '/projects/GreenStreet Parking Garage/GreenStreet Elevator Lobby Before.JPEG', caption: 'Elevator lobby before', isBefore: true },
-        { url: '/projects/GreenStreet Parking Garage/GreenStreet Elevator Lobby After.JPEG', caption: 'Elevator lobby after modernization', isAfter: true },
-        { url: '/projects/GreenStreet Parking Garage/GreenStreet After 1.jpg', caption: 'Main garage area with new lighting' },
-        { url: '/projects/GreenStreet Parking Garage/GreenStreet Old v New 1.jpg', caption: 'Direct comparison of old vs new lighting' },
-        { url: '/projects/GreenStreet Parking Garage/GreenStreet Valet Ramp Before.jpg', caption: 'Valet ramp before upgrade', isBefore: true },
-        { url: '/projects/GreenStreet Parking Garage/GreenStreet Valet Ramp Exit After.jpg', caption: 'Valet ramp after installation', isAfter: true }
-      ]
-    },
-    'springwoods-marriott': {
-      title: 'Springwoods Village Marriott',
-      type: 'Hospitality',
-      description: 'This extensive hotel renovation project required careful coordination to upgrade lighting throughout the property without disrupting guest experiences. Our team successfully retrofitted guest rooms, parking facilities, loading docks, and common areas with energy-efficient LED lighting. The project included custom solutions for guest room headboard lighting and decorative cove lighting in public spaces.',
-      features: [
-        'Guest room lighting upgrades with custom headboard solutions',
-        'Parking garage complete LED conversion',
-        'Loading dock safety and security lighting',
-        'Stairwell emergency lighting systems',
-        'Decorative cove lighting in public areas',
-        'Phased installation to minimize guest disruption',
-        'Full electrical service and panel upgrades',
-        'Integration with hotel management systems'
-      ],
-      images: [
-        { url: '/projects/Springwoods Village Marriott/Marriott Garage Before 2.jpg', caption: 'Parking garage before renovation', isBefore: true },
-        { url: '/projects/Springwoods Village Marriott/Marriott Garage After 2.jpg', caption: 'Parking garage after LED upgrade', isAfter: true },
-        { url: '/projects/Springwoods Village Marriott/Marriott Cove Lighting Before 1.jpg', caption: 'Cove area before lighting upgrade', isBefore: true },
-        { url: '/projects/Springwoods Village Marriott/Marriott Cove Lighting After.jpg', caption: 'Enhanced cove lighting installation', isAfter: true },
-        { url: '/projects/Springwoods Village Marriott/Marriott Garage Stairwell Before.jpg', caption: 'Stairwell before upgrade', isBefore: true },
-        { url: '/projects/Springwoods Village Marriott/Marriott Garage Stairwell After 1.jpg', caption: 'Stairwell with new safety lighting', isAfter: true },
-        { url: '/projects/Springwoods Village Marriott/Marriott King Headboard Before 1.jpg', caption: 'Guest room before custom lighting', isBefore: true },
-        { url: '/projects/Springwoods Village Marriott/Marriott King Headboard Demo Install After.jpg', caption: 'Custom headboard lighting installed', isAfter: true },
-        { url: '/projects/Springwoods Village Marriott/Marriott Loading Dock Before.jpg', caption: 'Loading dock before upgrade', isBefore: true },
-        { url: '/projects/Springwoods Village Marriott/Marriott Loading Dock After 2.jpg', caption: 'Loading dock with security lighting', isAfter: true }
-      ]
-    }
-  }
-
-  const project = projectsData[id]
+  const project = projectsById[id]
 
   if (!project) {
     return <div>Project not found</div>
@@ -115,14 +22,7 @@ const ProjectDetail = () => {
   const afterImages = project.images.filter(img => img.isAfter)
   const regularImages = project.images.filter(img => !img.isBefore && !img.isAfter)
 
-  const otherProjects = Object.keys(projectsData)
-    .filter(key => key !== id)
-    .slice(0, 3)
-    .map(key => ({
-      id: key,
-      ...projectsData[key],
-      image: projectsData[key].images[0].url
-    }))
+  const otherProjects = projects.filter(p => p.id !== id).slice(0, 3)
 
   return (
     <div className="project-detail-page">
@@ -152,6 +52,15 @@ const ProjectDetail = () => {
             </div>
             <h1 className="project-detail-title">{project.title}</h1>
             <span className="project-detail-type">{project.type}</span>
+            {project.location && (
+              <p className="project-detail-location">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3" fill="var(--color-dark)"/>
+                </svg>
+                {project.location}
+              </p>
+            )}
           </div>
         </div>
       </section>
@@ -162,6 +71,17 @@ const ProjectDetail = () => {
           <div className="project-layout">
             <div className="project-main">
               <p className="project-description">{project.description}</p>
+
+              {project.stats && (
+                <div className="project-stats-row">
+                  {project.stats.map(stat => (
+                    <div key={stat.label} className="project-stat">
+                      <span className="project-stat-value">{stat.value}</span>
+                      <span className="project-stat-label">{stat.label}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
               
               {/* Before/After Gallery */}
               {beforeImages.length > 0 && afterImages.length > 0 && (

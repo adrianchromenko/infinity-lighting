@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { projects, snapshots } from '../data/projects'
 import './Projects.css'
 import SEO from '../components/SEO'
 import TopBar from '../components/TopBar'
@@ -7,100 +8,6 @@ import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
 const Projects = () => {
-  const projects = [
-    {
-      id: 'shepherd-parking-garage',
-      title: '2323 S. Shepherd Parking Garage',
-      type: 'Parking Garage',
-      description: 'Complete LED retrofit for multi-level parking structure',
-      image: '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd After 1.jpg',
-      features: [
-        'Multi-level parking garage LED conversion',
-        'Stairwell safety lighting upgrade',
-        'Motion sensor integration',
-        '65% energy savings achieved',
-        '24/7 operation reliability'
-      ],
-      images: [
-        '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd After 1.jpg',
-        '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd Night 1 1.JPEG',
-        '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd Night 1 2.jpg',
-        '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd Night 1 5.jpg',
-        '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd Night 1 6.jpg',
-        '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd Stairwell Split.JPEG'
-      ]
-    },
-    {
-      id: 'global-financial',
-      title: 'Global Financial',
-      type: 'Commercial Office',
-      description: 'Modern track lighting installation for financial services office',
-      image: '/projects/Global Financial/Global Financial Track Lighting.jpg',
-      features: [
-        'Premium track lighting system',
-        'Adjustable beam angles for flexibility',
-        'Enhanced workspace illumination',
-        'Professional atmosphere lighting',
-        'Energy-efficient LED technology'
-      ],
-      images: [
-        '/projects/Global Financial/Global Financial Track Lighting.jpg',
-        '/projects/Global Financial/Global Financial Track Lighting with First Test Strip.jpg'
-      ]
-    },
-    {
-      id: 'greenstreet-parking',
-      title: 'GreenStreet Parking Garage',
-      type: 'Parking Garage',
-      description: 'Comprehensive lighting upgrade with before & after transformation',
-      image: '/projects/GreenStreet Parking Garage/GreenStreet After 1.jpg',
-      features: [
-        'Complete garage lighting overhaul',
-        'Elevator lobby modernization',
-        'Valet area enhancement',
-        'Dramatic visual improvement',
-        '70% reduction in energy costs'
-      ],
-      images: [
-        '/projects/GreenStreet Parking Garage/GreenStreet After 1.jpg',
-        '/projects/GreenStreet Parking Garage/GreenStreet Elevator Lobby After.JPEG',
-        '/projects/GreenStreet Parking Garage/GreenStreet Elevator Lobby Before.JPEG',
-        '/projects/GreenStreet Parking Garage/GreenStreet Old v New 1.jpg',
-        '/projects/GreenStreet Parking Garage/GreenStreet Phase 1 After.jpg',
-        '/projects/GreenStreet Parking Garage/GreenStreet Phase 1 Before.jpg',
-        '/projects/GreenStreet Parking Garage/GreenStreet Valet Ramp Before.jpg',
-        '/projects/GreenStreet Parking Garage/GreenStreet Valet Ramp Exit After.jpg'
-      ]
-    },
-    {
-      id: 'springwoods-marriott',
-      title: 'Springwoods Village Marriott',
-      type: 'Hospitality',
-      description: 'Full-service hotel lighting renovation including guest rooms and facilities',
-      image: '/projects/Springwoods Village Marriott/Marriott Garage After 2.jpg',
-      features: [
-        'Guest room lighting upgrades',
-        'Parking garage illumination',
-        'Loading dock safety lighting',
-        'Stairwell emergency lighting',
-        'Cove lighting aesthetics'
-      ],
-      images: [
-        '/projects/Springwoods Village Marriott/Marriott Garage After 2.jpg',
-        '/projects/Springwoods Village Marriott/Marriott Cove Lighting After.jpg',
-        '/projects/Springwoods Village Marriott/Marriott Cove Lighting Before 1.jpg',
-        '/projects/Springwoods Village Marriott/Marriott Garage Before 2.jpg',
-        '/projects/Springwoods Village Marriott/Marriott Garage Stairwell After 1.jpg',
-        '/projects/Springwoods Village Marriott/Marriott Garage Stairwell Before.jpg',
-        '/projects/Springwoods Village Marriott/Marriott King Headboard Before 1.jpg',
-        '/projects/Springwoods Village Marriott/Marriott King Headboard Demo Install 1.jpg',
-        '/projects/Springwoods Village Marriott/Marriott King Headboard Demo Install After.jpg',
-        '/projects/Springwoods Village Marriott/Marriott Loading Dock After 2.jpg',
-        '/projects/Springwoods Village Marriott/Marriott Loading Dock Before.jpg'
-      ]
-    }
-  ]
-
   return (
     <div className="projects-page">
       <SEO
@@ -152,6 +59,7 @@ const Projects = () => {
                 </div>
                 <div className="project-content">
                   <h3 className="project-title">{project.title}</h3>
+                  {project.location && <p className="project-location-line">{project.location}</p>}
                   <ul className="project-features">
                     {project.features.slice(0, 3).map((feature, index) => (
                       <li key={index}>
@@ -170,6 +78,46 @@ const Projects = () => {
                   </span>
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Snapshots */}
+      <section className="project-snapshots">
+        <div className="container">
+          <div className="projects-intro">
+            <p className="section-subtitle">More Transformations</p>
+            <h2 className="section-title">Snapshots From the Field</h2>
+            <p className="section-description">
+              Warehouses, medical offices, landscape and more. A few single-frame looks at what an LED upgrade does for a property.
+            </p>
+          </div>
+          <div className="snapshots-grid">
+            {snapshots.map(snap => (
+              <div key={snap.title} className="snapshot-card">
+                {snap.before ? (
+                  <div className="snapshot-pair">
+                    <div className="snapshot-frame">
+                      <img src={snap.before} alt={`${snap.title} before`} loading="lazy" />
+                      <span className="snapshot-tag">Before</span>
+                    </div>
+                    <div className="snapshot-frame">
+                      <img src={snap.after} alt={`${snap.title} after`} loading="lazy" />
+                      <span className="snapshot-tag after">After</span>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="snapshot-frame single">
+                    <img src={snap.image} alt={snap.title} loading="lazy" />
+                  </div>
+                )}
+                <div className="snapshot-body">
+                  <h3>{snap.title}</h3>
+                  <p className="snapshot-place">{snap.place}</p>
+                  <p>{snap.note}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>

@@ -10,6 +10,7 @@ const OfficeBuildings = () => {
     {
       id: 1,
       title: "BHP Entrance & Lobby",
+      image: "/images/bhp-lobby-after.jpg",
       description: "Illuminated with new LED lighting!",
       type: "entrance"
     },
@@ -28,6 +29,7 @@ const OfficeBuildings = () => {
     {
       id: 4,
       title: "Four Oaks Place Cove Lighting",
+      image: "/images/fop-1500-lobby-after.jpg",
       description: "Replaced high voltage system with energy efficient cove lighting",
       type: "cove"
     },
@@ -188,7 +190,9 @@ const OfficeBuildings = () => {
           <div className="projects-gallery">
             {projects.map(project => (
               <div key={project.id} className={`project-card ${project.type}`}>
-                <div className="project-image"></div>
+                <div className="project-image">
+                  {project.image && <img src={project.image} alt={project.title} loading="lazy" />}
+                </div>
                 <div className="project-info">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>

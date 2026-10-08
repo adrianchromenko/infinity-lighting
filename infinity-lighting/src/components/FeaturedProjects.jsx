@@ -1,37 +1,9 @@
 import { Link } from 'react-router-dom'
+import { projects } from '../data/projects'
 import './FeaturedProjects.css'
 
 const FeaturedProjects = () => {
-  const projects = [
-    {
-      id: 'shepherd-parking-garage',
-      title: '2323 S. Shepherd Parking Garage',
-      type: 'Parking Garage',
-      description: 'Multi-level LED retrofit with 65% energy savings',
-      image: '/projects/2323 S. Shepherd Parking Garage/2323 S. Shepherd After 1.jpg'
-    },
-    {
-      id: 'global-financial',
-      title: 'Global Financial',
-      type: 'Commercial Office',
-      description: 'Premium track lighting system for modern office',
-      image: '/projects/Global Financial/Global Financial Track Lighting.jpg'
-    },
-    {
-      id: 'greenstreet-parking',
-      title: 'GreenStreet Parking Garage',
-      type: 'Parking Garage',
-      description: 'Complete garage overhaul with 70% cost reduction',
-      image: '/projects/GreenStreet Parking Garage/GreenStreet After 1.jpg'
-    },
-    {
-      id: 'springwoods-marriott',
-      title: 'Springwoods Village Marriott',
-      type: 'Hospitality',
-      description: 'Full hotel renovation including guest rooms and facilities',
-      image: '/projects/Springwoods Village Marriott/Marriott Garage After 2.jpg'
-    }
-  ]
+  const featured = projects.slice(0, 6)
 
   return (
     <section className="featured-projects">
@@ -45,7 +17,7 @@ const FeaturedProjects = () => {
         </div>
 
         <div className="featured-projects-grid">
-          {projects.map(project => (
+          {featured.map(project => (
             <Link
               to={`/projects/${project.id}`}
               key={project.id}
@@ -62,7 +34,7 @@ const FeaturedProjects = () => {
               </div>
               <div className="featured-project-body">
                 <h3 className="featured-project-title">{project.title}</h3>
-                <p className="featured-project-description">{project.description}</p>
+                <p className="featured-project-description">{project.shortDescription}</p>
                 <span className="featured-project-link">
                   View Project
                   <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

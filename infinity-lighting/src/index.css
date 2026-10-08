@@ -1,35 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 /* ---------------------------------------------------------------
-   Brand palette (cool / calm refresh, Oct 2026)
+   Brand palette (softened burgundy refresh, Oct 2026)
    Change these values to re-theme the whole site.
    --------------------------------------------------------------- */
 :root {
-  /* Primary accent: deep, calm teal-blue (replaces the old red var(--color-primary)) */
-  --color-primary: #2b6777;
-  --color-primary-dark: #1f4f5c;     /* hover / pressed */
-  --color-primary-light: #5aa0b0;    /* gradient ends, link hover on dark */
-  --color-primary-rgb: 43, 103, 119; /* for rgba() tints and shadows */
-  --color-primary-tint: #eef4f7;     /* very light hover background */
+  /* Primary accent: the logo's burgundy, softened (old site used a brighter red #a52929) */
+  --color-primary: #7a2227;
+  --color-primary-dark: #5e1a1e;     /* hover / pressed */
+  --color-primary-light: #a3474d;    /* gradient ends, link hover on dark */
+  --color-primary-on-dark: #d0696f;  /* readable brand accent on dark photo backgrounds */
+  --color-primary-rgb: 122, 34, 39;  /* for rgba() tints and shadows */
+  --color-primary-tint: #faf5f5;     /* very light hover background */
+  --color-accent-tan: #cdc7a6;       /* the logo's tan underline, for subtle accents */
 
-  /* Dark sections (hero, footer, CTA bands): cool charcoal-navy instead of pure black */
-  --color-dark: #1c2b36;
-  --color-dark-2: #2a3f4d;
+  /* Dark sections (hero, footer, CTA bands): soft warm charcoal instead of pure black */
+  --color-dark: #262221;
+  --color-dark-2: #3a3432;
 
-  /* Text */
-  --color-text: #2e3b45;
-  --color-text-soft: #4b5a65;
-  --color-text-muted: #5c6b76;
-  --color-text-faint: #8a97a1;
-  --color-text-on-dark: #e8eef2;
-  --color-text-on-dark-soft: #c9d3da;
+  /* Text: warm greys */
+  --color-text: #2f2b2a;
+  --color-text-soft: #4d4846;
+  --color-text-muted: #645e5c;
+  --color-text-faint: #948e8b;
+  --color-text-on-dark: #f1edea;
+  --color-text-on-dark-soft: #d6d0cc;
 
-  /* Surfaces & borders */
-  --color-surface: #f4f7f9;
-  --color-surface-2: #f1f5f7;
-  --color-surface-3: #e8eef2;
-  --color-border: #d8e0e6;
-  --color-border-soft: #e1e8ed;
+  /* Surfaces & borders: warm off-whites */
+  --color-surface: #f8f6f3;
+  --color-surface-2: #f4f1ee;
+  --color-surface-3: #ede9e5;
+  --color-border: #e0dad5;
+  --color-border-soft: #e8e3de;
 }
 
 *,

@@ -10,6 +10,7 @@ const ParkingGarages = () => {
     {
       id: 1,
       title: "Four Oaks Place Parking Garage",
+      image: "/images/four-oaks-garage-today.jpg",
       description: "Phase 1 of the parking garage consisted of replacing 600 + old, ugly and inefficient 8' T8 fixtures with 600 + state of the art linear luminaires with integrated motion sensor. The client was able to eliminate one half of their lighting footprint!",
       location: "1300, 1330, 1360 Post Oak Blvd."
     },
@@ -139,7 +140,9 @@ const ParkingGarages = () => {
           <div className="projects-grid">
             {projects.map(project => (
               <div key={project.id} className="project-card">
-                <div className="project-image"></div>
+                <div className="project-image">
+                  {project.image && <img src={project.image} alt={project.title} loading="lazy" />}
+                </div>
                 <div className="project-content">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>

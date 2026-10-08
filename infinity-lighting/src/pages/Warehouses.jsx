@@ -155,6 +155,16 @@ const Warehouses = () => {
                 <h3>Keurig Dr Pepper</h3>
                 <div className="project-badge">Featured Project</div>
               </div>
+              <div className="wh-before-after">
+                <div className="wh-ba-frame">
+                  <img src="/images/lenexa-before.jpg" alt="Keurig Dr Pepper warehouse before LED high bay upgrade" loading="lazy" />
+                  <span className="wh-ba-tag">Before</span>
+                </div>
+                <div className="wh-ba-frame">
+                  <img src="/images/lenexa-after.jpg" alt="Keurig Dr Pepper warehouse after LED high bay upgrade" loading="lazy" />
+                  <span className="wh-ba-tag after">After</span>
+                </div>
+              </div>
               <div className="project-content">
                 <p className="project-description">
                   Transformed Lenexa, Kansas 7-Up warehouse by replacing 20+ year old high bay lighting 

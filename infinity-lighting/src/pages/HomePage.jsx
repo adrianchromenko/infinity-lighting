@@ -3,6 +3,7 @@ import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Services from '../components/Services'
+import BeforeAfter from '../components/BeforeAfter'
 import WarrantySection from '../components/WarrantySection'
 import ClientsPartners from '../components/ClientsPartners'
 import FeaturedProjects from '../components/FeaturedProjects'
@@ -21,6 +22,7 @@ const HomePage = () => {
       <Header />
       <Hero />
       <Services />
+      <BeforeAfter />
       <WarrantySection />
       <ClientsPartners />
       <FeaturedProjects />

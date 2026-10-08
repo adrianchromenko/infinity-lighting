@@ -10,6 +10,7 @@ const FountainsLandscape = () => {
     {
       id: 1,
       title: "BHP Billiton Tower",
+      image: "/images/bhp-entry-after.jpg",
       description: "Completed the bollards and the results are fantastic! Simple Fix with amazing results.",
       location: "1400 Post Oak Blvd., Houston, TX",
       type: "bollards"
@@ -17,6 +18,7 @@ const FountainsLandscape = () => {
     {
       id: 2,
       title: "Four Oaks Place - Trees",
+      image: "/images/christmas-crepes.jpg",
       description: "Transformed campus trees into a forest of color with DMX controlled, color changing landscape lighting",
       location: "1330 Post Oak Blvd., Houston, TX",
       type: "landscape"
@@ -189,6 +191,7 @@ const FountainsLandscape = () => {
             {projects.map(project => (
               <div key={project.id} className={`project-card ${project.type}`}>
                 <div className="project-image">
+                  {project.image && <img src={project.image} alt={project.title} loading="lazy" />}
                   <div className="project-type-badge">{project.type}</div>
                 </div>
                 <div className="project-info">

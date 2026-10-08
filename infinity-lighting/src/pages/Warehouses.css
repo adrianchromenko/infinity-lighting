@@ -645,3 +645,46 @@
     font-size: 0.9rem;
   }
 }
+
+/* Keurig Dr Pepper before / after */
+.wh-before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  background: var(--color-dark);
+  margin: 0 0 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 480px;
+}
+
+.wh-ba-frame {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.wh-ba-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wh-ba-tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.wh-ba-tag.after {
+  background: var(--color-primary);
+}

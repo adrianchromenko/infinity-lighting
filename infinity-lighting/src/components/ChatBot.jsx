@@ -143,7 +143,7 @@ const ChatBot = () => {
 
                 {status === 'success' ? (
                   <div className="chatbot-success">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2b6777" strokeWidth="2">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7a2227" strokeWidth="2">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                       <polyline points="22 4 12 14.01 9 11.01"/>
                     </svg>
