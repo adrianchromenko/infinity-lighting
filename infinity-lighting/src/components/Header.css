@@ -436,3 +436,30 @@
 .menu-toggle.open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
+
+/* Six nav items plus the CTA need tighter spacing on laptop-width screens */
+@media (max-width: 1500px) and (min-width: 969px) {
+  .container .nav-wrapper {
+    gap: 0.5rem;
+  }
+
+  .nav-menu {
+    gap: 0.4rem;
+    padding: 0 0.5rem;
+    min-width: 0;
+  }
+
+  .nav-link {
+    font-size: 0.7rem;
+    padding: 0.6rem 0.45rem;
+  }
+
+  .cta-button {
+    font-size: 0.62rem;
+    padding: 0.55rem 0.85rem;
+  }
+
+  .logo img {
+    height: 78px;
+  }
+}

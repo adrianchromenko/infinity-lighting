@@ -13,7 +13,8 @@ export default defineConfig(({ ssrBuild, isSsrBuild }) => ({
           input: {
             'entry-server': 'src/entry-server.jsx',
             routes: 'src/routes.jsx',
-            projects: 'src/data/projects.js'
+            projects: 'src/data/projects.js',
+            serviceAreas: 'src/data/serviceAreas.js'
           },
           output: { entryFileNames: '[name].js' }
         }

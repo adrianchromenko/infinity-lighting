@@ -1,5 +1,9 @@
 import './LightingProposal.css'
+import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import FAQ, { faqSchema } from '../components/FAQ'
+import RelatedLinks from '../components/RelatedLinks'
+import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -9,11 +13,12 @@ const LightingProposal = () => {
   return (
     <div className="lighting-proposal-page">
       <SEO
-        title="Commercial LED Lighting Proposal Houston TX"
-        description="Comprehensive LED lighting proposals for Houston TX businesses. Detailed cost analysis, energy savings projections up to 75%, and flexible financing options. Custom lighting design for your Houston commercial property."
+        title="LED Lighting Proposal Houston"
+        description="Commercial LED lighting proposals for Houston properties: fixture-by-fixture layout, energy and cost savings, payback period, and utility rebates handled."
         keywords="LED lighting proposal Houston, commercial lighting design Houston TX, LED lighting cost analysis Houston, energy savings proposal Houston TX, LED lighting ROI Houston, commercial lighting plan Houston"
         canonical="/lighting-proposal"
         service
+        schema={faqSchema(faqs['/lighting-proposal'])}
       />
       <TopBar />
       <Header />
@@ -282,15 +287,19 @@ const LightingProposal = () => {
       </section>
 
       {/* CTA Section */}
+      <FAQ items={faqs['/lighting-proposal']} />
+
       <section className="lp-cta">
         <div className="container">
           <div className="cta-content">
             <h2>Ready to upgrade your building</h2>
             <h2>with energy-efficient LED lighting?</h2>
-            <button className="cta-button">Contact Us & Get A Free Energy Survey</button>
+            <Link to="/contact-us" className="cta-button">Contact Us & Get A Free Energy Survey</Link>
           </div>
         </div>
       </section>
+
+      <RelatedLinks current="/lighting-proposal" />
 
       <Footer />
       <FloatingPhone />

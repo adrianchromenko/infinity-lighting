@@ -2,13 +2,16 @@ import { Helmet } from 'react-helmet-async'
 
 export const SITE_URL = 'https://inflighting.com'
 export const SITE_NAME = 'Infinity Lighting Solutions'
-const DEFAULT_TITLE = `${SITE_NAME} - Commercial LED Lighting & Electrical Houston TX`
+// Short brand suffix keeps most titles under ~60 characters so they are not truncated in search results.
+const TITLE_SUFFIX = 'Infinity Lighting'
+const DEFAULT_TITLE = `Commercial LED Lighting Houston TX | ${TITLE_SUFFIX}`
 const DEFAULT_DESCRIPTION =
   "Houston's commercial LED lighting and electrical contractor. LED retrofits for parking garages, offices, hotels and warehouses with a 10-year fixture and 5-year labor warranty. Free energy audits."
 const DEFAULT_IMAGE = `${SITE_URL}/images/garage-night.jpg`
 
 const SEGMENT_NAMES = {
-  projects: 'Projects'
+  projects: 'Projects',
+  'service-areas': 'Service Areas'
 }
 
 const toAbsolute = (path) => {
@@ -54,7 +57,7 @@ const buildBreadcrumbs = (canonical, title) => {
  * @param {object|object[]} schema  Extra JSON-LD objects to embed (Article, FAQPage...).
  */
 const SEO = ({ title, description, keywords, canonical, image, type = 'website', noindex = false, service = false, schema }) => {
-  const finalTitle = title ? `${title} | ${SITE_NAME}` : DEFAULT_TITLE
+  const finalTitle = title ? `${title} | ${TITLE_SUFFIX}` : DEFAULT_TITLE
   const finalDescription = description || DEFAULT_DESCRIPTION
   const url = toAbsolute(canonical)
   const imageUrl = toAbsolute(image) || DEFAULT_IMAGE

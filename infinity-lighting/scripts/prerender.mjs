@@ -24,8 +24,13 @@ const load = (file) => import(pathToFileURL(path.join(ssrDir, file)).href)
 const { render } = await load('entry-server.js')
 const { staticRoutes } = await load('routes.js')
 const { projects } = await load('projects.js')
+const { serviceAreas } = await load('serviceAreas.js')
 
-const routes = [...staticRoutes, ...projects.map(p => `/projects/${p.id}`)]
+const routes = [
+  ...staticRoutes,
+  ...projects.map(p => `/projects/${p.id}`),
+  ...serviceAreas.map(a => `/service-areas/${a.slug}`)
+]
 
 const renderPage = (route) => {
   const { html, head } = render(route)
@@ -48,6 +53,7 @@ const today = new Date().toISOString().slice(0, 10)
 const priorityFor = (route) => {
   if (route === '/') return '1.0'
   if (route.startsWith('/projects/')) return '0.7'
+  if (route.startsWith('/service-areas/')) return '0.8'
   if (route === '/contact-us' || route === '/lighting-proposal') return '0.8'
   return '0.9'
 }

@@ -1,5 +1,9 @@
 import './Stairwells.css'
+import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import FAQ, { faqSchema } from '../components/FAQ'
+import RelatedLinks from '../components/RelatedLinks'
+import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -9,11 +13,12 @@ const Stairwells = () => {
   return (
     <div className="stairwells-page">
       <SEO
-        title="Stairwell LED Lighting Houston TX"
-        description="Professional stairwell LED lighting installation in Houston TX. Motion sensor technology, 24/7 reliability, enhanced building safety, and 75% energy savings. Serving commercial buildings across Greater Houston."
+        title="Stairwell LED Lighting Houston"
+        description="Motion-controlled LED stairwell lighting for Houston commercial buildings. Bright on entry, idle when empty, code compliant, 12 to 18 month payback."
         keywords="stairwell lighting Houston, LED stairwell lights Houston TX, motion sensor stairwell lighting Houston, commercial stairwell LED Texas, building stairwell lighting Houston, emergency stairwell lighting Houston"
         canonical="/stairwells"
         service
+        schema={faqSchema(faqs['/stairwells'])}
       />
       <TopBar />
       <Header />
@@ -203,15 +208,19 @@ const Stairwells = () => {
       </section>
 
       {/* CTA Section */}
+      <FAQ items={faqs['/stairwells']} />
+
       <section className="sw-cta">
         <div className="container">
           <div className="cta-content">
             <h2>Stop Lighting Empty Stairwells</h2>
             <p>Calculate your potential savings with a free energy audit</p>
-            <button className="cta-button">Get Your Free Energy Assessment</button>
+            <Link to="/contact-us" className="cta-button">Get Your Free Energy Assessment</Link>
           </div>
         </div>
       </section>
+
+      <RelatedLinks current="/stairwells" />
 
       <Footer />
       <FloatingPhone />

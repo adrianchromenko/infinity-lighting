@@ -1,5 +1,9 @@
 import './Warehouses.css'
+import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import FAQ, { faqSchema } from '../components/FAQ'
+import RelatedLinks from '../components/RelatedLinks'
+import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -9,11 +13,12 @@ const Warehouses = () => {
   return (
     <div className="warehouses-page">
       <SEO
-        title="Warehouse & High Bay LED Lighting Houston TX"
-        description="Industrial LED high bay lighting for Houston TX warehouses and distribution centers. Motion sensors, energy savings up to 75%, and improved worker safety. Expert installation across Greater Houston area."
+        title="Warehouse High Bay LED Lighting Houston"
+        description="LED high bay lighting for Houston warehouses and distribution centers. Replace HID, T8 and T5 fixtures, save up to 75% and add motion sensors in about 4 days."
         keywords="warehouse lighting Houston, LED high bay lighting Houston TX, industrial lighting Houston TX, warehouse LED retrofit Houston, high bay LED fixtures Houston, distribution center lighting Houston"
         canonical="/warehouses"
         service
+        schema={faqSchema(faqs['/warehouses'])}
       />
       <TopBar />
       <Header />
@@ -228,15 +233,19 @@ const Warehouses = () => {
       </section>
 
       {/* CTA Section */}
+      <FAQ items={faqs['/warehouses']} />
+
       <section className="wh-cta">
         <div className="container">
           <div className="cta-content">
             <h2>Ready to upgrade your High Bay</h2>
             <h2>with energy-efficient LED lighting?</h2>
-            <button className="cta-button">Contact Us & Get A Free Energy Survey</button>
+            <Link to="/contact-us" className="cta-button">Contact Us & Get A Free Energy Survey</Link>
           </div>
         </div>
       </section>
+
+      <RelatedLinks current="/warehouses" />
 
       <Footer />
       <FloatingPhone />

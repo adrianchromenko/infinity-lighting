@@ -72,8 +72,8 @@ const ContactUs = () => {
   return (
     <div className="contact-us-page">
       <SEO
-        title="Contact Us - Houston TX LED Lighting Experts"
-        description="Contact Infinity Lighting Solutions for commercial LED lighting in Houston TX. Free consultations and energy audits. Call (281) 202-4625 or request a quote online. Serving Houston, Sugar Land, Katy, and The Woodlands."
+        title="Contact Us | Houston LED Lighting"
+        description="Request a free commercial lighting energy audit from Infinity Lighting Solutions, Richmond TX. Call (281) 202-4625 or send the form. Serving Greater Houston."
         keywords="contact LED lighting Houston, commercial lighting consultation Houston TX, LED lighting contractor Houston TX, Infinity Lighting Solutions Houston, Houston LED lighting quote, commercial electrician Houston TX"
         canonical="/contact-us"
       />

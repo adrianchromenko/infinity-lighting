@@ -104,3 +104,15 @@ Designed by [Primary Digital Marketing](https://primarydm.com)
 Per-page tags live in each page's `<SEO ... />` (see `src/components/SEO.jsx`). Site-wide
 business schema lives in `index.html`. Adding a page means adding it to `src/routes.jsx`
 (both the `<Route>` and the `staticRoutes` list); new projects only need a `src/data/projects.js` entry.
+
+### Content that drives SEO
+
+- **Service-area landing pages** live in `src/data/serviceAreas.js`. Each entry becomes `/service-areas/<slug>` with its own
+  title, description, intro copy, property types, nearby projects, FAQ (with FAQPage schema) and links. Add an entry and it is
+  routed, prerendered and added to the sitemap automatically.
+- **FAQs** for the service pages live in `src/data/faqs.js`, keyed by route. They render through `src/components/FAQ.jsx` and
+  are emitted as FAQPage structured data.
+- **Services** (names, paths, blurbs) live in `src/data/services.js` and feed the related-links block, the footer and the
+  service-area pages.
+- Titles are kept under about 60 characters and descriptions under 160. `scripts/prerender.mjs` is the place to check
+  what each page ships with: run `npm run build` and open `dist/<route>/index.html`.

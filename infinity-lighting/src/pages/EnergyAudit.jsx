@@ -1,5 +1,9 @@
 import './EnergyAudit.css'
+import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import FAQ, { faqSchema } from '../components/FAQ'
+import RelatedLinks from '../components/RelatedLinks'
+import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -10,11 +14,12 @@ const EnergyAudit = () => {
   return (
     <div className="energy-audit-page">
       <SEO
-        title="Free Commercial LED Energy Audit Houston TX"
-        description="Get a free commercial LED lighting energy audit in Houston TX. Discover potential energy savings up to 75%, ROI analysis, and available utility rebates. No obligation assessment for Houston area businesses."
+        title="Free Commercial Energy Audit Houston"
+        description="Free commercial lighting energy audit in Houston. Fixture survey, light readings, hours and your kW rate turned into a savings, ROI and rebate report."
         keywords="LED energy audit Houston, free lighting assessment Houston TX, commercial energy audit Houston, LED lighting savings Houston TX, energy efficiency audit Houston, free lighting audit Houston"
         canonical="/energy-audit"
         service
+        schema={faqSchema(faqs['/energy-audit'])}
       />
       <TopBar />
       <Header />
@@ -164,14 +169,16 @@ const EnergyAudit = () => {
       </section>
 
       {/* CTA Section */}
+      <FAQ items={faqs['/energy-audit']} />
+
       <section className="ea-cta">
         <div className="container">
           <div className="cta-content">
             <h2>Ready to upgrade your building</h2>
             <h2>with energy-efficient LED lighting?</h2>
             <div className="cta-buttons">
-              <button className="cta-button">Contact Us & Get A Free Energy Survey</button>
-              <button className="cta-button-secondary">GET A FREE ENERGY AUDIT</button>
+              <Link to="/contact-us" className="cta-button">Contact Us & Get A Free Energy Survey</Link>
+              <Link to="/contact-us" className="cta-button-secondary">Get a Free Energy Audit</Link>
             </div>
           </div>
         </div>
@@ -179,6 +186,8 @@ const EnergyAudit = () => {
 
       {/* Clients & Partners Section */}
       <ClientsPartners />
+
+      <RelatedLinks current="/energy-audit" />
 
       <Footer />
       <FloatingPhone />

@@ -1,5 +1,9 @@
 import './OfficeBuildings.css'
+import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import FAQ, { faqSchema } from '../components/FAQ'
+import RelatedLinks from '../components/RelatedLinks'
+import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -52,11 +56,12 @@ const OfficeBuildings = () => {
   return (
     <div className="office-buildings-page">
       <SEO
-        title="Office Building LED Lighting Houston TX"
-        description="Modern LED lighting for Houston TX office buildings. Boost employee productivity, reduce energy costs by up to 75%, and improve workplace environment. Professional office LED retrofits serving Houston's business district."
+        title="Office Building LED Lighting Houston"
+        description="LED troffers, recessed and cove lighting for Houston offices, lobbies and retail. Drop-in 1×4, 2×2 and 2×4 fixtures with minimal disruption. Free energy audit."
         keywords="office building lighting Houston, commercial LED office lighting Houston TX, LED troffer lighting Houston, office lighting retrofit Houston TX, workplace lighting Houston, office LED installation Houston"
         canonical="/office-buildings"
         service
+        schema={faqSchema(faqs['/office-buildings'])}
       />
       <TopBar />
       <Header />
@@ -171,7 +176,7 @@ const OfficeBuildings = () => {
             <div className="feature-highlight">
               <div className="highlight-box">
                 <h3>Let Infinity Lighting Solutions show you our line of troffers and office lighting</h3>
-                <button className="demo-button">Request Product Demo</button>
+                <Link to="/contact-us" className="demo-button">Request Product Demo</Link>
               </div>
             </div>
           </div>
@@ -210,15 +215,19 @@ const OfficeBuildings = () => {
       </section>
 
       {/* CTA Section */}
+      <FAQ items={faqs['/office-buildings']} />
+
       <section className="ob-cta">
         <div className="container">
           <div className="cta-content">
             <h2>Ready to upgrade your Office Buildings</h2>
             <h2>with energy-efficient LED lighting?</h2>
-            <button className="cta-button">Contact Us & Get A Free Energy Survey</button>
+            <Link to="/contact-us" className="cta-button">Contact Us & Get A Free Energy Survey</Link>
           </div>
         </div>
       </section>
+
+      <RelatedLinks current="/office-buildings" />
 
       <Footer />
       <FloatingPhone />

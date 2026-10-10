@@ -1,5 +1,9 @@
 import './WallPacksFlood.css'
+import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import FAQ, { faqSchema } from '../components/FAQ'
+import RelatedLinks from '../components/RelatedLinks'
+import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -9,11 +13,12 @@ const WallPacksFlood = () => {
   return (
     <div className="wallpacks-flood-page">
       <SEO
-        title="Wall Pack & Flood LED Lighting Houston TX"
-        description="Commercial wall pack and flood LED lighting in Houston TX. Secure perimeter lighting, building exterior illumination, and parking area safety. Save up to 75% on energy costs with professional installation."
+        title="LED Wall Packs & Flood Lights Houston"
+        description="LED wall pack and flood light installation for Houston commercial properties. Replace metal halide, save 65%+, dusk-to-dawn and motion options, IP65 fixtures."
         keywords="wall pack lighting Houston, LED flood lighting Houston TX, commercial exterior lighting Houston, perimeter lighting Houston TX, security lighting Houston, outdoor wall pack LED Houston, flood light installation Houston"
         canonical="/wallpacks-flood"
         service
+        schema={faqSchema(faqs['/wallpacks-flood'])}
       />
       <TopBar />
       <Header />
@@ -215,6 +220,8 @@ const WallPacksFlood = () => {
       </section>
 
       {/* Final CTA Section */}
+      <FAQ items={faqs['/wallpacks-flood']} />
+
       <section className="wpf-final-cta">
         <div className="container">
           <div className="final-message">
@@ -231,11 +238,13 @@ const WallPacksFlood = () => {
           <div className="cta-content">
             <h2>Ready to upgrade your Wall Packs &</h2>
             <h2>Floodlights with energy-efficient LED lighting?</h2>
-            <button className="cta-button">Contact Us & Get A Free Energy Survey</button>
-            <button className="cta-button-secondary">GET A FREE ENERGY AUDIT</button>
+            <Link to="/contact-us" className="cta-button">Contact Us & Get A Free Energy Survey</Link>
+            <Link to="/energy-audit" className="cta-button-secondary">GET A FREE ENERGY AUDIT</Link>
           </div>
         </div>
       </section>
+
+      <RelatedLinks current="/wallpacks-flood" />
 
       <Footer />
       <FloatingPhone />

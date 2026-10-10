@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { projects, projectsById } from '../data/projects'
+import { relatedServicesFor } from '../data/services'
 import './ProjectDetail.css'
 import SEO from '../components/SEO'
 import TopBar from '../components/TopBar'
@@ -28,8 +29,8 @@ const ProjectDetail = () => {
   return (
     <div className="project-detail-page">
       <SEO 
-        title={`${project.title} - LED Lighting Project Houston`}
-        description={`${project.description} Full-service electrical and lighting with a 10-year fixture and 5-year labor warranty.`}
+        title={`${project.title} LED Retrofit`}
+        description={`${project.shortDescription}. ${project.type} LED retrofit at ${project.location} by Infinity Lighting Solutions.`}
         keywords={`${project.title}, ${project.type} lighting Houston, commercial LED project, electrical contractor Houston`}
         canonical={`/projects/${id}`}
         image={project.image}
@@ -140,6 +141,17 @@ const ProjectDetail = () => {
                   ))}
                 </ul>
               </div>
+
+              <div className="project-info-card">
+                <h3 className="info-card-title">Related Services</h3>
+                <ul className="project-features-list project-related-services">
+                  {relatedServicesFor(project.type).map(service => (
+                    <li key={service.path}><Link to={service.path}>{service.name}</Link></li>
+                  ))}
+                  <li><Link to="/projects">All projects</Link></li>
+                </ul>
+              </div>
+
 
               <div className="warranty-card">
                 <div className="warranty-icon">

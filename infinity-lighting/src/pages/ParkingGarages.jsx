@@ -1,5 +1,9 @@
 import './ParkingGarages.css'
+import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import FAQ, { faqSchema } from '../components/FAQ'
+import RelatedLinks from '../components/RelatedLinks'
+import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -37,11 +41,12 @@ const ParkingGarages = () => {
   return (
     <div className="parking-garages-page">
       <SEO
-        title="Parking Garage LED Lighting Houston TX"
-        description="Houston parking garage LED lighting experts. Improve safety, visibility, and reduce energy costs by up to 75% with professional LED retrofits. Free energy audit for Houston TX parking structures. 10-year fixture and 5-year labor warranty included."
+        title="Parking Garage LED Lighting Houston"
+        description="Houston parking garage LED retrofits with motion-sensor linear fixtures that cut lighting cost by 80%+. The garage stays open during install. Free energy audit."
         keywords="parking garage lighting Houston, LED garage lighting Houston TX, parking structure lighting Houston, garage LED retrofit Houston, commercial garage lighting Texas, parking garage electrician Houston"
         canonical="/parking-garages"
         service
+        schema={faqSchema(faqs['/parking-garages'])}
       />
       <TopBar />
       <Header />
@@ -127,7 +132,7 @@ const ParkingGarages = () => {
             <p className="solutions-text">
               We also carry every major brand, so we match your garage to the most cost-effective fixture instead of a one-size-fits-all product.
             </p>
-            <button className="download-btn">DOWNLOAD PRODUCT BROCHURE</button>
+            <Link to="/contact-us" className="download-btn">Request Product Brochure</Link>
           </div>
         </div>
       </section>
@@ -163,15 +168,19 @@ const ParkingGarages = () => {
 
 
       {/* CTA Section */}
+      <FAQ items={faqs['/parking-garages']} />
+
       <section className="pg-cta">
         <div className="container">
           <div className="cta-content">
             <h2>Ready to upgrade your Parking Garages?</h2>
             <p>Transform your facilities with energy-efficient LED lighting</p>
-            <button className="cta-button">Contact Us & Get A Free Energy Survey</button>
+            <Link to="/contact-us" className="cta-button">Contact Us & Get A Free Energy Survey</Link>
           </div>
         </div>
       </section>
+
+      <RelatedLinks current="/parking-garages" />
 
       <Footer />
       <FloatingPhone />

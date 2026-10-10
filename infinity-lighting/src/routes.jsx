@@ -11,10 +11,13 @@ import EnergyAudit from './pages/EnergyAudit'
 import LightingProposal from './pages/LightingProposal'
 import Projects from './pages/Projects'
 import ProjectDetail from './pages/ProjectDetail'
+import ServiceAreas from './pages/ServiceAreas'
+import ServiceArea from './pages/ServiceArea'
 import ContactUs from './pages/ContactUs'
 import NotFound from './pages/NotFound'
 
 // Static (non-dynamic) paths. Used by the prerender script and the sitemap generator.
+// Dynamic routes (/projects/:id, /service-areas/:slug) are expanded from their data files.
 export const staticRoutes = [
   '/',
   '/parking-garages',
@@ -27,6 +30,7 @@ export const staticRoutes = [
   '/energy-audit',
   '/lighting-proposal',
   '/projects',
+  '/service-areas',
   '/contact-us'
 ]
 
@@ -44,6 +48,8 @@ const AppRoutes = () => (
     <Route path="/lighting-proposal" element={<LightingProposal />} />
     <Route path="/projects" element={<Projects />} />
     <Route path="/projects/:id" element={<ProjectDetail />} />
+    <Route path="/service-areas" element={<ServiceAreas />} />
+    <Route path="/service-areas/:slug" element={<ServiceArea />} />
     <Route path="/contact-us" element={<ContactUs />} />
     <Route path="*" element={<NotFound />} />
   </Routes>

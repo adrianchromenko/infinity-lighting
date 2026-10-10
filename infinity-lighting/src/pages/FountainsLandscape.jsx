@@ -1,5 +1,9 @@
 import './FountainsLandscape.css'
+import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import FAQ, { faqSchema } from '../components/FAQ'
+import RelatedLinks from '../components/RelatedLinks'
+import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -35,11 +39,12 @@ const FountainsLandscape = () => {
   return (
     <div className="fountains-landscape-page">
       <SEO
-        title="Fountain & Landscape LED Lighting Houston TX"
-        description="Stunning LED fountain and commercial landscape lighting in Houston TX. Energy-efficient outdoor illumination, professional design, and expert installation. Transform your Houston property's curb appeal."
+        title="Fountain & Landscape Lighting Houston"
+        description="Commercial fountain and landscape LED lighting in Houston with wireless DMX color control. Trees, bollards, wall washers and path lights as one system."
         keywords="fountain lighting Houston, landscape lighting Houston TX, outdoor LED lighting Houston, commercial landscape lighting Houston TX, decorative lighting Houston, outdoor lighting installation Houston"
         canonical="/fountains-landscape"
         service
+        schema={faqSchema(faqs['/fountains-landscape'])}
       />
       <TopBar />
       <Header />
@@ -209,15 +214,19 @@ const FountainsLandscape = () => {
       </section>
 
       {/* CTA Section */}
+      <FAQ items={faqs['/fountains-landscape']} />
+
       <section className="fl-cta">
         <div className="container">
           <div className="cta-content">
             <h2>Ready to upgrade your Fountains and</h2>
             <h2>Landscape with energy-efficient LED lighting?</h2>
-            <button className="cta-button">Contact Us & Get A Free Energy Survey</button>
+            <Link to="/contact-us" className="cta-button">Contact Us & Get A Free Energy Survey</Link>
           </div>
         </div>
       </section>
+
+      <RelatedLinks current="/fountains-landscape" />
 
       <Footer />
       <FloatingPhone />

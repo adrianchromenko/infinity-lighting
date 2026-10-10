@@ -62,6 +62,7 @@ const Header = () => {
             </div>
 
             <Link to="/projects" className="nav-link" onClick={closeMenu}>Projects</Link>
+            <Link to="/service-areas" className="nav-link" onClick={closeMenu}>Service Areas</Link>
             <Link to="/contact-us" className="nav-link" onClick={closeMenu}>Contact Us</Link>
           </nav>
 

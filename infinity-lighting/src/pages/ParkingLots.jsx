@@ -1,5 +1,9 @@
 import './ParkingLots.css'
+import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import FAQ, { faqSchema } from '../components/FAQ'
+import RelatedLinks from '../components/RelatedLinks'
+import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -26,11 +30,12 @@ const ParkingLots = () => {
   return (
     <div className="parking-lots-page">
       <SEO
-        title="Parking Lot LED Lighting Houston TX"
-        description="LED parking lot lighting for Houston TX businesses. Improve safety, reduce liability, and cut energy costs by up to 75%. Free lighting assessment available. Professional pole light and area light installation across Greater Houston."
+        title="Parking Lot LED Lighting Houston"
+        description="LED parking lot lighting in Houston from poles to fixtures. Replace metal halide, save 65%+, meet IES light levels with the right optics. Free assessment."
         keywords="parking lot lighting Houston, LED parking lot lights Houston TX, commercial parking lighting Houston, pole lighting Houston TX, parking area lighting Houston, LED pole lights Houston"
         canonical="/parking-lots"
         service
+        schema={faqSchema(faqs['/parking-lots'])}
       />
       <TopBar />
       <Header />
@@ -238,18 +243,22 @@ const ParkingLots = () => {
       </section>
 
       {/* CTA Section */}
+      <FAQ items={faqs['/parking-lots']} />
+
       <section className="pl-cta">
         <div className="container">
           <div className="cta-content">
             <h2>Ready to upgrade your Parking Lots</h2>
             <h2>with energy-efficient LED lighting?</h2>
             <div className="cta-buttons">
-              <button className="cta-button">Contact Us & Get A Free Energy Survey</button>
-              <button className="cta-button-secondary">GET A FREE ENERGY AUDIT</button>
+              <Link to="/contact-us" className="cta-button">Contact Us & Get A Free Energy Survey</Link>
+              <Link to="/energy-audit" className="cta-button-secondary">GET A FREE ENERGY AUDIT</Link>
             </div>
           </div>
         </div>
       </section>
+
+      <RelatedLinks current="/parking-lots" />
 
       <Footer />
       <FloatingPhone />
