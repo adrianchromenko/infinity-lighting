@@ -9,10 +9,10 @@ const Hero = () => {
           <h1 className="hero-title">
             <span className="highlight">Full-Service</span> LED Lighting & Electrical
           </h1>
-          <h2 className="hero-subtitle">Houston's commercial LED lighting and electrical contractor, backed by a 10-year fixture and 5-year labor warranty.</h2>
+          <h2 className="hero-subtitle">Houston's commercial LED lighting and electrical contractor, serving all of Texas and nearby states, backed by a 10-year fixture and 5-year labor warranty.</h2>
           <p className="hero-description">
             From panel upgrades to full LED retrofits, one team handles design, fixtures, installation and service
-            for parking garages, offices, hotels and warehouses across Greater Houston.
+            for parking garages, offices, hotels and warehouses across Houston, Texas and the surrounding states.
           </p>
           <div className="hero-badges">
             <div className="warranty-badge-hero">

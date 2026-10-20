@@ -14,8 +14,8 @@ const LightingProposal = () => {
     <div className="lighting-proposal-page">
       <SEO
         title="LED Lighting Proposal Houston"
-        description="Commercial LED lighting proposals for Houston properties: fixture-by-fixture layout, energy and cost savings, payback period, and utility rebates handled."
-        keywords="LED lighting proposal Houston, commercial lighting design Houston TX, LED lighting cost analysis Houston, energy savings proposal Houston TX, LED lighting ROI Houston, commercial lighting plan Houston"
+        description="Commercial LED lighting proposals for Houston and Texas properties: fixture-by-fixture layout, energy and cost savings, payback period, and utility rebates handled."
+        keywords="LED lighting proposal Houston, commercial lighting design Texas, LED lighting cost analysis Houston, energy savings proposal Texas, LED lighting ROI Houston, commercial lighting plan Texas, utility rebate LED Texas"
         canonical="/lighting-proposal"
         service
         schema={faqSchema(faqs['/lighting-proposal'])}

@@ -4,9 +4,9 @@ export const SITE_URL = 'https://inflighting.com'
 export const SITE_NAME = 'Infinity Lighting Solutions'
 // Short brand suffix keeps most titles under ~60 characters so they are not truncated in search results.
 const TITLE_SUFFIX = 'Infinity Lighting'
-const DEFAULT_TITLE = `Commercial LED Lighting Houston TX | ${TITLE_SUFFIX}`
+const DEFAULT_TITLE = `Commercial LED Lighting Houston & Texas | ${TITLE_SUFFIX}`
 const DEFAULT_DESCRIPTION =
-  "Houston's commercial LED lighting and electrical contractor. LED retrofits for parking garages, offices, hotels and warehouses with a 10-year fixture and 5-year labor warranty. Free energy audits."
+  'Houston-based commercial LED lighting and electrical contractor serving all of Texas and nearby states. Garage, office, hotel and warehouse retrofits with a 10-year fixture and 5-year labor warranty.'
 const DEFAULT_IMAGE = `${SITE_URL}/images/garage-night.jpg`
 
 const SEGMENT_NAMES = {
@@ -54,9 +54,15 @@ const buildBreadcrumbs = (canonical, title) => {
  * @param {string}  type         Open Graph type, "website" (default) or "article".
  * @param {boolean} noindex      Keep the page out of search results (404, thank-you pages).
  * @param {boolean} service      Emit a schema.org Service entry for this page (service/application pages).
+ * @param {object|object[]} areaServed  schema.org place(s) for the Service entry. Defaults to Houston plus the state of Texas.
  * @param {object|object[]} schema  Extra JSON-LD objects to embed (Article, FAQPage...).
  */
-const SEO = ({ title, description, keywords, canonical, image, type = 'website', noindex = false, service = false, schema }) => {
+const DEFAULT_AREA_SERVED = [
+  { '@type': 'City', name: 'Houston', containedInPlace: { '@type': 'State', name: 'Texas' } },
+  { '@type': 'State', name: 'Texas' }
+]
+
+const SEO = ({ title, description, keywords, canonical, image, type = 'website', noindex = false, service = false, areaServed, schema }) => {
   const finalTitle = title ? `${title} | ${TITLE_SUFFIX}` : DEFAULT_TITLE
   const finalDescription = description || DEFAULT_DESCRIPTION
   const url = toAbsolute(canonical)
@@ -71,7 +77,7 @@ const SEO = ({ title, description, keywords, canonical, image, type = 'website',
         description: finalDescription,
         url,
         provider: { '@id': `${SITE_URL}/#business` },
-        areaServed: { '@type': 'City', name: 'Houston' }
+        areaServed: areaServed || DEFAULT_AREA_SERVED
       }
     : null
   const schemas = [breadcrumbs, serviceSchema, ...(Array.isArray(schema) ? schema : [schema])].filter(Boolean)

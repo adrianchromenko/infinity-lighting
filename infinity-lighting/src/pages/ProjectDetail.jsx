@@ -31,7 +31,7 @@ const ProjectDetail = () => {
       <SEO 
         title={`${project.title} LED Retrofit`}
         description={`${project.shortDescription}. ${project.type} LED retrofit at ${project.location} by Infinity Lighting Solutions.`}
-        keywords={`${project.title}, ${project.type} lighting Houston, commercial LED project, electrical contractor Houston`}
+        keywords={`${project.title}, ${project.type} lighting Houston, ${project.type} LED lighting Texas, commercial LED project, electrical contractor Houston`}
         canonical={`/projects/${id}`}
         image={project.image}
       />

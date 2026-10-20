@@ -14,9 +14,9 @@ const EnergyAudit = () => {
   return (
     <div className="energy-audit-page">
       <SEO
-        title="Free Commercial Energy Audit Houston"
-        description="Free commercial lighting energy audit in Houston. Fixture survey, light readings, hours and your kW rate turned into a savings, ROI and rebate report."
-        keywords="LED energy audit Houston, free lighting assessment Houston TX, commercial energy audit Houston, LED lighting savings Houston TX, energy efficiency audit Houston, free lighting audit Houston"
+        title="Free Commercial Energy Audit Houston & Texas"
+        description="Free commercial lighting energy audit in Houston and across Texas. Fixture survey, light readings, hours and your kW rate turned into a savings, ROI and rebate report."
+        keywords="LED energy audit Houston, free lighting assessment Texas, commercial energy audit Houston, commercial lighting audit Texas, LED lighting savings Houston TX, energy efficiency audit Dallas Austin San Antonio, free lighting audit Houston"
         canonical="/energy-audit"
         service
         schema={faqSchema(faqs['/energy-audit'])}

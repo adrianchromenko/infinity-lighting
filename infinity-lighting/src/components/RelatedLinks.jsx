@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { allServices } from '../data/services'
-import { serviceAreas } from '../data/serviceAreas'
+import { serviceAreasByGroup } from '../data/serviceAreas'
 import './RelatedLinks.css'
 
 // Internal links to the other services, the project portfolio and the service-area pages.
@@ -20,9 +20,17 @@ const RelatedLinks = ({ current, title = 'Explore More' }) => {
             </ul>
           </div>
           <div className="related-links-group">
-            <h3>Areas We Serve</h3>
+            <h3>Greater Houston</h3>
             <ul>
-              {serviceAreas.map(a => (
+              {serviceAreasByGroup.houston.map(a => (
+                <li key={a.slug}><Link to={`/service-areas/${a.slug}`}>{a.name}</Link></li>
+              ))}
+            </ul>
+          </div>
+          <div className="related-links-group">
+            <h3>Texas &amp; Nearby States</h3>
+            <ul>
+              {[...serviceAreasByGroup.texas, ...serviceAreasByGroup.regional].map(a => (
                 <li key={a.slug}><Link to={`/service-areas/${a.slug}`}>{a.name}</Link></li>
               ))}
               <li><Link to="/service-areas">All service areas</Link></li>

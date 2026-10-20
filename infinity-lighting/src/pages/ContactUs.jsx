@@ -72,9 +72,9 @@ const ContactUs = () => {
   return (
     <div className="contact-us-page">
       <SEO
-        title="Contact Us | Houston LED Lighting"
-        description="Request a free commercial lighting energy audit from Infinity Lighting Solutions, Richmond TX. Call (281) 202-4625 or send the form. Serving Greater Houston."
-        keywords="contact LED lighting Houston, commercial lighting consultation Houston TX, LED lighting contractor Houston TX, Infinity Lighting Solutions Houston, Houston LED lighting quote, commercial electrician Houston TX"
+        title="Contact Us | LED Lighting Houston & Texas"
+        description="Request a free commercial lighting energy audit from Infinity Lighting Solutions, Richmond TX. Call (281) 202-4625. Serving Houston, all of Texas and nearby states."
+        keywords="contact LED lighting Houston, commercial lighting consultation Texas, LED lighting contractor Houston TX, LED lighting contractor Texas, Infinity Lighting Solutions, commercial LED lighting quote Texas, commercial electrician Houston TX"
         canonical="/contact-us"
       />
       <TopBar />
@@ -99,8 +99,8 @@ const ContactUs = () => {
             <div className="contact-form-section">
               <h2>Get Your Free Energy Assessment</h2>
               <p className="form-intro">
-                Complete the form below and our Houston LED lighting specialists will contact you 
-                within 24 hours to schedule your free consultation.
+                Complete the form below and our LED lighting specialists will contact you 
+                within 24 hours to schedule your free consultation, in Houston, anywhere in Texas or a nearby state.
               </p>
               
               <form className="contact-form" onSubmit={handleSubmit}>
@@ -231,7 +231,7 @@ const ContactUs = () => {
                   </svg>
                   <div>
                     <p>Richmond, TX 77407</p>
-                    <p className="service-area">Serving Houston, Sugar Land, Katy,<br/>The Woodlands & Greater Houston</p>
+                    <p className="service-area">Serving Greater Houston and all of Texas,<br/>plus Louisiana, Oklahoma, Arkansas &amp; Kansas City</p>
                   </div>
                 </div>
                 
@@ -259,7 +259,7 @@ const ContactUs = () => {
               <div className="contact-card">
                 <h3>Why Choose Infinity Lighting?</h3>
                 <ul className="why-list">
-                  <li>20+ Years Experience in Houston</li>
+                  <li>20+ Years Experience in Houston and Texas</li>
                   <li>Free Energy Assessments</li>
                   <li>Maximum Utility Rebates</li>
                   <li>50%+ Energy Savings Guaranteed</li>
@@ -286,7 +286,7 @@ const ContactUs = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Start Saving on Energy Costs Today</h2>
-            <p>Join hundreds of Houston businesses that have upgraded to LED</p>
+            <p>Join hundreds of Houston and Texas businesses that have upgraded to LED</p>
             <div className="cta-buttons">
               <a href="tel:2812024625" className="cta-button">Call (281) 202-4625</a>
               <a href="mailto:mark@inflighting.com" className="cta-button-secondary">Email Us</a>

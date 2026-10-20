@@ -12,7 +12,7 @@ const FeaturedProjects = () => {
           <p className="featured-projects-eyebrow">Our Work</p>
           <h2 className="featured-projects-title">Featured Projects</h2>
           <p className="featured-projects-subtitle">
-            A look at some of the Houston commercial spaces we've transformed with LED lighting.
+            A look at some of the Houston commercial spaces we've transformed with LED lighting. The same crews now travel across Texas and to nearby states.
           </p>
         </div>
 

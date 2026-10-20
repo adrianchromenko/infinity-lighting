@@ -9,8 +9,8 @@
 
 .footer-content {
   display: grid;
-  grid-template-columns: 1.8fr 1fr 1fr 1fr;
-  gap: 2.5rem;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
   margin-bottom: 3rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -110,6 +110,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
     padding: 0 1rem 2rem;
+  }
+
+  .footer-logo-section {
+    grid-column: 1 / -1;
   }
   
   .footer-logo {

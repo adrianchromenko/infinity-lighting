@@ -68,7 +68,7 @@ const Services = () => {
       <div className="container">
         <div className="services-grid">
           <div className="services-left">
-            <p className="services-eyebrow">Why Houston properties switch to LED</p>
+            <p className="services-eyebrow">Why Houston and Texas properties switch to LED</p>
             <h2 className="services-headline">
               Less energy for the same light, and a building that looks better for it.
             </h2>

@@ -64,13 +64,10 @@ npm run preview
 
 ## 📍 Service Area
 
-Serving the Greater Houston area including:
-- Houston
-- Sugar Land
-- Katy
-- The Woodlands
-- Richmond
-- Harris County
+Based in Richmond, TX. Service-area landing pages (`src/data/serviceAreas.js`) are grouped as:
+- **Greater Houston**: Downtown, Galleria/Uptown, Westchase, Greenway/Upper Kirby, The Woodlands/Spring, Sugar Land, Katy/Energy Corridor, Richmond/Rosenberg
+- **Across Texas**: Dallas–Fort Worth, Austin, San Antonio, Beaumont/Golden Triangle, Corpus Christi, Bryan–College Station
+- **Nearby states**: Louisiana, Oklahoma City & Tulsa, Arkansas, Kansas City (Keurig Dr Pepper warehouse in Lenexa, KS)
 
 ## 📞 Contact
 
@@ -109,7 +106,10 @@ business schema lives in `index.html`. Adding a page means adding it to `src/rou
 
 - **Service-area landing pages** live in `src/data/serviceAreas.js`. Each entry becomes `/service-areas/<slug>` with its own
   title, description, intro copy, property types, nearby projects, FAQ (with FAQPage schema) and links. Add an entry and it is
-  routed, prerendered and added to the sitemap automatically.
+  routed, prerendered and added to the sitemap automatically. Each entry carries `group` (`houston` | `texas` | `regional`),
+  `city` and `state`, which drive the hub page sections, the footer/related-links columns, the per-page Service schema
+  `areaServed`, and the travel/licensing wording on the page. Optional fields: `utility` (named in the trust card) and
+  `beforeAfter` (a single photo pair, used for Lenexa, KS). Keep out-of-town pages honest: no invented local projects.
 - **FAQs** for the service pages live in `src/data/faqs.js`, keyed by route. They render through `src/components/FAQ.jsx` and
   are emitted as FAQPage structured data.
 - **Services** (names, paths, blurbs) live in `src/data/services.js` and feed the related-links block, the footer and the

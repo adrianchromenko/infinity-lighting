@@ -11,9 +11,9 @@ const Projects = () => {
   return (
     <div className="projects-page">
       <SEO
-        title="Commercial LED Lighting Projects Houston"
-        description="Before and after photos from commercial LED lighting projects across Houston: parking garages, office towers, hotels and warehouses. Free energy audit."
-        keywords="LED lighting projects Houston, commercial lighting portfolio Houston TX, parking garage lighting project Houston, office lighting project Houston, hotel lighting renovation Houston, LED case studies Houston TX"
+        title="Commercial LED Lighting Projects Houston & Texas"
+        description="Before and after photos from commercial LED lighting projects in Houston, Texas and Kansas City: parking garages, office towers, hotels and warehouses. Free audit."
+        keywords="LED lighting projects Houston, commercial lighting portfolio Texas, parking garage lighting project Houston, office lighting project Texas, hotel lighting renovation Houston, warehouse LED conversion Kansas City, LED case studies Texas"
         canonical="/projects"
       />
       <TopBar />
