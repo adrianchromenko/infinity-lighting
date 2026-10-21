@@ -12,7 +12,7 @@ const ServiceAreas = () => (
   <div className="service-area-page">
     <SEO
       title="Service Areas | Texas & Nearby States"
-      description="Commercial LED lighting across Greater Houston, Dallas–Fort Worth, Austin, San Antonio, Beaumont and Corpus Christi, plus Louisiana, Oklahoma, Arkansas and Kansas City."
+      description="Commercial LED lighting across Greater Houston, Dallas–Fort Worth, Austin, San Antonio and the Gulf Coast, plus Louisiana, Oklahoma, Arkansas and Kansas City."
       canonical="/service-areas"
       schema={faqSchema(serviceAreaFaqs)}
     />

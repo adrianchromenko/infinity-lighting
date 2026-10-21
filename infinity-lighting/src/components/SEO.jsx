@@ -55,6 +55,7 @@ const buildBreadcrumbs = (canonical, title) => {
  * @param {boolean} noindex      Keep the page out of search results (404, thank-you pages).
  * @param {boolean} service      Emit a schema.org Service entry for this page (service/application pages).
  * @param {object|object[]} areaServed  schema.org place(s) for the Service entry. Defaults to Houston plus the state of Texas.
+ * @param {string}  preloadImage Site path of the page's largest above-the-fold image (hero background), preloaded for LCP.
  * @param {object|object[]} schema  Extra JSON-LD objects to embed (Article, FAQPage...).
  */
 const DEFAULT_AREA_SERVED = [
@@ -62,7 +63,7 @@ const DEFAULT_AREA_SERVED = [
   { '@type': 'State', name: 'Texas' }
 ]
 
-const SEO = ({ title, description, keywords, canonical, image, type = 'website', noindex = false, service = false, areaServed, schema }) => {
+const SEO = ({ title, description, keywords, canonical, image, type = 'website', noindex = false, service = false, areaServed, preloadImage, schema }) => {
   const finalTitle = title ? `${title} | ${TITLE_SUFFIX}` : DEFAULT_TITLE
   const finalDescription = description || DEFAULT_DESCRIPTION
   const url = toAbsolute(canonical)
@@ -88,6 +89,7 @@ const SEO = ({ title, description, keywords, canonical, image, type = 'website',
       <meta name="description" content={finalDescription} />
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={url} />
+      {preloadImage && <link rel="preload" as="image" href={toAbsolute(preloadImage)} fetchpriority="high" />}
       <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large'} />
 
       <meta property="og:type" content={type} />
@@ -95,6 +97,7 @@ const SEO = ({ title, description, keywords, canonical, image, type = 'website',
       <meta property="og:title" content={finalTitle} />
       <meta property="og:description" content={finalDescription} />
       <meta property="og:image" content={image ? imageUrl : DEFAULT_IMAGE} />
+      <meta property="og:image:alt" content={finalTitle} />
       <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:locale" content="en_US" />
 

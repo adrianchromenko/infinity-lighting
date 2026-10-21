@@ -1,6 +1,7 @@
 import './ParkingGarages.css'
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import { imgSize } from '../data/imageSizes'
 import FAQ, { faqSchema } from '../components/FAQ'
 import RelatedLinks from '../components/RelatedLinks'
 import { faqs } from '../data/faqs'
@@ -146,7 +147,7 @@ const ParkingGarages = () => {
               <div key={project.id} className="project-card">
                 {project.image && (
                   <div className="project-image">
-                    <img src={project.image} alt={project.title} loading="lazy" />
+                    <img src={project.image} alt={`${project.title} LED lighting project`} loading="lazy" {...imgSize(project.image)} />
                   </div>
                   )}
                 <div className="project-content">

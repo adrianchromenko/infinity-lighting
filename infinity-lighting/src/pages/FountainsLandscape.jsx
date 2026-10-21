@@ -1,6 +1,7 @@
 import './FountainsLandscape.css'
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import { imgSize } from '../data/imageSizes'
 import FAQ, { faqSchema } from '../components/FAQ'
 import RelatedLinks from '../components/RelatedLinks'
 import { faqs } from '../data/faqs'
@@ -193,7 +194,7 @@ const FountainsLandscape = () => {
             {projects.map(project => (
               <div key={project.id} className={`project-card ${project.type}`}>
                 <div className="project-image">
-                  {project.image && <img src={project.image} alt={project.title} loading="lazy" />}
+                  {project.image && <img src={project.image} alt={`${project.title} lighting project`} loading="lazy" {...imgSize(project.image)} />}
                   <div className="project-type-badge">{project.type}</div>
                 </div>
                 <div className="project-info">

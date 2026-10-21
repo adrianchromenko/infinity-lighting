@@ -4,6 +4,7 @@ import { projects, projectsById } from '../data/projects'
 import { relatedServicesFor } from '../data/services'
 import './ProjectDetail.css'
 import SEO from '../components/SEO'
+import { imgSize } from '../data/imageSizes'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -29,7 +30,7 @@ const ProjectDetail = () => {
   return (
     <div className="project-detail-page">
       <SEO 
-        title={`${project.title} LED Retrofit`}
+        title={project.title.length > 26 ? project.title : `${project.title} LED Retrofit`}
         description={`${project.shortDescription}. ${project.type} LED retrofit at ${project.location} by Infinity Lighting Solutions.`}
         keywords={`${project.title}, ${project.type} lighting Houston, ${project.type} LED lighting Texas, commercial LED project, electrical contractor Houston`}
         canonical={`/projects/${id}`}
@@ -95,7 +96,7 @@ const ProjectDetail = () => {
                       <div key={`before-${index}`} className="before-after-item">
                         <span className="before-after-label before-label">Before</span>
                         <div className="gallery-item" onClick={() => setLightboxImage(image.url)}>
-                          <img src={image.url} alt={image.caption} />
+                          <img src={image.url} alt={image.caption} loading="lazy" {...imgSize(image.url)} />
                         </div>
                       </div>
                     ))}
@@ -103,7 +104,7 @@ const ProjectDetail = () => {
                       <div key={`after-${index}`} className="before-after-item">
                         <span className="before-after-label after-label">After</span>
                         <div className="gallery-item" onClick={() => setLightboxImage(image.url)}>
-                          <img src={image.url} alt={image.caption} />
+                          <img src={image.url} alt={image.caption} loading="lazy" {...imgSize(image.url)} />
                         </div>
                       </div>
                     ))}
@@ -118,7 +119,7 @@ const ProjectDetail = () => {
                   <div className="gallery-grid">
                     {regularImages.map((image, index) => (
                       <div key={index} className="gallery-item" onClick={() => setLightboxImage(image.url)}>
-                        <img src={image.url} alt={image.caption} />
+                        <img src={image.url} alt={image.caption} loading="lazy" {...imgSize(image.url)} />
                         <div className="gallery-caption">{image.caption}</div>
                       </div>
                     ))}
@@ -197,7 +198,7 @@ const ProjectDetail = () => {
               {otherProjects.map(proj => (
                 <Link to={`/projects/${proj.id}`} key={proj.id} className="project-card">
                   <div className="project-image-container">
-                    <img src={proj.image} alt={proj.title} className="project-image" />
+                    <img src={proj.image} alt={`${proj.title} LED lighting project`} className="project-image" loading="lazy" {...imgSize(proj.image)} />
                     <span className="project-type-badge">{proj.type}</span>
                   </div>
                   <div className="project-content">

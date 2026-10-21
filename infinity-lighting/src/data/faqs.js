@@ -145,6 +145,28 @@ export const faqs = {
       a: 'A recent electric bill and access to the areas to be surveyed. Everything else, including measurements and light readings, is handled on site.'
     }
   ],
+  '/led-lighting-rebates-texas': [
+    {
+      q: 'Do I have to apply for the rebate before the lights are installed?',
+      a: 'In most programs, yes. Pre-approval confirms eligibility and reserves funds for your project, and a retrofit completed without it is usually not eligible. We file the application before installation starts.'
+    },
+    {
+      q: 'How much is a commercial LED lighting rebate in Texas?',
+      a: 'It depends on the program, the kilowatts and kilowatt-hours the retrofit removes, and whether controls such as occupancy sensors are included. Rates and budgets change each year, so your proposal shows the current estimate for your utility rather than a generic figure.'
+    },
+    {
+      q: 'Who receives the rebate payment?',
+      a: 'It varies by program. Some pay the customer directly after verification; others pay the contractor as the project sponsor and the amount is credited on your invoice. Either way, the proposal shows the incentive and your net cost.'
+    },
+    {
+      q: 'Can rebate funds run out?',
+      a: 'Yes. Programs run on calendar-year budgets reserved first come, first served, and funds are often exhausted late in the year. Filing early in the year is the safest way to capture the incentive.'
+    },
+    {
+      q: 'Do you handle rebates outside Texas?',
+      a: 'Yes. We prepare applications for Entergy Louisiana, Cleco, SWEPCO, OG&E, PSO, Entergy Arkansas and Evergy programs for projects in Louisiana, Oklahoma, Arkansas and Kansas City.'
+    }
+  ],
   '/lighting-proposal': [
     {
       q: 'What is in the lighting proposal?',

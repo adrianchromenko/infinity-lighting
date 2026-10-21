@@ -11,7 +11,8 @@ export const applications = [
 
 export const services = [
   { name: 'Free Energy Audit', short: 'Energy Audit', path: '/energy-audit', blurb: 'A fixture-by-fixture survey with light readings, hours and your kilowatt rate.' },
-  { name: 'Lighting Proposal', short: 'Lighting Proposal', path: '/lighting-proposal', blurb: 'A layout, savings analysis and payback period, with utility rebates handled.' }
+  { name: 'Lighting Proposal', short: 'Lighting Proposal', path: '/lighting-proposal', blurb: 'A layout, savings analysis and payback period, with utility rebates handled.' },
+  { name: 'LED Lighting Rebates in Texas', short: 'Rebates', path: '/led-lighting-rebates-texas', blurb: 'How CenterPoint, Oncor, Austin Energy, CPS Energy and other utility programs pay for LED retrofits.' }
 ]
 
 export const allServices = [...applications, ...services]

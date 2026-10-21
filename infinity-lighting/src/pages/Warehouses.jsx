@@ -1,6 +1,7 @@
 import './Warehouses.css'
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import { imgSize } from '../data/imageSizes'
 import FAQ, { faqSchema } from '../components/FAQ'
 import RelatedLinks from '../components/RelatedLinks'
 import { faqs } from '../data/faqs'
@@ -160,11 +161,11 @@ const Warehouses = () => {
               </div>
               <div className="wh-before-after">
                 <div className="wh-ba-frame">
-                  <img src="/images/lenexa-before.jpg" alt="Keurig Dr Pepper warehouse before LED high bay upgrade" loading="lazy" />
+                  <img src="/images/lenexa-before.jpg" alt="Keurig Dr Pepper warehouse before LED high bay upgrade" loading="lazy" {...imgSize('/images/lenexa-before.jpg')} />
                   <span className="wh-ba-tag">Before</span>
                 </div>
                 <div className="wh-ba-frame">
-                  <img src="/images/lenexa-after.jpg" alt="Keurig Dr Pepper warehouse after LED high bay upgrade" loading="lazy" />
+                  <img src="/images/lenexa-after.jpg" alt="Keurig Dr Pepper warehouse after LED high bay upgrade" loading="lazy" {...imgSize('/images/lenexa-after.jpg')} />
                   <span className="wh-ba-tag after">After</span>
                 </div>
               </div>

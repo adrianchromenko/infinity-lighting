@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { projects, snapshots } from '../data/projects'
 import './Projects.css'
 import SEO from '../components/SEO'
+import { imgSize } from '../data/imageSizes'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -11,8 +12,8 @@ const Projects = () => {
   return (
     <div className="projects-page">
       <SEO
-        title="Commercial LED Lighting Projects Houston & Texas"
-        description="Before and after photos from commercial LED lighting projects in Houston, Texas and Kansas City: parking garages, office towers, hotels and warehouses. Free audit."
+        title="LED Lighting Projects Houston & Texas"
+        description="Before and after photos from commercial LED lighting projects in Houston, Texas and Kansas City: garages, office towers, hotels and warehouses."
         keywords="LED lighting projects Houston, commercial lighting portfolio Texas, parking garage lighting project Houston, office lighting project Texas, hotel lighting renovation Houston, warehouse LED conversion Kansas City, LED case studies Texas"
         canonical="/projects"
       />
@@ -42,7 +43,7 @@ const Projects = () => {
         <div className="container">
           <div className="projects-intro">
             <p className="section-subtitle">Portfolio</p>
-            <h2 className="section-title">Transforming Houston's Commercial Spaces</h2>
+            <h2 className="section-title">Transforming Commercial Spaces in Houston and Beyond</h2>
             <p className="section-description">
               We handle every step from assessment to installation, and back it with a 10-year fixture and 5-year labor warranty.
             </p>
@@ -52,7 +53,7 @@ const Projects = () => {
             {projects.map(project => (
               <Link to={`/projects/${project.id}`} key={project.id} className="project-card">
                 <div className="project-image-container">
-                  <img src={project.image} alt={project.title} className="project-image" />
+                  <img src={project.image} alt={`${project.title} LED lighting project`} className="project-image" loading="lazy" {...imgSize(project.image)} />
                   <span className="project-type-badge">{project.type}</span>
                 </div>
                 <div className="project-content">
@@ -97,17 +98,17 @@ const Projects = () => {
                 {snap.before ? (
                   <div className="snapshot-pair">
                     <div className="snapshot-frame">
-                      <img src={snap.before} alt={`${snap.title} before`} loading="lazy" />
+                      <img src={snap.before} alt={`${snap.title} before`} loading="lazy" {...imgSize(snap.before)} />
                       <span className="snapshot-tag">Before</span>
                     </div>
                     <div className="snapshot-frame">
-                      <img src={snap.after} alt={`${snap.title} after`} loading="lazy" />
+                      <img src={snap.after} alt={`${snap.title} after`} loading="lazy" {...imgSize(snap.after)} />
                       <span className="snapshot-tag after">After</span>
                     </div>
                   </div>
                 ) : (
                   <div className="snapshot-frame single">
-                    <img src={snap.image} alt={snap.title} loading="lazy" />
+                    <img src={snap.image} alt={snap.title} loading="lazy" {...imgSize(snap.image)} />
                   </div>
                 )}
                 <div className="snapshot-body">

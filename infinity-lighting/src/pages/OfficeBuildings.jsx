@@ -1,6 +1,7 @@
 import './OfficeBuildings.css'
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import { imgSize } from '../data/imageSizes'
 import FAQ, { faqSchema } from '../components/FAQ'
 import RelatedLinks from '../components/RelatedLinks'
 import { faqs } from '../data/faqs'
@@ -192,7 +193,7 @@ const OfficeBuildings = () => {
               <div key={project.id} className={`project-card ${project.type}`}>
                 {project.image && (
                   <div className="project-image">
-                    <img src={project.image} alt={project.title} loading="lazy" />
+                    <img src={project.image} alt={`${project.title} LED lighting project`} loading="lazy" {...imgSize(project.image)} />
                   </div>
                   )}
                 <div className="project-info">

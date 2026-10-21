@@ -11,6 +11,30 @@
   margin: 0 0 1.75rem;
 }
 
+.related-links-cities {
+  margin: -0.75rem 0 1.75rem;
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+}
+
+.related-links-cities > span:first-child {
+  font-weight: 600;
+  color: var(--color-text-soft);
+}
+
+.related-links-cities a {
+  color: var(--color-text-soft);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+  text-underline-offset: 2px;
+}
+
+.related-links-cities a:hover {
+  color: var(--color-primary);
+  text-decoration-color: currentColor;
+}
+
 .related-links-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

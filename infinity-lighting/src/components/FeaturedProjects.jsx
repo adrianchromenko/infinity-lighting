@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { projects } from '../data/projects'
+import { imgSize } from '../data/imageSizes'
 import './FeaturedProjects.css'
 
 const FeaturedProjects = () => {
@@ -29,6 +30,7 @@ const FeaturedProjects = () => {
                   alt={project.title}
                   className="featured-project-image"
                   loading="lazy"
+                  {...imgSize(project.image)}
                 />
                 <span className="featured-project-badge">{project.type}</span>
               </div>

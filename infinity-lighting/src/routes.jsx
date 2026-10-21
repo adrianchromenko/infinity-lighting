@@ -9,6 +9,7 @@ import WallPacksFlood from './pages/WallPacksFlood'
 import ParkingLots from './pages/ParkingLots'
 import EnergyAudit from './pages/EnergyAudit'
 import LightingProposal from './pages/LightingProposal'
+import LedRebates from './pages/LedRebates'
 import Projects from './pages/Projects'
 import ProjectDetail from './pages/ProjectDetail'
 import ServiceAreas from './pages/ServiceAreas'
@@ -29,6 +30,7 @@ export const staticRoutes = [
   '/parking-lots',
   '/energy-audit',
   '/lighting-proposal',
+  '/led-lighting-rebates-texas',
   '/projects',
   '/service-areas',
   '/contact-us'
@@ -46,6 +48,7 @@ const AppRoutes = () => (
     <Route path="/parking-lots" element={<ParkingLots />} />
     <Route path="/energy-audit" element={<EnergyAudit />} />
     <Route path="/lighting-proposal" element={<LightingProposal />} />
+    <Route path="/led-lighting-rebates-texas" element={<LedRebates />} />
     <Route path="/projects" element={<Projects />} />
     <Route path="/projects/:id" element={<ProjectDetail />} />
     <Route path="/service-areas" element={<ServiceAreas />} />

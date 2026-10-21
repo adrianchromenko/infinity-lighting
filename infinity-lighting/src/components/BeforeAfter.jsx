@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { homeBeforeAfter } from '../data/projects'
+import { imgSize } from '../data/imageSizes'
 import './BeforeAfter.css'
 
 const BeforeAfter = () => {
@@ -19,11 +20,11 @@ const BeforeAfter = () => {
             <Link to={`/projects/${pair.projectId}`} key={pair.projectId} className="before-after-card">
               <div className="before-after-images">
                 <div className="before-after-frame">
-                  <img src={pair.before} alt={`${pair.title} before LED retrofit`} loading="lazy" />
+                  <img src={pair.before} alt={`${pair.title} before LED retrofit`} loading="lazy" {...imgSize(pair.before)} />
                   <span className="before-after-tag before">Before</span>
                 </div>
                 <div className="before-after-frame">
-                  <img src={pair.after} alt={`${pair.title} after LED retrofit`} loading="lazy" />
+                  <img src={pair.after} alt={`${pair.title} after LED retrofit`} loading="lazy" {...imgSize(pair.after)} />
                   <span className="before-after-tag after">After</span>
                 </div>
               </div>

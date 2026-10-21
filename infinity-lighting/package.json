@@ -6,7 +6,7 @@
   "scripts": {
     "start": "vite --port 3000",
     "dev": "vite --port 3000",
-    "build": "vite build && vite build --ssr --outDir dist-ssr && node scripts/prerender.mjs",
+    "build": "node scripts/image-sizes.mjs && vite build && vite build --ssr --outDir dist-ssr && node scripts/prerender.mjs",
     "preview": "vite preview",
     "server": "node server/server.js",
     "dev:all": "concurrently \"npm run dev\" \"npm run server\"",

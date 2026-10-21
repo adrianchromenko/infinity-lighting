@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import { imgSize } from '../data/imageSizes'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -130,11 +131,11 @@ const ServiceArea = () => {
             <div className="sa-ba-card">
               <div className="sa-ba-images">
                 <figure className="sa-ba-frame">
-                  <img src={area.beforeAfter.before} alt={`${area.beforeAfter.title} before the LED high bay conversion`} loading="lazy" />
+                  <img src={area.beforeAfter.before} alt={`${area.beforeAfter.title} before the LED high bay conversion`} loading="lazy" {...imgSize(area.beforeAfter.before)} />
                   <figcaption className="sa-ba-tag before">Before</figcaption>
                 </figure>
                 <figure className="sa-ba-frame">
-                  <img src={area.beforeAfter.after} alt={`${area.beforeAfter.title} after the LED high bay conversion`} loading="lazy" />
+                  <img src={area.beforeAfter.after} alt={`${area.beforeAfter.title} after the LED high bay conversion`} loading="lazy" {...imgSize(area.beforeAfter.after)} />
                   <figcaption className="sa-ba-tag after">After</figcaption>
                 </figure>
               </div>
@@ -160,7 +161,7 @@ const ServiceArea = () => {
               {projects.map(project => (
                 <Link to={`/projects/${project.id}`} key={project.id} className="sa-project-card">
                   <div className="sa-project-image">
-                    <img src={project.image} alt={`${project.title}, ${project.type} LED lighting project`} loading="lazy" />
+                    <img src={project.image} alt={`${project.title}, ${project.type} LED lighting project`} loading="lazy" {...imgSize(project.image)} />
                     <span className="sa-project-type">{project.type}</span>
                   </div>
                   <div className="sa-project-body">

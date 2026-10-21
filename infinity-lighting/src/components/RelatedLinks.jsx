@@ -1,15 +1,31 @@
 import { Link } from 'react-router-dom'
-import { allServices } from '../data/services'
-import { serviceAreasByGroup } from '../data/serviceAreas'
+import { allServices, applications } from '../data/services'
+import { serviceAreasByGroup, serviceAreasBySlug } from '../data/serviceAreas'
 import './RelatedLinks.css'
 
 // Internal links to the other services, the project portfolio and the service-area pages.
 const RelatedLinks = ({ current, title = 'Explore More' }) => {
   const others = allServices.filter(s => s.path !== current)
+  // On an application page, add "<service> in <city>" links so each service is tied to every market.
+  const service = applications.find(s => s.path === current)
+  const cityAreas = service
+    ? [serviceAreasBySlug['downtown-houston'], ...serviceAreasByGroup.texas, ...serviceAreasByGroup.regional]
+    : []
   return (
     <section className="related-links">
       <div className="container">
         <h2 className="related-links-title">{title}</h2>
+        {service && (
+          <p className="related-links-cities">
+            <span>{service.name} across Texas and nearby states:</span>{' '}
+            {cityAreas.map((a, i) => (
+              <span key={a.slug}>
+                <Link to={`/service-areas/${a.slug}`}>{service.name} in {a.slug === 'downtown-houston' ? 'Houston' : a.name}</Link>
+                {i < cityAreas.length - 1 ? ', ' : '.'}
+              </span>
+            ))}
+          </p>
+        )}
         <div className="related-links-grid">
           <div className="related-links-group">
             <h3>LED Lighting Services</h3>

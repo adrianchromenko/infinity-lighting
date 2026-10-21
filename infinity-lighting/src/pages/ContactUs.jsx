@@ -72,8 +72,8 @@ const ContactUs = () => {
   return (
     <div className="contact-us-page">
       <SEO
-        title="Contact Us | LED Lighting Houston & Texas"
-        description="Request a free commercial lighting energy audit from Infinity Lighting Solutions, Richmond TX. Call (281) 202-4625. Serving Houston, all of Texas and nearby states."
+        title="Contact | LED Lighting Houston & Texas"
+        description="Request a free commercial lighting energy audit from Infinity Lighting Solutions, Richmond TX. Call (281) 202-4625. Serving Houston, Texas and nearby states."
         keywords="contact LED lighting Houston, commercial lighting consultation Texas, LED lighting contractor Houston TX, LED lighting contractor Texas, Infinity Lighting Solutions, commercial LED lighting quote Texas, commercial electrician Houston TX"
         canonical="/contact-us"
       />

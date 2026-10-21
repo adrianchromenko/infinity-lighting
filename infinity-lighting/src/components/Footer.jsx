@@ -1,6 +1,7 @@
 import './Footer.css'
 import { Link } from 'react-router-dom'
 import { serviceAreasByGroup } from '../data/serviceAreas'
+import { imgSize } from '../data/imageSizes'
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo-section">
-            <img src="/inflighting-white.png" alt="Infinity Lighting Solutions" className="footer-logo" loading="lazy" />
+            <img src="/inflighting-white.png" alt="Infinity Lighting Solutions" className="footer-logo" loading="lazy" {...imgSize('/inflighting-white.png')} />
             <h3>Houston LED Lighting Experts</h3>
             <p>Richmond, TX 77407</p>
             <p>Serving Greater Houston and all of Texas, including Dallas–Fort Worth, Austin and San Antonio</p>
@@ -56,6 +57,7 @@ const Footer = () => {
               <li><Link to="/projects">Projects</Link></li>
               <li><Link to="/energy-audit">Free Energy Audit</Link></li>
               <li><Link to="/lighting-proposal">Lighting Proposal</Link></li>
+              <li><Link to="/led-lighting-rebates-texas">LED Rebates in Texas</Link></li>
               <li><Link to="/contact-us">Contact Us</Link></li>
             </ul>
           </div>

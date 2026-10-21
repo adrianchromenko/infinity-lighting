@@ -15,7 +15,8 @@ const HomePage = () => {
   return (
     <>
       <SEO
-        description="Houston-based commercial LED lighting and electrical contractor serving all of Texas and nearby states. Garages, offices, hotels and warehouses re-lit with a 10-year warranty."
+        description="Houston commercial LED lighting and electrical contractor serving Texas and nearby states. Garages, offices, hotels and warehouses with a 10-year warranty."
+        preloadImage="/images/garage-night.jpg"
         keywords="commercial LED lighting Houston, commercial LED lighting Texas, LED lighting Houston TX, LED retrofit Texas, commercial lighting contractor Texas, LED lighting Dallas, LED lighting Austin, LED lighting San Antonio, parking garage LED lighting Texas, warehouse LED lighting Texas, commercial electrician Houston"
         canonical="/"
       />

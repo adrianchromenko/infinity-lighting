@@ -17,7 +17,8 @@ const Header = () => {
 
   const servicesItems = [
     { name: 'Commercial Lighting Assessment & Energy Audit', path: '/energy-audit' },
-    { name: 'Comprehensive Lighting Proposal', path: '/lighting-proposal' }
+    { name: 'Comprehensive Lighting Proposal', path: '/lighting-proposal' },
+    { name: 'LED Lighting Rebates in Texas', path: '/led-lighting-rebates-texas' }
   ]
 
   // While the mobile menu is open: lock page scroll and hide the floating call/chat buttons (see index.css).

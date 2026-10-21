@@ -98,6 +98,10 @@ Designed by [Primary Digital Marketing](https://primarydm.com)
    and JSON-LD already in the HTML. It also writes `dist/404.html` (noindex) and regenerates
    `sitemap.xml` from the route list in `src/routes.jsx` and the projects in `src/data/projects.js`.
 
+`scripts/image-sizes.mjs` (also run by `npm run build`) writes `src/data/imageSizes.js` with the pixel size of every image
+under `public/`; components spread `imgSize(src)` onto `<img>` so the browser reserves space and the page does not shift.
+The rebate guide at `/led-lighting-rebates-texas` lives in `src/pages/LedRebates.jsx`; its FAQs are in `src/data/faqs.js`.
+
 Per-page tags live in each page's `<SEO ... />` (see `src/components/SEO.jsx`). Site-wide
 business schema lives in `index.html`. Adding a page means adding it to `src/routes.jsx`
 (both the `<Route>` and the `staticRoutes` list); new projects only need a `src/data/projects.js` entry.
