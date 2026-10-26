@@ -10,21 +10,21 @@ export const projects = [
     title: 'Four Oaks Place Parking Garage',
     type: 'Parking Garage',
     location: '1300–1360 Post Oak Blvd., Houston, TX',
-    shortDescription: 'Nearly 1,500 fixtures eliminated with a one-year payback',
-    description: "Four Oaks Place is the project we point to when owners ask what a smart LED design can do. The garage was lit with 8-foot T8 fluorescent fixtures. We re-lit it with 4-foot LED linear luminaires with integrated motion sensors and eliminated nearly 1,500 fixtures in the process. Payback came in just over one year at a 99% ROI. Installed almost seven years ago, the garage is still bright and even today. The 1500 Post Oak elevator lobby received the same treatment, with yellowed cove lighting replaced by clean white LED.",
+    shortDescription: 'Nearly 1,500 fixtures eliminated with an 18-month payback',
+    description: "Four Oaks Place is the project we point to when owners ask what a smart LED design can do. The garage was lit with 8-foot T8 fluorescent fixtures. We re-lit it with 4-foot LED linear luminaires with integrated motion sensors and eliminated nearly 1,500 fixtures in the process. Payback came in about 18 months. Installed almost seven years ago, the garage is still bright and even today. The 1500 Post Oak elevator lobby received the same treatment, with yellowed cove lighting replaced by clean white LED.",
     features: [
       '8-foot T8 fluorescents replaced with 4-foot LED linear fixtures',
       'Nearly 1,500 fixtures eliminated from the design',
       'Integrated motion sensors on every fixture',
-      'Payback in just over one year at a 99% ROI',
+      'Payback in about 18 months',
       'Still bright and even almost seven years after install',
       '1500 Post Oak lobby cove lighting upgraded to LED',
-      'Full electrical scope handled in-house'
+      'Fixtures, controls and surge protection handled in-house'
     ],
     stats: [
       { value: '~1,500', label: 'Fixtures eliminated' },
-      { value: '~1 yr', label: 'Payback period' },
-      { value: '99%', label: 'Return on investment' }
+      { value: '18 mo', label: 'Payback period' },
+      { value: '7 yrs', label: 'Still bright and even' }
     ],
     image: `${IMG}/four-oaks-garage-today.jpg`,
     images: [
@@ -50,7 +50,7 @@ export const projects = [
       'Motion sensors added for additional savings',
       'Phase-based implementation minimizing disruption',
       '70% energy cost reduction achieved',
-      'Full electrical service upgrades included'
+      'Lighting controls and surge protection included'
     ],
     image: `${IMG}/garage-night.jpg`,
     images: [
@@ -114,7 +114,7 @@ export const projects = [
       'About 2.5 times more light on the deck',
       '64.5 watts saved per fixture',
       'Brighter, safer parking for theatre patrons',
-      'Full electrical scope handled in-house'
+      'Fixtures, controls and surge protection handled in-house'
     ],
     stats: [
       { value: '8.5 → 21.1', label: 'Foot-candles on the deck' },
@@ -129,23 +129,20 @@ export const projects = [
   },
   {
     id: 'bhp-tower',
-    title: 'BHP Tower Entry Plaza & Lobby',
+    title: 'BHP Tower Lobby',
     type: 'Commercial Office',
     location: '1400 Post Oak Blvd., Houston, TX',
-    shortDescription: 'Entry plaza bollards and lobby re-lit in even white LED',
-    description: 'At BHP Tower on Post Oak the bollards and entry plaza lighting were re-lit to even white LED, photographed before and after from the same spot. The lobby received the same treatment, so the stone, steel and glass the owner paid for finally read the way they were designed to. A simple fix with amazing results.',
+    shortDescription: 'Lobby re-lit in even white LED',
+    description: 'At BHP Tower on Post Oak we re-lit the lobby in even white LED, so the stone, steel and glass the owner paid for finally read the way they were designed to. A simple fix with amazing results.',
     features: [
-      'Entry plaza bollards converted to LED',
-      'Entrance lighting re-lit in even white light',
       'Lobby lighting upgraded to LED',
-      'Before and after shot from the same vantage point',
-      'Improved safety and curb appeal at night',
-      'Full electrical scope handled in-house'
+      'Even white light across stone, steel and glass finishes',
+      'Class A first impression restored for tenants and visitors',
+      'Installed without disrupting the building',
+      'Fixtures, controls and surge protection handled in-house'
     ],
-    image: `${IMG}/bhp-entry-after.jpg`,
+    image: `${IMG}/bhp-lobby-after.jpg`,
     images: [
-      { url: `${IMG}/bhp-entry-before.jpg`, caption: 'Entry plaza and bollards before', isBefore: true },
-      { url: `${IMG}/bhp-entry-after.jpg`, caption: 'Entry plaza and bollards after, same spot', isAfter: true },
       { url: `${IMG}/bhp-lobby-after.jpg`, caption: 'Lobby after the LED upgrade' }
     ]
   },
@@ -162,8 +159,8 @@ export const projects = [
       'Adjustable beam angles for task-specific lighting',
       'Dimmable controls for ambiance adjustment',
       'Integration with existing electrical infrastructure',
-      'Energy-efficient design reducing costs by 50%',
-      'Full-service electrical upgrades as needed'
+      'Energy-efficient design cutting lighting energy use by 60% to 70%',
+      'Surge protection installed with the new fixtures'
     ],
     image: `${IMG}/office-1.jpg`,
     images: [
@@ -187,7 +184,7 @@ export const projects = [
       '65% reduction in energy consumption',
       '24/7 operational reliability with minimal maintenance',
       'Enhanced security with improved brightness levels',
-      'Full electrical system evaluation and upgrades'
+      'Fixture-by-fixture lighting evaluation and layout'
     ],
     image: `${OLD}/2323 S. Shepherd Parking Garage/2323 S. Shepherd After 1.jpg`,
     images: [
@@ -255,10 +252,10 @@ export const homeBeforeAfter = [
     after: `${IMG}/marriott-entry-after.jpg`
   },
   {
-    projectId: 'bhp-tower',
-    title: 'BHP Tower Entry Plaza',
-    note: 'Bollards and entry lighting re-lit in even white LED.',
-    before: `${IMG}/bhp-entry-before.jpg`,
-    after: `${IMG}/bhp-entry-after.jpg`
+    projectId: 'four-oaks-place',
+    title: 'Four Oaks Place Lobby',
+    note: 'Yellowed cove lighting at 1500 Post Oak replaced with clean white LED, same camera position.',
+    before: `${IMG}/fop-1500-lobby-before.jpg`,
+    after: `${IMG}/fop-1500-lobby-after.jpg`
   }
 ]

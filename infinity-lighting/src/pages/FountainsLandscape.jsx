@@ -13,14 +13,6 @@ import FloatingPhone from '../components/FloatingPhone'
 const FountainsLandscape = () => {
   const projects = [
     {
-      id: 1,
-      title: "BHP Billiton Tower",
-      image: "/images/bhp-entry-after.jpg",
-      description: "Completed the bollards and the results are fantastic! Simple Fix with amazing results.",
-      location: "1400 Post Oak Blvd., Houston, TX",
-      type: "bollards"
-    },
-    {
       id: 2,
       title: "Four Oaks Place - Trees",
       image: "/images/christmas-crepes.jpg",

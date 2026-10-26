@@ -64,10 +64,14 @@ npm run preview
 
 ## 📍 Service Area
 
-Based in Richmond, TX. Service-area landing pages (`src/data/serviceAreas.js`) are grouped as:
-- **Greater Houston**: Downtown, Galleria/Uptown, Westchase, Greenway/Upper Kirby, The Woodlands/Spring, Sugar Land, Katy/Energy Corridor, Richmond/Rosenberg
-- **Across Texas**: Dallas–Fort Worth, Austin, San Antonio, Beaumont/Golden Triangle, Corpus Christi, Bryan–College Station
-- **Nearby states**: Louisiana, Oklahoma City & Tulsa, Arkansas, Kansas City (Keurig Dr Pepper warehouse in Lenexa, KS)
+Based in Richmond, TX and serving **Greater Houston only** (confirmed by the client). Service-area landing pages
+(`src/data/serviceAreas.js`): Downtown, Galleria/Uptown, Westchase, Greenway/Upper Kirby, The Woodlands/Spring, Sugar Land,
+Katy/Energy Corridor, Richmond/Rosenberg. Do not add out-of-town pages or copy.
+
+Positioning notes from the client: the company is an LED lighting contractor, not a full-service electrical contractor.
+The 10-year fixture / 5-year labor warranty applies only to the commercial-grade fixtures they supply and install with surge
+protection (shared wording in `src/data/warranty.js`). Typical savings are 60–70% of lighting energy; typical payback is 2–3
+years, 12–18 months in the best cases. The BHP Tower project was the lobby only.
 
 ## 📞 Contact
 
@@ -100,7 +104,7 @@ Designed by [Primary Digital Marketing](https://primarydm.com)
 
 `scripts/image-sizes.mjs` (also run by `npm run build`) writes `src/data/imageSizes.js` with the pixel size of every image
 under `public/`; components spread `imgSize(src)` onto `<img>` so the browser reserves space and the page does not shift.
-The rebate guide at `/led-lighting-rebates-texas` lives in `src/pages/LedRebates.jsx`; its FAQs are in `src/data/faqs.js`.
+The rebate guide at `/led-lighting-rebates-houston` lives in `src/pages/LedRebates.jsx`; its FAQs are in `src/data/faqs.js`.
 
 Per-page tags live in each page's `<SEO ... />` (see `src/components/SEO.jsx`). Site-wide
 business schema lives in `index.html`. Adding a page means adding it to `src/routes.jsx`
@@ -110,10 +114,8 @@ business schema lives in `index.html`. Adding a page means adding it to `src/rou
 
 - **Service-area landing pages** live in `src/data/serviceAreas.js`. Each entry becomes `/service-areas/<slug>` with its own
   title, description, intro copy, property types, nearby projects, FAQ (with FAQPage schema) and links. Add an entry and it is
-  routed, prerendered and added to the sitemap automatically. Each entry carries `group` (`houston` | `texas` | `regional`),
-  `city` and `state`, which drive the hub page sections, the footer/related-links columns, the per-page Service schema
-  `areaServed`, and the travel/licensing wording on the page. Optional fields: `utility` (named in the trust card) and
-  `beforeAfter` (a single photo pair, used for Lenexa, KS). Keep out-of-town pages honest: no invented local projects.
+  routed, prerendered and added to the sitemap automatically. Each entry carries `city`, `state` and `utility`, which drive
+  the per-page Service schema `areaServed` and the rebate line in the trust card.
 - **FAQs** for the service pages live in `src/data/faqs.js`, keyed by route. They render through `src/components/FAQ.jsx` and
   are emitted as FAQPage structured data.
 - **Services** (names, paths, blurbs) live in `src/data/services.js` and feed the related-links block, the footer and the

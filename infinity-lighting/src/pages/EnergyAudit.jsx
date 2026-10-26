@@ -14,9 +14,9 @@ const EnergyAudit = () => {
   return (
     <div className="energy-audit-page">
       <SEO
-        title="Free Energy Audit Houston & Texas"
-        description="Free commercial lighting energy audit in Houston and across Texas. Fixture survey, light readings and your kW rate turned into a savings, ROI and rebate report."
-        keywords="LED energy audit Houston, free lighting assessment Texas, commercial energy audit Houston, commercial lighting audit Texas, LED lighting savings Houston TX, energy efficiency audit Dallas Austin San Antonio, free lighting audit Houston"
+        title="Free Energy Audit Houston TX"
+        description="Free commercial lighting energy audit across Greater Houston. Fixture survey, light readings and your kW rate turned into a savings, payback and rebate report."
+        keywords="LED energy audit Houston, free lighting assessment Houston, commercial energy audit Houston, commercial lighting audit Houston TX, LED lighting savings Houston TX, energy efficiency audit Houston, free lighting audit Houston"
         canonical="/energy-audit"
         service
         schema={faqSchema(faqs['/energy-audit'])}
@@ -30,8 +30,8 @@ const EnergyAudit = () => {
           <div className="ea-hero-content">
             <h1 className="ea-hero-title">Houston Commercial LED Lighting Assessment<br />&amp; Energy Audit</h1>
             <div className="ea-hero-highlight">
-              <p>Most clients save more than <span className="accent">50%</span></p>
-              <p>on energy cost with LED lighting.</p>
+              <p>Most clients cut lighting energy use by <span className="accent">60–70%</span></p>
+              <p>with LED lighting.</p>
             </div>
           </div>
         </div>
@@ -125,12 +125,12 @@ const EnergyAudit = () => {
                 <h3>Average Client Savings</h3>
                 <div className="savings-display">
                   <div className="savings-percentage">
-                    <span className="percentage-number">50-75%</span>
+                    <span className="percentage-number">60–70%</span>
                     <span className="percentage-label">Energy Cost Reduction</span>
                   </div>
                   <div className="savings-roi">
-                    <span className="roi-number">12-24</span>
-                    <span className="roi-label">Months Typical ROI</span>
+                    <span className="roi-number">2–3</span>
+                    <span className="roi-label">Years Typical Payback</span>
                   </div>
                 </div>
               </div>

@@ -15,9 +15,9 @@ const HomePage = () => {
   return (
     <>
       <SEO
-        description="Houston commercial LED lighting and electrical contractor serving Texas and nearby states. Garages, offices, hotels and warehouses with a 10-year warranty."
+        description="Houston commercial LED lighting contractor. Garage, office, hotel and warehouse LED retrofits across Greater Houston, backed by a 10-year fixture warranty."
         preloadImage="/images/garage-night.jpg"
-        keywords="commercial LED lighting Houston, commercial LED lighting Texas, LED lighting Houston TX, LED retrofit Texas, commercial lighting contractor Texas, LED lighting Dallas, LED lighting Austin, LED lighting San Antonio, parking garage LED lighting Texas, warehouse LED lighting Texas, commercial electrician Houston"
+        keywords="commercial LED lighting Houston, LED lighting Houston TX, commercial lighting contractor Houston, LED retrofit Houston, parking garage LED lighting Houston, warehouse LED lighting Houston, office LED lighting Houston, LED lighting Katy, LED lighting Sugar Land, LED lighting The Woodlands, LED lighting Richmond TX"
         canonical="/"
       />
       <TopBar />

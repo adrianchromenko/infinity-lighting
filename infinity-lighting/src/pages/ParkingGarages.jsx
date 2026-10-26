@@ -44,7 +44,7 @@ const ParkingGarages = () => {
       <SEO
         title="Parking Garage LED Lighting Houston"
         description="Houston parking garage LED retrofits with motion-sensor linear fixtures that cut lighting cost by 80%+. The garage stays open during install. Free energy audit."
-        keywords="parking garage lighting Houston, LED garage lighting Houston TX, parking structure lighting Houston, garage LED retrofit Houston, commercial garage lighting Texas, parking garage electrician Houston"
+        keywords="parking garage lighting Houston, LED garage lighting Houston TX, parking structure lighting Houston, garage LED retrofit Houston, commercial garage lighting Houston TX, parking garage lighting contractor Houston"
         canonical="/parking-garages"
         service
         schema={faqSchema(faqs['/parking-garages'])}

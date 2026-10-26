@@ -53,7 +53,7 @@ const today = new Date().toISOString().slice(0, 10)
 const priorityFor = (route) => {
   if (route === '/') return '1.0'
   if (route.startsWith('/projects/')) return '0.7'
-  if (route.startsWith('/service-areas/')) return serviceAreas.find(a => `/service-areas/${a.slug}` === route)?.group === 'regional' ? '0.7' : '0.8'
+  if (route.startsWith('/service-areas/')) return '0.8'
   if (route === '/contact-us' || route === '/lighting-proposal') return '0.8'
   return '0.9'
 }

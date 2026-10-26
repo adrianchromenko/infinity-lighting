@@ -26,10 +26,10 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "ElectricalContractor",
+          "@type": "HomeAndConstructionBusiness",
           "@id": "https://inflighting.com/#business",
           "name": "Infinity Lighting Solutions",
-          "description": "Houston-based commercial LED lighting and full-service electrical contractor serving all of Texas and nearby states, including Dallas–Fort Worth, Austin, San Antonio, Louisiana, Oklahoma, Arkansas and Kansas City. LED retrofits for parking garages, stairwells, office buildings, hotels, warehouses and parking lots.",
+          "description": "Commercial LED lighting contractor based in Richmond, TX and serving all of Greater Houston. Commercial-grade LED retrofits for parking garages, stairwells, office buildings, hotels, warehouses and parking lots, installed with surge protection and backed by a 10-year fixture and 5-year labor warranty.",
           "url": "https://inflighting.com",
           "logo": "https://inflighting.com/Logo-V2.png",
           "image": "https://inflighting.com/images/garage-night.jpg",
@@ -48,27 +48,21 @@
             "longitude": "-95.7606"
           },
           "areaServed": [
-            { "@type": "State", "name": "Texas" },
             { "@type": "City", "name": "Houston", "containedInPlace": { "@type": "State", "name": "Texas" } },
+            { "@type": "City", "name": "Richmond", "containedInPlace": { "@type": "State", "name": "Texas" } },
+            { "@type": "City", "name": "Rosenberg", "containedInPlace": { "@type": "State", "name": "Texas" } },
             { "@type": "City", "name": "Sugar Land", "containedInPlace": { "@type": "State", "name": "Texas" } },
             { "@type": "City", "name": "Katy", "containedInPlace": { "@type": "State", "name": "Texas" } },
             { "@type": "City", "name": "The Woodlands", "containedInPlace": { "@type": "State", "name": "Texas" } },
-            { "@type": "City", "name": "Richmond", "containedInPlace": { "@type": "State", "name": "Texas" } },
             { "@type": "City", "name": "Spring", "containedInPlace": { "@type": "State", "name": "Texas" } },
-            { "@type": "City", "name": "Dallas", "containedInPlace": { "@type": "State", "name": "Texas" } },
-            { "@type": "City", "name": "Fort Worth", "containedInPlace": { "@type": "State", "name": "Texas" } },
-            { "@type": "City", "name": "Austin", "containedInPlace": { "@type": "State", "name": "Texas" } },
-            { "@type": "City", "name": "San Antonio", "containedInPlace": { "@type": "State", "name": "Texas" } },
-            { "@type": "City", "name": "Beaumont", "containedInPlace": { "@type": "State", "name": "Texas" } },
-            { "@type": "City", "name": "Corpus Christi", "containedInPlace": { "@type": "State", "name": "Texas" } },
-            { "@type": "City", "name": "College Station", "containedInPlace": { "@type": "State", "name": "Texas" } },
-            { "@type": "State", "name": "Louisiana" },
-            { "@type": "State", "name": "Oklahoma" },
-            { "@type": "State", "name": "Arkansas" },
-            { "@type": "City", "name": "Kansas City", "containedInPlace": { "@type": "State", "name": "Kansas" } },
-            { "@type": "City", "name": "Kansas City", "containedInPlace": { "@type": "State", "name": "Missouri" } }
+            { "@type": "City", "name": "Pearland", "containedInPlace": { "@type": "State", "name": "Texas" } },
+            { "@type": "City", "name": "Cypress", "containedInPlace": { "@type": "State", "name": "Texas" } },
+            { "@type": "City", "name": "Conroe", "containedInPlace": { "@type": "State", "name": "Texas" } },
+            { "@type": "AdministrativeArea", "name": "Harris County" },
+            { "@type": "AdministrativeArea", "name": "Fort Bend County" },
+            { "@type": "AdministrativeArea", "name": "Montgomery County" }
           ],
-          "knowsAbout": ["Commercial LED lighting", "LED retrofit", "Parking garage lighting", "Warehouse high bay lighting", "Commercial electrical contracting", "Utility rebate programs"],
+          "knowsAbout": ["Commercial LED lighting", "LED retrofit", "Parking garage lighting", "Warehouse high bay lighting", "Surge protection", "Utility rebate programs"],
           "priceRange": "$$",
           "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
@@ -94,7 +88,7 @@
             "@type": "ContactPoint",
             "telephone": "+1-281-202-4625",
             "contactType": "sales",
-            "areaServed": ["US-TX", "US-LA", "US-OK", "US-AR", "US-KS", "US-MO"],
+            "areaServed": "US-TX",
             "availableLanguage": "English"
           }
         },

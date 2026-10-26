@@ -4,7 +4,7 @@ export const faqs = {
   '/parking-garages': [
     {
       q: 'How much can a parking garage save by switching to LED?',
-      a: 'Our 4-foot linear LED luminaire with an integrated motion sensor typically cuts garage lighting cost by more than 80%. At Four Oaks Place on Post Oak Blvd. the retrofit paid for itself in just over one year.'
+      a: 'Our 4-foot linear LED luminaire with an integrated motion sensor typically cuts garage lighting cost by more than 80%. At Four Oaks Place on Post Oak Blvd. the retrofit paid for itself in about 18 months.'
     },
     {
       q: 'Do you replace garage fixtures one for one?',
@@ -16,7 +16,7 @@ export const faqs = {
     },
     {
       q: 'What warranty comes with a garage LED retrofit?',
-      a: 'Every installation is backed by a 10-year fixture warranty and a 5-year labor warranty. Qualifying surge protection devices are required.'
+      a: 'Every installation is backed by a 10-year fixture warranty and a 5-year labor warranty. It applies to the commercial-grade fixtures we supply and install together with surge protection; fixtures we did not install, or installed without surge protection, do not qualify.'
     }
   ],
   '/stairwells': [
@@ -30,7 +30,7 @@ export const faqs = {
     },
     {
       q: 'How quickly does a stairwell upgrade pay for itself?',
-      a: 'Most stairwell installations pay for themselves in 12 to 18 months through energy savings and reduced maintenance. The Lifetime Fitness project in Houston reached payback in 14 months.'
+      a: 'Stairwells are one of the fastest-payback applications because motion control cuts run hours as well as watts. Many pay for themselves in 12 to 18 months, versus two to three years for a typical LED retrofit. The Lifetime Fitness project in Houston reached payback in 14 months.'
     },
     {
       q: 'Will the new fixtures work with our existing building systems?',
@@ -145,13 +145,13 @@ export const faqs = {
       a: 'A recent electric bill and access to the areas to be surveyed. Everything else, including measurements and light readings, is handled on site.'
     }
   ],
-  '/led-lighting-rebates-texas': [
+  '/led-lighting-rebates-houston': [
     {
       q: 'Do I have to apply for the rebate before the lights are installed?',
       a: 'In most programs, yes. Pre-approval confirms eligibility and reserves funds for your project, and a retrofit completed without it is usually not eligible. We file the application before installation starts.'
     },
     {
-      q: 'How much is a commercial LED lighting rebate in Texas?',
+      q: 'How much is a commercial LED lighting rebate in Houston?',
       a: 'It depends on the program, the kilowatts and kilowatt-hours the retrofit removes, and whether controls such as occupancy sensors are included. Rates and budgets change each year, so your proposal shows the current estimate for your utility rather than a generic figure.'
     },
     {
@@ -163,8 +163,8 @@ export const faqs = {
       a: 'Yes. Programs run on calendar-year budgets reserved first come, first served, and funds are often exhausted late in the year. Filing early in the year is the safest way to capture the incentive.'
     },
     {
-      q: 'Do you handle rebates outside Texas?',
-      a: 'Yes. We prepare applications for Entergy Louisiana, Cleco, SWEPCO, OG&E, PSO, Entergy Arkansas and Evergy programs for projects in Louisiana, Oklahoma, Arkansas and Kansas City.'
+      q: 'Which utility rebate applies to my Houston property?',
+      a: 'Most of Harris and Fort Bend County is CenterPoint Energy territory. Conroe and much of Montgomery County are served by Entergy Texas, and League City, Texas City and parts of Galveston and Brazoria counties by TNMP. Your electric bill names the utility, and we confirm the program during the free audit.'
     }
   ],
   '/lighting-proposal': [

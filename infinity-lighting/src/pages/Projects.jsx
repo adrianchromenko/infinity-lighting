@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { projects, snapshots } from '../data/projects'
+import { WARRANTY_SHORT } from '../data/warranty'
 import './Projects.css'
 import SEO from '../components/SEO'
 import { imgSize } from '../data/imageSizes'
@@ -12,9 +13,9 @@ const Projects = () => {
   return (
     <div className="projects-page">
       <SEO
-        title="LED Lighting Projects Houston & Texas"
-        description="Before and after photos from commercial LED lighting projects in Houston, Texas and Kansas City: garages, office towers, hotels and warehouses."
-        keywords="LED lighting projects Houston, commercial lighting portfolio Texas, parking garage lighting project Houston, office lighting project Texas, hotel lighting renovation Houston, warehouse LED conversion Kansas City, LED case studies Texas"
+        title="Commercial LED Lighting Projects Houston"
+        description="Before and after photos from commercial LED lighting projects across Greater Houston: parking garages, office towers, hotels and warehouses."
+        keywords="LED lighting projects Houston, commercial lighting portfolio Houston, parking garage lighting project Houston, office lighting project Houston, hotel lighting renovation Houston, warehouse LED conversion, LED case studies Houston"
         canonical="/projects"
       />
       <TopBar />
@@ -26,7 +27,7 @@ const Projects = () => {
           <div className="projects-hero-content">
             <h1 className="projects-hero-title">Our Lighting Projects</h1>
             <p className="projects-hero-subtitle">
-              Full-Service Electrical & LED Lighting Solutions with an Industry-Leading 10-Year Fixture & 5-Year Labor Warranty
+              Commercial LED Lighting Solutions with an Industry-Leading 10-Year Fixture & 5-Year Labor Warranty*
             </p>
             <div className="warranty-badge">
               <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -34,6 +35,7 @@ const Projects = () => {
               </svg>
               10-Year Fixture / 5-Year Labor Warranty
             </div>
+            <p className="projects-warranty-note">*{WARRANTY_SHORT}</p>
           </div>
         </div>
       </section>
@@ -43,7 +45,7 @@ const Projects = () => {
         <div className="container">
           <div className="projects-intro">
             <p className="section-subtitle">Portfolio</p>
-            <h2 className="section-title">Transforming Commercial Spaces in Houston and Beyond</h2>
+            <h2 className="section-title">Transforming Commercial Spaces Across Greater Houston</h2>
             <p className="section-description">
               We handle every step from assessment to installation, and back it with a 10-year fixture and 5-year labor warranty.
             </p>
@@ -127,7 +129,7 @@ const Projects = () => {
         <div className="container">
           <div className="projects-intro">
             <p className="section-subtitle">Why Choose Us</p>
-            <h2 className="section-title">Full-Service Electrical & Lighting Excellence</h2>
+            <h2 className="section-title">Commercial LED Lighting Excellence</h2>
           </div>
           
           <div className="highlights-grid">
@@ -141,7 +143,7 @@ const Projects = () => {
               <h3 className="highlight-title">10-Year Fixture / 5-Year Labor Warranty</h3>
               <p className="highlight-description">
                 Industry-leading coverage: a 10-year warranty on LED fixtures and a 5-year warranty on labor.
-                Qualifying surge protection devices required.
+                {WARRANTY_SHORT}
               </p>
             </div>
             
@@ -151,9 +153,9 @@ const Projects = () => {
                   <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6A4.997 4.997 0 017 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/>
                 </svg>
               </div>
-              <h3 className="highlight-title">Full-Service Electrical</h3>
+              <h3 className="highlight-title">Commercial-Grade Fixtures</h3>
               <p className="highlight-description">
-                Complete electrical services beyond just lighting - panel upgrades, wiring, and more
+                Robust, commercial-grade LED fixtures installed with surge protection, which is what lets us stand behind them for 10 years
               </p>
             </div>
             
@@ -177,8 +179,7 @@ const Projects = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Ready to Transform Your Space?</h2>
-            <p>Get your free energy assessment and discover how our full-service electrical 
-               and LED lighting solutions can save you money</p>
+            <p>Get your free energy assessment and discover how our commercial LED lighting solutions can save you money</p>
             <div className="cta-buttons">
               <a href="tel:2812024625" className="cta-button">
                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">

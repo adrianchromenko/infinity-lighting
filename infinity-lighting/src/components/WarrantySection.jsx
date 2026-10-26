@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { WARRANTY_TERMS } from '../data/warranty'
 import './WarrantySection.css'
 
 const WarrantySection = () => {
@@ -14,7 +15,7 @@ const WarrantySection = () => {
           
           <h2 className="warranty-title-main">Industry-Leading 10-Year Fixture & 5-Year Labor Warranty</h2>
           <p className="warranty-subtitle">
-            Full-Service Electrical & LED Lighting with Complete Peace of Mind
+            Commercial-grade LED fixtures, installed with surge protection, for complete peace of mind
           </p>
 
           <div className="warranty-features">
@@ -27,7 +28,7 @@ const WarrantySection = () => {
               </div>
               <h3 className="warranty-feature-title">10-Year Fixture Warranty</h3>
               <p className="warranty-feature-desc">
-                Manufacturer-backed coverage on all LED fixtures we install
+                Manufacturer-backed coverage on the commercial-grade LED fixtures we supply and install
               </p>
             </div>
 
@@ -49,16 +50,15 @@ const WarrantySection = () => {
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
               </div>
-              <h3 className="warranty-feature-title">Quality Guaranteed</h3>
+              <h3 className="warranty-feature-title">Surge Protection Included</h3>
               <p className="warranty-feature-desc">
-                Professional installation with rigorous quality control standards
+                Every installation includes surge protection, which protects the fixtures and is what qualifies them for the warranty
               </p>
             </div>
           </div>
 
           <p className="warranty-disclaimer">
-            Warranty coverage requires the installation of qualifying surge protection devices.
-            Contact us for full warranty terms and conditions.
+            {WARRANTY_TERMS}
           </p>
 
           <Link to="/contact-us" className="warranty-cta">

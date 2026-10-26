@@ -1,6 +1,6 @@
 import './Footer.css'
 import { Link } from 'react-router-dom'
-import { serviceAreasByGroup } from '../data/serviceAreas'
+import { serviceAreas } from '../data/serviceAreas'
 import { imgSize } from '../data/imageSizes'
 
 const Footer = () => {
@@ -12,8 +12,7 @@ const Footer = () => {
             <img src="/inflighting-white.png" alt="Infinity Lighting Solutions" className="footer-logo" loading="lazy" {...imgSize('/inflighting-white.png')} />
             <h3>Houston LED Lighting Experts</h3>
             <p>Richmond, TX 77407</p>
-            <p>Serving Greater Houston and all of Texas, including Dallas–Fort Worth, Austin and San Antonio</p>
-            <p>Projects in Louisiana, Oklahoma, Arkansas and Kansas City</p>
+            <p>Serving all of Greater Houston, from Downtown and the Galleria to The Woodlands, Katy and Sugar Land</p>
             <p>E: <a href="mailto:mark@inflighting.com">mark@inflighting.com</a></p>
             <p>P: <a href="tel:2812024625">(281) 202-4625</a> or <a href="tel:3185723212">(318) 572-3212</a></p>
           </div>
@@ -32,18 +31,9 @@ const Footer = () => {
           </div>
 
           <div className="footer-nav">
-            <h3>Greater Houston</h3>
+            <h3>Service Areas</h3>
             <ul>
-              {serviceAreasByGroup.houston.map(area => (
-                <li key={area.slug}><Link to={`/service-areas/${area.slug}`}>{area.name}</Link></li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="footer-nav">
-            <h3>Texas &amp; Nearby</h3>
-            <ul>
-              {[...serviceAreasByGroup.texas, ...serviceAreasByGroup.regional].map(area => (
+              {serviceAreas.map(area => (
                 <li key={area.slug}><Link to={`/service-areas/${area.slug}`}>{area.name}</Link></li>
               ))}
               <li><Link to="/service-areas">All Service Areas</Link></li>
@@ -57,14 +47,14 @@ const Footer = () => {
               <li><Link to="/projects">Projects</Link></li>
               <li><Link to="/energy-audit">Free Energy Audit</Link></li>
               <li><Link to="/lighting-proposal">Lighting Proposal</Link></li>
-              <li><Link to="/led-lighting-rebates-texas">LED Rebates in Texas</Link></li>
+              <li><Link to="/led-lighting-rebates-houston">LED Rebates in Houston</Link></li>
               <li><Link to="/contact-us">Contact Us</Link></li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>Copyright © Infinity Lighting Solutions | Commercial LED Lighting in Houston, Texas and Nearby States | All Rights Reserved</p>
+          <p>Copyright © Infinity Lighting Solutions | Commercial LED Lighting in Houston, TX | All Rights Reserved</p>
           <p>Designed by <a href="https://primarydm.com" target="_blank" rel="noopener noreferrer" style={{color: 'var(--color-primary)', textDecoration: 'none', fontWeight: '500'}}>Primary Digital Marketing</a></p>
         </div>
       </div>

@@ -4,9 +4,9 @@ export const SITE_URL = 'https://inflighting.com'
 export const SITE_NAME = 'Infinity Lighting Solutions'
 // Short brand suffix keeps most titles under ~60 characters so they are not truncated in search results.
 const TITLE_SUFFIX = 'Infinity Lighting'
-const DEFAULT_TITLE = `Commercial LED Lighting Houston & Texas | ${TITLE_SUFFIX}`
+const DEFAULT_TITLE = `Commercial LED Lighting Houston TX | ${TITLE_SUFFIX}`
 const DEFAULT_DESCRIPTION =
-  'Houston-based commercial LED lighting and electrical contractor serving all of Texas and nearby states. Garage, office, hotel and warehouse retrofits with a 10-year fixture and 5-year labor warranty.'
+  'Commercial LED lighting contractor serving Greater Houston. Garage, office, hotel and warehouse LED retrofits backed by a 10-year fixture and 5-year labor warranty.'
 const DEFAULT_IMAGE = `${SITE_URL}/images/garage-night.jpg`
 
 const SEGMENT_NAMES = {
@@ -54,13 +54,15 @@ const buildBreadcrumbs = (canonical, title) => {
  * @param {string}  type         Open Graph type, "website" (default) or "article".
  * @param {boolean} noindex      Keep the page out of search results (404, thank-you pages).
  * @param {boolean} service      Emit a schema.org Service entry for this page (service/application pages).
- * @param {object|object[]} areaServed  schema.org place(s) for the Service entry. Defaults to Houston plus the state of Texas.
+ * @param {object|object[]} areaServed  schema.org place(s) for the Service entry. Defaults to Houston and the Greater Houston counties.
  * @param {string}  preloadImage Site path of the page's largest above-the-fold image (hero background), preloaded for LCP.
  * @param {object|object[]} schema  Extra JSON-LD objects to embed (Article, FAQPage...).
  */
 const DEFAULT_AREA_SERVED = [
   { '@type': 'City', name: 'Houston', containedInPlace: { '@type': 'State', name: 'Texas' } },
-  { '@type': 'State', name: 'Texas' }
+  { '@type': 'AdministrativeArea', name: 'Harris County' },
+  { '@type': 'AdministrativeArea', name: 'Fort Bend County' },
+  { '@type': 'AdministrativeArea', name: 'Montgomery County' }
 ]
 
 const SEO = ({ title, description, keywords, canonical, image, type = 'website', noindex = false, service = false, areaServed, preloadImage, schema }) => {

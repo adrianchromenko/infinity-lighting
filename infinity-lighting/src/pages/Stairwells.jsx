@@ -14,8 +14,8 @@ const Stairwells = () => {
     <div className="stairwells-page">
       <SEO
         title="Stairwell LED Lighting Houston"
-        description="Motion-controlled LED stairwell lighting for Houston commercial buildings. Bright on entry, idle when empty, code compliant, 12 to 18 month payback."
-        keywords="stairwell lighting Houston, LED stairwell lights Houston TX, motion sensor stairwell lighting Houston, commercial stairwell LED Texas, building stairwell lighting Houston, emergency stairwell lighting Houston"
+        description="Motion-controlled LED stairwell lighting for Houston commercial buildings. Bright on entry, idle when empty, code compliant, payback as fast as 12 to 18 months."
+        keywords="stairwell lighting Houston, LED stairwell lights Houston TX, motion sensor stairwell lighting Houston, commercial stairwell LED Houston TX, building stairwell lighting Houston, emergency stairwell lighting Houston"
         canonical="/stairwells"
         service
         schema={faqSchema(faqs['/stairwells'])}
@@ -199,8 +199,7 @@ const Stairwells = () => {
               <div className="benefit-icon">📊</div>
               <h3>Quick ROI</h3>
               <p>
-                Most installations pay for themselves in 12-18 months through energy savings 
-                and reduced maintenance costs.
+                Stairwells are one of the fastest-payback applications. With motion control, many pay for themselves in 12 to 18 months, versus two to three years for a typical LED retrofit.
               </p>
             </div>
           </div>

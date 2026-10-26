@@ -3,8 +3,8 @@ import './Services.css'
 
 const benefits = [
   {
-    title: 'Cut energy use by 50%+',
-    text: 'LED draws a fraction of the power of fluorescent and HID for the same light.',
+    title: 'Cut energy use by 60–70%',
+    text: 'LED cuts lighting electricity use by 60% to 70% compared with fluorescent and HID, for the same or better light.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" />
@@ -52,7 +52,7 @@ const benefits = [
   },
   {
     title: 'Fast payback',
-    text: 'Most projects pay for themselves in one to two years, then keep saving.',
+    text: 'Most projects pay for themselves in two to three years, and in 12 to 18 months in the right situations, then keep saving.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 17l6-6 4 4 8-8" />
@@ -68,7 +68,7 @@ const Services = () => {
       <div className="container">
         <div className="services-grid">
           <div className="services-left">
-            <p className="services-eyebrow">Why Houston and Texas properties switch to LED</p>
+            <p className="services-eyebrow">Why Houston properties switch to LED</p>
             <h2 className="services-headline">
               Less energy for the same light, and a building that looks better for it.
             </h2>

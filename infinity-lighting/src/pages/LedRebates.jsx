@@ -10,24 +10,13 @@ import { faqs } from '../data/faqs'
 import './ServiceArea.css'
 import './LedRebates.css'
 
-// Utility programs we work with. Names and budgets change year to year, so the page describes
+// Utility programs around Houston. Names and budgets change year to year, so the page describes
 // each program in general terms and the proposal confirms the current details.
-const texasUtilities = [
-  { utility: 'CenterPoint Energy', area: 'Houston and most of the Greater Houston area', note: 'Commercial standard offer program for lighting and controls retrofits in existing buildings.', link: '/service-areas/downtown-houston' },
-  { utility: 'Oncor', area: 'Dallas–Fort Worth and much of North, Central and West Texas', note: 'Commercial standard offer program; projects are reserved with the utility before installation.', link: '/service-areas/dallas-fort-worth' },
-  { utility: 'Austin Energy', area: 'City of Austin', note: 'Municipal commercial rebate program with incentives for LED fixtures and lighting controls.', link: '/service-areas/austin' },
-  { utility: 'CPS Energy', area: 'San Antonio', note: 'Municipal commercial lighting and demand-response incentives.', link: '/service-areas/san-antonio' },
-  { utility: 'Entergy Texas', area: 'Southeast Texas including Beaumont, Port Arthur, Conroe and The Woodlands', note: 'Commercial solutions program for lighting retrofits.', link: '/service-areas/beaumont-golden-triangle' },
-  { utility: 'AEP Texas', area: 'Corpus Christi, the Coastal Bend, the Rio Grande Valley and Abilene', note: 'Commercial solutions program for lighting and controls.', link: '/service-areas/corpus-christi' },
-  { utility: 'TNMP', area: 'Parts of the Gulf Coast, DFW suburbs and West Texas', note: 'Commercial standard offer program.', link: '/service-areas' },
-  { utility: 'Xcel Energy and El Paso Electric', area: 'The Panhandle, South Plains and El Paso', note: 'Commercial lighting efficiency programs.', link: '/service-areas' }
-]
-
-const nearbyUtilities = [
-  { utility: 'Entergy Louisiana, Cleco and SWEPCO', area: 'Louisiana', note: 'Commercial energy-efficiency programs with prescriptive lighting incentives.', link: '/service-areas/louisiana' },
-  { utility: 'OG&E and PSO', area: 'Oklahoma City and Tulsa', note: 'Commercial lighting rebate programs.', link: '/service-areas/oklahoma' },
-  { utility: 'Entergy Arkansas and SWEPCO', area: 'Arkansas', note: 'Commercial energy-efficiency programs with lighting incentives.', link: '/service-areas/arkansas' },
-  { utility: 'Evergy', area: 'Kansas City, Kansas and Missouri', note: 'Business lighting rebate programs.', link: '/service-areas/kansas-city' }
+const houstonUtilities = [
+  { utility: 'CenterPoint Energy', area: 'Houston and most of Harris, Fort Bend, Brazoria and Galveston counties', note: 'Commercial standard offer program for lighting and controls retrofits in existing buildings. Covers Downtown, the Galleria, Westchase, Katy, Sugar Land and Richmond.', link: '/service-areas/downtown-houston' },
+  { utility: 'Entergy Texas', area: 'Conroe, much of Montgomery County and parts of The Woodlands', note: 'Commercial solutions program for lighting retrofits, with incentives based on the kilowatts and kilowatt-hours removed.', link: '/service-areas/the-woodlands-spring' },
+  { utility: 'TNMP (Texas-New Mexico Power)', area: 'League City, Texas City, Dickinson, Friendswood, Alvin and parts of Galveston and Brazoria counties', note: 'Commercial standard offer program; projects are reserved with the utility before installation.', link: '/service-areas' },
+  { utility: 'Electric cooperatives', area: 'The outer edges of the metro, such as San Bernard Electric Cooperative to the west and Sam Houston Electric Cooperative to the northeast', note: 'Co-op programs vary. We confirm what is available for your meter during the audit.', link: '/service-areas' }
 ]
 
 const steps = [
@@ -38,27 +27,27 @@ const steps = [
 ]
 
 const LedRebates = () => {
-  const items = faqs['/led-lighting-rebates-texas']
+  const items = faqs['/led-lighting-rebates-houston']
   const article = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Commercial LED Lighting Rebates in Texas and Nearby States',
-    description: 'How utility rebate programs for commercial LED lighting work in Texas, which programs apply in each city, and how Infinity Lighting Solutions files them for you.',
-    url: `${SITE_URL}/led-lighting-rebates-texas`,
+    headline: 'Commercial LED Lighting Rebates in Greater Houston',
+    description: 'How utility rebate programs for commercial LED lighting work around Houston, which program applies to each part of the metro, and how Infinity Lighting Solutions files them for you.',
+    url: `${SITE_URL}/led-lighting-rebates-houston`,
     image: `${SITE_URL}/images/garage-night.jpg`,
     author: { '@id': `${SITE_URL}/#business` },
     publisher: { '@id': `${SITE_URL}/#business` },
-    about: ['Utility rebates', 'Commercial LED lighting', 'Energy efficiency programs'],
+    about: ['Utility rebates', 'Commercial LED lighting', 'CenterPoint Energy', 'Energy efficiency programs'],
     inLanguage: 'en-US'
   }
 
   return (
     <div className="service-area-page rebates-page">
       <SEO
-        title="Commercial LED Lighting Rebates in Texas"
-        description="How Texas utility rebates for commercial LED lighting work: CenterPoint, Oncor, Austin Energy, CPS Energy, Entergy and AEP Texas. We file the paperwork for you."
-        keywords="commercial LED lighting rebates Texas, Oncor LED rebate, CenterPoint commercial lighting rebate, Austin Energy commercial rebate, CPS Energy lighting rebate, Entergy Texas lighting incentive, AEP Texas commercial solutions, utility rebate LED retrofit"
-        canonical="/led-lighting-rebates-texas"
+        title="Commercial LED Lighting Rebates Houston"
+        description="How Houston utility rebates for commercial LED lighting work: CenterPoint Energy, Entergy Texas and TNMP programs. We file the paperwork for you."
+        keywords="commercial LED lighting rebates Houston, CenterPoint commercial lighting rebate, CenterPoint Energy LED rebate, Entergy Texas lighting incentive, TNMP commercial rebate, utility rebate LED retrofit Houston, Houston lighting rebate program"
+        canonical="/led-lighting-rebates-houston"
         type="article"
         schema={[article, faqSchema(items)]}
       />
@@ -72,9 +61,9 @@ const LedRebates = () => {
             <span aria-hidden="true">›</span>
             <span>LED Lighting Rebates</span>
           </nav>
-          <h1 className="sa-title">Commercial LED Lighting Rebates in Texas and Nearby States</h1>
+          <h1 className="sa-title">Commercial LED Lighting Rebates in Greater Houston</h1>
           <p className="sa-tagline">
-            Utilities across Texas pay commercial customers to cut lighting load. Here is how the programs work, which one applies to your property, and how we handle the application so the incentive lands in your project.
+            Houston-area utilities pay commercial customers to cut lighting load. Here is how the programs work, which one applies to your property, and how we handle the application so the incentive lands in your project.
           </p>
           <div className="sa-hero-actions">
             <Link to="/contact-us" className="sa-btn-primary">Get a Free Energy Audit</Link>
@@ -87,9 +76,9 @@ const LedRebates = () => {
         <div className="container">
           <div className="sa-intro-grid">
             <div className="sa-intro-text">
-              <h2 className="rb-h2">Why Texas utilities pay for LED upgrades</h2>
+              <h2 className="rb-h2">Why Houston utilities pay for LED upgrades</h2>
               <p>
-                Texas requires its transmission and distribution utilities to meet energy-efficiency goals every year, and the cheapest way for a utility to meet them is to pay customers to use less. Oncor, CenterPoint Energy, AEP Texas, Entergy Texas, TNMP, Xcel Energy and El Paso Electric each run commercial programs that pay an incentive for the kilowatt-hours and peak kilowatts a lighting retrofit removes. Municipal utilities such as Austin Energy and CPS Energy, and many electric cooperatives, run programs of their own.
+                Texas requires its transmission and distribution utilities to meet energy-efficiency goals every year, and the cheapest way for a utility to meet them is to pay customers to use less. Around Houston that means CenterPoint Energy for most of the metro, Entergy Texas to the north and TNMP along the coast, each running a commercial program that pays an incentive for the kilowatt-hours and peak kilowatts a lighting retrofit removes.
               </p>
               <p>
                 Lighting is the easiest measure to qualify. A parking garage that goes from 8-foot T8 fluorescents running 24 hours a day to motion-controlled linear LED removes a large, predictable load, and that is exactly what these programs are designed to reward. Controls such as occupancy sensors and photocells usually increase the incentive because they cut hours as well as watts.
@@ -131,9 +120,9 @@ const LedRebates = () => {
 
       <section className="rb-utilities">
         <div className="container">
-          <h2 className="sa-section-title">Texas utility programs by area</h2>
+          <h2 className="sa-section-title">Houston utility programs by area</h2>
           <p className="rb-note">
-            Program names, incentive rates and budgets change from year to year. The table shows who serves each area and the kind of program they run; we confirm the current details when we prepare your proposal.
+            Program names, incentive rates and budgets change from year to year. The table shows who serves each part of the metro and the kind of program they run; we confirm the current details when we prepare your proposal. Your electric bill names the transmission and distribution utility separately from your retail electric provider, and it is the utility that runs the rebate program.
           </p>
           <div className="rb-table-wrap">
             <table className="rb-table">
@@ -141,25 +130,7 @@ const LedRebates = () => {
                 <tr><th>Utility</th><th>Service area</th><th>Commercial lighting program</th></tr>
               </thead>
               <tbody>
-                {texasUtilities.map(u => (
-                  <tr key={u.utility}>
-                    <td><strong>{u.utility}</strong></td>
-                    <td><Link to={u.link}>{u.area}</Link></td>
-                    <td>{u.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <h2 className="sa-section-title rb-h2-spaced">Louisiana, Oklahoma, Arkansas and Kansas City</h2>
-          <div className="rb-table-wrap">
-            <table className="rb-table">
-              <thead>
-                <tr><th>Utility</th><th>Service area</th><th>Commercial lighting program</th></tr>
-              </thead>
-              <tbody>
-                {nearbyUtilities.map(u => (
+                {houstonUtilities.map(u => (
                   <tr key={u.utility}>
                     <td><strong>{u.utility}</strong></td>
                     <td><Link to={u.link}>{u.area}</Link></td>
@@ -206,7 +177,7 @@ const LedRebates = () => {
         </div>
       </section>
 
-      <RelatedLinks current="/led-lighting-rebates-texas" title="LED lighting services and areas we serve" />
+      <RelatedLinks current="/led-lighting-rebates-houston" title="LED lighting services and areas we serve" />
       <Footer />
       <FloatingPhone />
     </div>

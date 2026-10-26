@@ -450,115 +450,9 @@
 }
 
 /* Travel note and out-of-town project intro */
-.sa-travel-note {
-  border-left: 3px solid var(--color-primary);
-  padding-left: 1rem;
-  font-size: 0.95rem !important;
-  color: var(--color-text-muted) !important;
-}
-
-.sa-projects-intro {
-  max-width: 46rem;
-  margin: -1rem 0 1.75rem;
-  font-size: 0.98rem;
-  line-height: 1.7;
-  color: var(--color-text-muted);
-}
-
 /* Single before/after pair on an area page (e.g. Lenexa, KS) */
-.sa-before-after {
-  padding: 4rem 0 1rem;
-}
-
-.sa-ba-card {
-  background: #fff;
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.sa-ba-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
-  background: var(--color-border);
-}
-
-.sa-ba-frame {
-  position: relative;
-  margin: 0;
-  aspect-ratio: 4 / 3;
-  background: var(--color-surface-3);
-}
-
-.sa-ba-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.sa-ba-tag {
-  position: absolute;
-  top: 0.75rem;
-  left: 0.75rem;
-  padding: 0.3rem 0.7rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.sa-ba-tag.after {
-  background: var(--color-primary);
-}
-
-.sa-ba-body {
-  padding: 1.25rem 1.5rem;
-}
-
-.sa-ba-body h3 {
-  font-size: 1.05rem;
-  margin: 0 0 0.4rem;
-  color: var(--color-text);
-}
-
-.sa-ba-body p {
-  margin: 0;
-  font-size: 0.92rem;
-  line-height: 1.5;
-  color: var(--color-text-muted);
-}
-
 /* Nearby: second list on the same page */
-.sa-nearby-secondary {
-  margin-top: 2.25rem;
-}
-
 /* Hub page groups */
-.sa-group + .sa-group {
-  margin-top: 3.5rem;
-}
-
-.sa-group-header {
-  margin-bottom: 1.5rem;
-}
-
-.sa-group-header .sa-section-title {
-  margin-bottom: 0.5rem;
-}
-
-.sa-group-header p {
-  margin: 0;
-  max-width: 46rem;
-  font-size: 0.98rem;
-  line-height: 1.6;
-  color: var(--color-text-muted);
-}
-
 .sa-area-card h3 {
   font-size: 1.15rem;
   font-weight: 700;
@@ -566,8 +460,9 @@
   color: var(--color-text);
 }
 
-@media (max-width: 600px) {
-  .sa-ba-images {
-    grid-template-columns: 1fr;
-  }
+.sa-trust-note {
+  margin: 1rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
 }

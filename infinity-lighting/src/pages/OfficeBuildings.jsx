@@ -14,7 +14,7 @@ const OfficeBuildings = () => {
   const projects = [
     {
       id: 1,
-      title: "BHP Entrance & Lobby",
+      title: "BHP Tower Lobby",
       image: "/images/bhp-lobby-after.jpg",
       description: "Illuminated with new LED lighting!",
       type: "entrance"
@@ -143,7 +143,7 @@ const OfficeBuildings = () => {
             <div className="benefit-stat">
               <div className="stat-number">10 / 5</div>
               <div className="stat-label">Yr Fixture / Labor Warranty</div>
-              <div className="stat-desc">Long-lasting Performance</div>
+              <div className="stat-desc">Fixtures we install with surge protection</div>
             </div>
           </div>
         </div>

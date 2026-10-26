@@ -14,8 +14,8 @@ const LightingProposal = () => {
     <div className="lighting-proposal-page">
       <SEO
         title="LED Lighting Proposal Houston"
-        description="Commercial LED lighting proposals for Houston and Texas properties: fixture-by-fixture layout, energy and cost savings, payback period and rebates handled."
-        keywords="LED lighting proposal Houston, commercial lighting design Texas, LED lighting cost analysis Houston, energy savings proposal Texas, LED lighting ROI Houston, commercial lighting plan Texas, utility rebate LED Texas"
+        description="Commercial LED lighting proposals for Houston properties: fixture-by-fixture layout, energy and cost savings, payback period and CenterPoint rebates handled."
+        keywords="LED lighting proposal Houston, commercial lighting design Houston, LED lighting cost analysis Houston, energy savings proposal Houston, LED lighting ROI Houston, commercial lighting plan Houston, CenterPoint rebate LED Houston"
         canonical="/lighting-proposal"
         service
         schema={faqSchema(faqs['/lighting-proposal'])}
@@ -275,7 +275,7 @@ const LightingProposal = () => {
               </div>
               <div className="summary-item">
                 <span className="summary-label">Payback Period:</span>
-                <span className="summary-value">18 Months</span>
+                <span className="summary-value">2–3 Years</span>
               </div>
               <div className="summary-item">
                 <span className="summary-label">10-Year Savings:</span>

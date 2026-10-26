@@ -47,7 +47,7 @@ const BeforeAfter = () => {
           </div>
           <div className="before-after-stat">
             <span className="before-after-stat-value">~1,500</span>
-            <span className="before-after-stat-label">Fixtures eliminated at Four Oaks Place with a one-year payback</span>
+            <span className="before-after-stat-label">Fixtures eliminated at Four Oaks Place with an 18-month payback</span>
           </div>
           <div className="before-after-stat">
             <span className="before-after-stat-value">7 yrs</span>

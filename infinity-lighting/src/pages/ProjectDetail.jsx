@@ -4,6 +4,7 @@ import { projects, projectsById } from '../data/projects'
 import { relatedServicesFor } from '../data/services'
 import './ProjectDetail.css'
 import SEO from '../components/SEO'
+import { WARRANTY_TERMS } from '../data/warranty'
 import { imgSize } from '../data/imageSizes'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
@@ -32,7 +33,7 @@ const ProjectDetail = () => {
       <SEO 
         title={project.title.length > 26 ? project.title : `${project.title} LED Retrofit`}
         description={`${project.shortDescription}. ${project.type} LED retrofit at ${project.location} by Infinity Lighting Solutions.`}
-        keywords={`${project.title}, ${project.type} lighting Houston, ${project.type} LED lighting Texas, commercial LED project, electrical contractor Houston`}
+        keywords={`${project.title}, ${project.type} lighting Houston, ${project.type} LED retrofit Houston TX, commercial LED project, LED lighting contractor Houston`}
         canonical={`/projects/${id}`}
         image={project.image}
       />
@@ -162,8 +163,7 @@ const ProjectDetail = () => {
                 </div>
                 <h3 className="warranty-title">10-Year Fixture / 5-Year Labor Warranty</h3>
                 <p className="warranty-description">
-                  Our installations are backed by a 10-year fixture warranty and a 5-year labor warranty.
-                  Qualifying surge protection devices required.
+                  {WARRANTY_TERMS}
                 </p>
               </div>
 

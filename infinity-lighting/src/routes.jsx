@@ -30,7 +30,7 @@ export const staticRoutes = [
   '/parking-lots',
   '/energy-audit',
   '/lighting-proposal',
-  '/led-lighting-rebates-texas',
+  '/led-lighting-rebates-houston',
   '/projects',
   '/service-areas',
   '/contact-us'
@@ -48,7 +48,7 @@ const AppRoutes = () => (
     <Route path="/parking-lots" element={<ParkingLots />} />
     <Route path="/energy-audit" element={<EnergyAudit />} />
     <Route path="/lighting-proposal" element={<LightingProposal />} />
-    <Route path="/led-lighting-rebates-texas" element={<LedRebates />} />
+    <Route path="/led-lighting-rebates-houston" element={<LedRebates />} />
     <Route path="/projects" element={<Projects />} />
     <Route path="/projects/:id" element={<ProjectDetail />} />
     <Route path="/service-areas" element={<ServiceAreas />} />

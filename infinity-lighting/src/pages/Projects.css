@@ -474,3 +474,12 @@
     padding: 3rem 0;
   }
 }
+
+/* Warranty qualifier under the hero badge */
+.projects-warranty-note {
+  margin: 0.9rem auto 0;
+  max-width: 40rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.78);
+}

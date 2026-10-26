@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './ContactUs.css'
 import SEO from '../components/SEO'
+import { WARRANTY_SHORT } from '../data/warranty'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -72,9 +73,9 @@ const ContactUs = () => {
   return (
     <div className="contact-us-page">
       <SEO
-        title="Contact | LED Lighting Houston & Texas"
-        description="Request a free commercial lighting energy audit from Infinity Lighting Solutions, Richmond TX. Call (281) 202-4625. Serving Houston, Texas and nearby states."
-        keywords="contact LED lighting Houston, commercial lighting consultation Texas, LED lighting contractor Houston TX, LED lighting contractor Texas, Infinity Lighting Solutions, commercial LED lighting quote Texas, commercial electrician Houston TX"
+        title="Contact | LED Lighting Houston TX"
+        description="Request a free commercial lighting energy audit from Infinity Lighting Solutions, Richmond TX. Call (281) 202-4625. Serving all of Greater Houston."
+        keywords="contact LED lighting Houston, commercial lighting consultation Houston, LED lighting contractor Houston TX, Infinity Lighting Solutions, commercial LED lighting quote Houston, LED lighting Richmond TX"
         canonical="/contact-us"
       />
       <TopBar />
@@ -100,7 +101,7 @@ const ContactUs = () => {
               <h2>Get Your Free Energy Assessment</h2>
               <p className="form-intro">
                 Complete the form below and our LED lighting specialists will contact you 
-                within 24 hours to schedule your free consultation, in Houston, anywhere in Texas or a nearby state.
+                within 24 hours to schedule your free consultation anywhere in Greater Houston.
               </p>
               
               <form className="contact-form" onSubmit={handleSubmit}>
@@ -231,7 +232,7 @@ const ContactUs = () => {
                   </svg>
                   <div>
                     <p>Richmond, TX 77407</p>
-                    <p className="service-area">Serving Greater Houston and all of Texas,<br/>plus Louisiana, Oklahoma, Arkansas &amp; Kansas City</p>
+                    <p className="service-area">Serving all of Greater Houston,<br/>from Richmond and Katy to Downtown and The Woodlands</p>
                   </div>
                 </div>
                 
@@ -259,14 +260,14 @@ const ContactUs = () => {
               <div className="contact-card">
                 <h3>Why Choose Infinity Lighting?</h3>
                 <ul className="why-list">
-                  <li>20+ Years Experience in Houston and Texas</li>
+                  <li>20+ Years Experience in Houston</li>
                   <li>Free Energy Assessments</li>
                   <li>Maximum Utility Rebates</li>
-                  <li>50%+ Energy Savings Guaranteed</li>
+                  <li>60–70% Lighting Energy Savings</li>
                   <li>Professional Installation Team</li>
                   <li>10-Year Fixture &amp; 5-Year Labor Warranty*</li>
                 </ul>
-                <p className="warranty-footnote">*Qualifying surge protection devices required. Contact us for full warranty terms.</p>
+                <p className="warranty-footnote">*{WARRANTY_SHORT} Contact us for full warranty terms.</p>
               </div>
               
               <div className="contact-card emergency">
@@ -286,7 +287,7 @@ const ContactUs = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Start Saving on Energy Costs Today</h2>
-            <p>Join hundreds of Houston and Texas businesses that have upgraded to LED</p>
+            <p>Join hundreds of Houston businesses that have upgraded to LED</p>
             <div className="cta-buttons">
               <a href="tel:2812024625" className="cta-button">Call (281) 202-4625</a>
               <a href="mailto:mark@inflighting.com" className="cta-button-secondary">Email Us</a>
