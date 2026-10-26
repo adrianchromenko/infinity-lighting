@@ -6,6 +6,7 @@ import RelatedLinks from '../components/RelatedLinks'
 import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
@@ -26,6 +27,7 @@ const LightingProposal = () => {
       {/* Hero Section */}
       <section className="lp-hero">
         <div className="container">
+          <Breadcrumbs current="Lighting Proposal" />
           <div className="lp-hero-content">
             <h1 className="lp-hero-title">HOUSTON LED LIGHTING PROPOSAL</h1>
             <p className="lp-hero-subtitle">For the most efficient LED lighting upgrade in Houston, Texas!</p>

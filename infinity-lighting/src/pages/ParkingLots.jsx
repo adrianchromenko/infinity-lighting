@@ -6,6 +6,7 @@ import RelatedLinks from '../components/RelatedLinks'
 import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
@@ -43,6 +44,7 @@ const ParkingLots = () => {
       {/* Hero Section */}
       <section className="pl-hero">
         <div className="container">
+          <Breadcrumbs current="Parking Lot Lighting" />
           <div className="pl-hero-content">
             <h1 className="pl-hero-title">Houston Parking Lot LED Lighting</h1>
             <div className="pl-hero-message">

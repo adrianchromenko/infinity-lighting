@@ -7,6 +7,7 @@ import RelatedLinks from '../components/RelatedLinks'
 import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
@@ -70,6 +71,7 @@ const OfficeBuildings = () => {
       {/* Hero Section */}
       <section className="ob-hero">
         <div className="container">
+          <Breadcrumbs current="Office Building Lighting" />
           <div className="ob-hero-content">
             <h1 className="ob-hero-title">Office Buildings & Retail LED Lighting Houston</h1>
             <p className="ob-hero-subtitle">Transform your Houston commercial spaces with modern LED lighting solutions</p>

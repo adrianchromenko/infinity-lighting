@@ -4,6 +4,7 @@ import SEO from '../components/SEO'
 import { WARRANTY_SHORT } from '../data/warranty'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
@@ -84,6 +85,7 @@ const ContactUs = () => {
       {/* Hero Section */}
       <section className="contact-hero">
         <div className="container">
+          <Breadcrumbs current="Contact Us" />
           <div className="contact-hero-content">
             <h1 className="contact-hero-title">Contact Houston's LED Lighting Experts</h1>
             <p className="contact-hero-subtitle">

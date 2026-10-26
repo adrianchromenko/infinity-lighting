@@ -6,6 +6,7 @@ import SEO from '../components/SEO'
 import { imgSize } from '../data/imageSizes'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
@@ -24,6 +25,7 @@ const Projects = () => {
       {/* Hero Section */}
       <section className="projects-hero">
         <div className="container">
+          <Breadcrumbs current="Projects" />
           <div className="projects-hero-content">
             <h1 className="projects-hero-title">Our Lighting Projects</h1>
             <p className="projects-hero-subtitle">

@@ -1,0 +1,31 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-on-dark-soft);
+  margin-bottom: 1.25rem;
+}
+
+.breadcrumbs a {
+  color: var(--color-text-on-dark-soft);
+  text-decoration: none;
+  padding: 0.2rem 0;
+  display: inline-block;
+}
+
+.breadcrumbs a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+}

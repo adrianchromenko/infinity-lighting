@@ -1,6 +1,32 @@
 // Frequently asked questions per page. Rendered by <FAQ> and emitted as FAQPage structured data.
 // Keep answers consistent with the claims made on the page itself.
 export const faqs = {
+  '/': [
+    {
+      q: 'How much does a commercial LED retrofit save in Houston?',
+      a: 'Most properties cut lighting electricity use by 60% to 70%. Parking garages with motion-sensor fixtures usually save more than 80%, because the fixtures idle when a level is empty and run at full output only when someone is there.'
+    },
+    {
+      q: 'What is the typical payback period?',
+      a: 'Two to three years for most projects once utility rebates are applied. High-hour spaces such as stairwells and 24-hour garages often pay back in 12 to 18 months.'
+    },
+    {
+      q: 'Where does Infinity Lighting Solutions work?',
+      a: 'All of Greater Houston, from our office in Richmond, TX 77407: Downtown, the Galleria and Uptown, Westchase, Greenway Plaza and Upper Kirby, The Woodlands and Spring, Sugar Land, Katy and the Energy Corridor, and the rest of Fort Bend, Harris and Montgomery counties.'
+    },
+    {
+      q: 'Is the energy audit really free?',
+      a: 'Yes. We survey every fixture, take light readings and turn your electric rate into a written savings and payback estimate, at no cost and with no obligation.'
+    },
+    {
+      q: 'Do you handle the CenterPoint rebate paperwork?',
+      a: 'Yes. We identify the program that applies to your utility, file for pre-approval before installation and handle the post-installation documentation, so the incentive shows up in your net project cost.'
+    },
+    {
+      q: 'What does the 10-year fixture and 5-year labor warranty cover?',
+      a: 'The commercial-grade LED fixtures we supply and install together with surge protection, and our installation workmanship. Fixtures we did not install, installations without surge protection, and damage from power events, misuse or alterations are not covered.'
+    }
+  ],
   '/parking-garages': [
     {
       q: 'How much can a parking garage save by switching to LED?',

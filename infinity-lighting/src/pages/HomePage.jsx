@@ -8,6 +8,8 @@ import WarrantySection from '../components/WarrantySection'
 import ClientsPartners from '../components/ClientsPartners'
 import FeaturedProjects from '../components/FeaturedProjects'
 import RelatedLinks from '../components/RelatedLinks'
+import FAQ, { faqSchema } from '../components/FAQ'
+import { faqs } from '../data/faqs'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
@@ -19,6 +21,7 @@ const HomePage = () => {
         preloadImage="/images/garage-night.jpg"
         keywords="commercial LED lighting Houston, LED lighting Houston TX, commercial lighting contractor Houston, LED retrofit Houston, parking garage LED lighting Houston, warehouse LED lighting Houston, office LED lighting Houston, LED lighting Katy, LED lighting Sugar Land, LED lighting The Woodlands, LED lighting Richmond TX"
         canonical="/"
+        schema={faqSchema(faqs['/'])}
       />
       <TopBar />
       <Header />
@@ -28,6 +31,7 @@ const HomePage = () => {
       <WarrantySection />
       <ClientsPartners />
       <FeaturedProjects />
+      <FAQ items={faqs['/']} title="Houston commercial LED lighting questions" />
       <RelatedLinks current="/" title="LED Lighting Services and Areas We Serve" />
       <Footer />
       <FloatingPhone />

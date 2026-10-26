@@ -7,6 +7,7 @@ import RelatedLinks from '../components/RelatedLinks'
 import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
@@ -45,6 +46,7 @@ const FountainsLandscape = () => {
       {/* Hero Section */}
       <section className="fl-hero">
         <div className="container">
+          <Breadcrumbs current="Fountain & Landscape Lighting" />
           <div className="fl-hero-content">
             <h1 className="fl-hero-title">Houston Fountains & Commercial Landscape Lighting</h1>
             <p className="fl-hero-subtitle">A truly innovative approach to your outdoor lighting!</p>

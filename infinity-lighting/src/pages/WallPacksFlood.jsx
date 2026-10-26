@@ -6,6 +6,7 @@ import RelatedLinks from '../components/RelatedLinks'
 import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
@@ -26,6 +27,7 @@ const WallPacksFlood = () => {
       {/* Hero Section */}
       <section className="wpf-hero">
         <div className="container">
+          <Breadcrumbs current="Wall Pack & Flood Lighting" />
           <div className="wpf-hero-content">
             <h1 className="wpf-hero-title">Houston Wall Packs & Flood LED Lighting</h1>
             <p className="wpf-hero-subtitle">

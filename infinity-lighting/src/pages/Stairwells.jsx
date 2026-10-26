@@ -6,6 +6,7 @@ import RelatedLinks from '../components/RelatedLinks'
 import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
@@ -26,6 +27,7 @@ const Stairwells = () => {
       {/* Hero Section */}
       <section className="sw-hero">
         <div className="container">
+          <Breadcrumbs current="Stairwell Lighting" />
           <div className="sw-hero-content">
             <h1 className="sw-hero-title">Stairwell LED Lighting Houston TX</h1>
             <p className="sw-hero-subtitle">Smart motion-controlled lighting solutions for Houston commercial buildings</p>

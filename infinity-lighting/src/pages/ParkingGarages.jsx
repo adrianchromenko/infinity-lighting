@@ -7,6 +7,7 @@ import RelatedLinks from '../components/RelatedLinks'
 import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
@@ -55,6 +56,7 @@ const ParkingGarages = () => {
       {/* Hero Section - Simple and Clean */}
       <section className="pg-hero">
         <div className="container">
+          <Breadcrumbs current="Parking Garage Lighting" />
           <div className="pg-hero-content">
             <h1 className="pg-hero-title">Parking Garage LED Lighting in Houston</h1>
             <p className="pg-hero-subtitle">Transform your Houston parking facilities with energy-efficient LED solutions</p>
@@ -67,7 +69,7 @@ const ParkingGarages = () => {
         <div className="container">
           <div className="impression-content">
             <div className="impression-text">
-              <h2>Your parking garage is the <span className="highlight">first impression</span> 
+              <h2>Your parking garage is the <span className="highlight">first impression</span>{' '}
               <br/>and the <span className="highlight">last impression</span> of your building.</h2>
             </div>
             <div className="impression-question">

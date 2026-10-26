@@ -9,6 +9,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
+import { execSync } from 'node:child_process'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dist = path.join(root, 'dist')
@@ -50,6 +51,39 @@ fs.writeFileSync(path.join(dist, '404.html'), renderPage('/this-page-does-not-ex
 
 // --- sitemap.xml --------------------------------------------------------------------------------
 const today = new Date().toISOString().slice(0, 10)
+
+// Real last-modified dates: the last commit that touched the files a route is built from.
+// Uncommitted changes to those files count as "modified today".
+const pageFileFor = {
+  '/parking-garages': 'ParkingGarages', '/stairwells': 'Stairwells', '/office-buildings': 'OfficeBuildings',
+  '/warehouses': 'Warehouses', '/fountains-landscape': 'FountainsLandscape', '/wallpacks-flood': 'WallpacksFlood',
+  '/parking-lots': 'ParkingLots', '/energy-audit': 'EnergyAudit', '/lighting-proposal': 'LightingProposal',
+  '/led-lighting-rebates-houston': 'LedRebates', '/projects': 'Projects', '/contact-us': 'ContactUs',
+  '/service-areas': 'ServiceAreas', '/': 'HomePage'
+}
+const sourcesFor = (route) => {
+  if (route.startsWith('/projects/')) return ['src/data/projects.js', 'src/pages/ProjectDetail.jsx']
+  if (route.startsWith('/service-areas/')) return ['src/data/serviceAreas.js', 'src/pages/ServiceArea.jsx']
+  const page = pageFileFor[route]
+  if (!page) return []
+  const files = [`src/pages/${page}.jsx`, 'src/data/faqs.js']
+  if (route === '/') files.push('src/components/Hero.jsx', 'src/components/Services.jsx', 'src/components/BeforeAfter.jsx', 'src/components/WarrantySection.jsx', 'src/data/projects.js')
+  if (route === '/projects') files.push('src/data/projects.js')
+  if (route === '/service-areas') files.push('src/data/serviceAreas.js')
+  return files
+}
+const git = (args) => execSync(`git ${args}`, { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim()
+const lastmodFor = (route) => {
+  const files = sourcesFor(route)
+  if (files.length === 0) return today
+  try {
+    const quoted = files.map(f => `"${f}"`).join(' ')
+    if (git(`status --porcelain -- ${quoted}`)) return today
+    return git(`log -1 --format=%cs -- ${quoted}`) || today
+  } catch {
+    return today
+  }
+}
 const priorityFor = (route) => {
   if (route === '/') return '1.0'
   if (route.startsWith('/projects/')) return '0.7'
@@ -65,7 +99,7 @@ const changefreqFor = (route) => {
 const entries = routes.map(route => [
   '  <url>',
   `    <loc>${SITE_URL}${route}</loc>`,
-  `    <lastmod>${today}</lastmod>`,
+  `    <lastmod>${lastmodFor(route)}</lastmod>`,
   `    <changefreq>${changefreqFor(route)}</changefreq>`,
   `    <priority>${priorityFor(route)}</priority>`,
   '  </url>'

@@ -7,6 +7,7 @@ import RelatedLinks from '../components/RelatedLinks'
 import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Footer from '../components/Footer'
 import FloatingPhone from '../components/FloatingPhone'
 
@@ -27,6 +28,7 @@ const Warehouses = () => {
       {/* Hero Section */}
       <section className="wh-hero">
         <div className="container">
+          <Breadcrumbs current="Warehouse High Bay Lighting" />
           <div className="wh-hero-content">
             <h1 className="wh-hero-title">Houston Warehouse High Bay LED Lighting</h1>
             <div className="wh-hero-message">

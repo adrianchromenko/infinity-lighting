@@ -6,6 +6,7 @@ import RelatedLinks from '../components/RelatedLinks'
 import { faqs } from '../data/faqs'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Footer from '../components/Footer'
 import ClientsPartners from '../components/ClientsPartners'
 import FloatingPhone from '../components/FloatingPhone'
@@ -27,6 +28,7 @@ const EnergyAudit = () => {
       {/* Hero Section */}
       <section className="ea-hero">
         <div className="container">
+          <Breadcrumbs current="Free Energy Audit" />
           <div className="ea-hero-content">
             <h1 className="ea-hero-title">Houston Commercial LED Lighting Assessment<br />&amp; Energy Audit</h1>
             <div className="ea-hero-highlight">

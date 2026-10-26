@@ -106,6 +106,10 @@ Designed by [Primary Digital Marketing](https://primarydm.com)
 under `public/`; components spread `imgSize(src)` onto `<img>` so the browser reserves space and the page does not shift.
 The rebate guide at `/led-lighting-rebates-houston` lives in `src/pages/LedRebates.jsx`; its FAQs are in `src/data/faqs.js`.
 
+Every hero page shows a visible breadcrumb trail (`src/components/Breadcrumbs.jsx`) that matches the BreadcrumbList schema.
+The home page has its own FAQ (key `'/'` in `src/data/faqs.js`) emitted as FAQPage schema. Sitemap `<lastmod>` comes from the
+last git commit that touched each route's source files (uncommitted changes count as today).
+
 Per-page tags live in each page's `<SEO ... />` (see `src/components/SEO.jsx`). Site-wide
 business schema lives in `index.html`. Adding a page means adding it to `src/routes.jsx`
 (both the `<Route>` and the `staticRoutes` list); new projects only need a `src/data/projects.js` entry.
